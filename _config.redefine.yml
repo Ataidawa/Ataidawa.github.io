@@ -224,7 +224,7 @@ navbar:
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
   search:
     # Whether to enable
-    enable: true
+    enable: false
     # Preload search data when the page loads
     preload: true
 # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -293,8 +293,8 @@ articles:
   # Author label
   author_label: 
     enable: true # Whether to enable
-    auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
-    list: []
+    auto: true # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
+    list: ['故障','mmd','搞机','ai']
   # Code block settings
   code_block:
     copy: true # Whether to enable code block copy button
@@ -347,7 +347,7 @@ comment:
   config:
     # Waline comment system. See https://waline.js.org/
     waline:
-      serverUrl: https://example.example.com # Waline server URL. e.g. https://example.example.com
+      serverUrl: https://commentwaline-9b3ytjfxa-ataidawas-projects.vercel.app/ # Waline server URL. e.g. https://example.example.com
       lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
       emoji: [] # Waline emojis, see https://waline.js.org/guide/features/emoji.html
       recaptchaV3Key: # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
