@@ -435,19 +435,19 @@ plugins:
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: true # Whether to enable
-    type: fixed # fixed, mini
+    type: mini # fixed, mini
     audios:
       - name: Square # audio name
         artist: Peppsen # audio artist
-        url: sounds/01-02 Square.wav # audio url
+        url: sounds/01-02 Square.mp3 # audio url
         cover: sounds/shapez.io.png # audio cover url
       - name: Split
         artist: Peppsen
-        url: sounds/03-01 Split.wav
+        url: sounds/03-01 Split.mp3
         cover: sounds/shapez.io.png
       - name: Combine
         artist: Peppsen
-        url: sounds/03-02 Combine.wav
+        url: sounds/03-02 Combine.mp3
         cover: sounds/shapez.io.png
 
 #      - name: # audio name
