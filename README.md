@@ -692,9 +692,9 @@ $ hexo clean  # 清除缓存(db.json与public/内的静态页面)
    title: 博客建立帮助文档
    date: 2024-11-14 18:46:00
    tags:
-   	- "Hexo"
-   	- "hexo-theme"
-   	- "Github Pages"
+     - "Hexo"
+     - "hexo-theme"
+     - "Github Pages"
    ---
    ```
 

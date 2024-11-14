@@ -30,7 +30,7 @@ excerpt: "看的到我单独写的摘要吗？"
 
 ### 模块
 
-{% notel blue fa-info  提示 %}
+{% notel blue 提示 %}
 文章的Sha256验证异常，建议检查文章格式和文件大小
 换行测试
 {% endnotel %}
