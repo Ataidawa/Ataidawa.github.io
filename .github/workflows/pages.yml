@@ -9,10 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 设置时区
-      - name: Set timezone to Asia/Shanghai
-        run: sudo timedatectl set-timezone Asia/Shanghai
-        
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
