@@ -27,7 +27,7 @@ defaults:
   # Favicon
   favicon: images/favicon.webp
   # Site logo
-  logo: images/Logo.png
+  logo: images/favicon.webp
   # Site avatar
   avatar: images/avatar.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
