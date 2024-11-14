@@ -2,9 +2,9 @@
 title: 懒事屋 - Ataida's Blog Website - 辅助手册
 date: 2024-11-14 18:46:00
 tags:
-	- "Hexo"
-	- "hexo-theme"
-	- "Github Pages"
+  - "Hexo"
+  - "hexo-theme"
+  - "Github Pages"
 ---
 
 ## 基本介绍和要点
