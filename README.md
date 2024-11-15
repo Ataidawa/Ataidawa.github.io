@@ -80,10 +80,12 @@ tags:
    $ npm install hexo-theme-redefine@latest
    ```
 
-4. 修改`_config.yml`以启用主题
+4. 修改`_config.yml`
 
    ```yaml
-   theme: redefine
+   language: zh-CN  # Line 11 设定语言
+   timezone: 'Asia/Shanghai'  # Line 12 设定时区
+   theme: redefine  # Line 99 启用主题
    ```
 
    - 一般`_config.yml`中有`theme`，修改其值就可以
