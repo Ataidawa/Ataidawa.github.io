@@ -128,7 +128,7 @@ home_banner:
   title: "就算不是理工科也要耍博客！"
   # Home banner subtitle
   subtitle:
-    text: ["都说人累了就会睡着，要不是现在晚上睡不着我差点就信了……","世界上怎么会有皮蛋这么好吃的东西！！","人为什么不能永远留在自己喜欢的夏天？","坏了！我成福瑞控了……","懒懒正在思考说些什么……"] # subtitle text, array
+    text: ["懒懒正在思考说些什么……"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: true # Whether to enable hitokoto
       show_author: false # Whether to show author
@@ -306,8 +306,8 @@ articles:
   # Author label
   author_label: 
     enable: true # Whether to enable
-    auto: true # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
-    list: ['故障','mmd','搞机','ai']
+    auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
+    list: []
   # Code block settings
   code_block:
     copy: true # Whether to enable code block copy button

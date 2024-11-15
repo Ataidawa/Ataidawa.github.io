@@ -15,3 +15,21 @@
         description: 捏捏太一逼我的
         avatar: https://aaronhumm-cmm.github.io/images/person-avatar.jpg
         thumbnail: https://aaronhumm-cmm.github.io/images/walllight.webp
+
+- links_category: Hexo主题制作者
+  has_thumbnail: false
+  list:
+      - name: EvanNotFound
+        link: https://redefine.ohevan.com/
+        description: issue处理超快的大佬一枚呀~
+        avatar: https://redefine.ohevan.com/images/redefine-avatar.svg
+        thumbnail: 
+
+- links_category: 好朋友
+  has_thumbnail: false
+  list:
+      - name: Kinoko
+        link: https://jcbreak.github.io/
+        description: 很厉害的前端小哥哥
+        avatar: https://jcbreak.github.io/medias/avatar.jpeg
+        thumbnail: 
