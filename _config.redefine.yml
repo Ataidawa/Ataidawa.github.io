@@ -127,7 +127,7 @@ home_banner:
   # Home banner title
   title: "Ataida's Blog Website"
   # Home banner subtitle
-  subtitle:
+  subtitle: "就算不是理工科也要耍博客！"
     text: ["都说人累了就会睡着，要不是现在晚上睡不着我差点就信了……","世界上怎么会有皮蛋这么好吃的东西！！","人为什么不能永远留在自己喜欢的夏天？","坏了！我成福瑞控了……","懒懒正在思考说些什么……"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: true # Whether to enable hitokoto
@@ -435,7 +435,7 @@ plugins:
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: true # Whether to enable
-    type: fiexd # fixed, mini
+    type: fixed # fixed, mini
     audios:
       - name: 幹物女(WeiWei)
         artist: 封茗囧菌
