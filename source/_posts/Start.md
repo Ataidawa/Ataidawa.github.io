@@ -40,7 +40,7 @@ thumbnail: images/start-head.png
 
 <!-- tab red -->
 
-{% notel red可自定义 %}
+{% notel red 可自定义 %}
 红色的大号提示块
 {% endnotel %}
 
@@ -87,4 +87,20 @@ Cyan色的大号提示块
 <!-- endtab -->
 
 {% endtabs %}
+
+{% note %} 默认 提示块标签 {% endnote %} 
+
+{% note default %} default 提示块标签{% endnote %} 
+
+{% note primary %} primary 提示块标签 {% endnote %} 
+
+{% note success %} success 提示块标签 {% endnote %} 
+
+{% note info %} info 提示块标签 {% endnote %}
+
+ {% note warning %} warning 提示块标签 {% endnote %} 
+
+{% note danger %}danger 提示块标签 {% endnote %} 
+
+{% note red fa-bolt %} 自定义提示块标签 {% endnote %}
 
