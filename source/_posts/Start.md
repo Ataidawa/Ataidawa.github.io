@@ -20,7 +20,10 @@ thumbnail: images/start-head.png
 
 ### 笔记
 
-{% tabs tabs-1 %}
+这些内容编译存在问题
+
+```markdown
+{% tabs tabs_a %}
 
 <!-- tab default -->
 
@@ -87,6 +90,7 @@ Cyan色的大号提示块
 <!-- endtab -->
 
 {% endtabs %}
+```
 
 {% note %} 默认 提示块标签 {% endnote %} 
 
