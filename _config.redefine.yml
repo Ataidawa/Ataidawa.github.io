@@ -125,9 +125,9 @@ home_banner:
     light: images/Mountains15.jpg # light mode
     dark: images/Mountains15Dark.jpg # dark mode
   # Home banner title
-  title: "Ataida's Blog Website"
+  title: "就算不是理工科也要耍博客！"
   # Home banner subtitle
-  subtitle: "就算不是理工科也要耍博客！"
+  subtitle:
     text: ["都说人累了就会睡着，要不是现在晚上睡不着我差点就信了……","世界上怎么会有皮蛋这么好吃的东西！！","人为什么不能永远留在自己喜欢的夏天？","坏了！我成福瑞控了……","懒懒正在思考说些什么……"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: true # Whether to enable hitokoto
