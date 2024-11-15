@@ -2,109 +2,31 @@
 title: 懒事屋正式建立
 date: 2024-11-15 06:43:00
 tags:	
-  - "Test"
+  - "Introduction"
 thumbnail: images/start-head.png
+excerpt: 点击了解我和我的网站！
+sticky: 999
 ---
 
-## 或许这会是一个AI生成味很重的博客网站
+## 基本介绍
 
-## 网站正在建设中……
+{% note info %} 以下部分内容由ChatGPT输出，人工进行修改，如有不通顺的地方可及时联系反馈。 {% endnote %}
 
-### 博客更新时间异常
+### 我是谁？
 
-- ~~修复方案：为Github Actions设置时区~~（无效果）
+你好，我是数字媒体艺术设计专业的24届毕业生！鄙人对技术充满兴趣，尤其是数码产品、AI应用和编程。虽然刚接触编程不久，但在学习和实践的过程中，我一直在不断成长，享受这个探索的过程！未来，我计划继续丰富博客内容，提升质量，保持创意与实用性。无论是AI学习笔记、数码产品的小窍门，还是技术问题的解决心得，我都会持续分享。期待与更多志同道合的朋友一起交流和成长！
 
 
 
-## 写作模块
+### 这是什么网站？
 
-### 笔记
+欢迎来到我的博客——**懒事阁**！这是我在探索技术、数码产品、AI和编程过程中搭建的一个创意空间。在这里，我记录下自己的学习历程，分享技术经验、实用教程和创意想法。无论是AI学习笔记、数码产品小窍门，还是日常的技术问题解决方案，这里都有我的实践与思考。
 
-这些内容编译存在问题
+**懒事阁**不仅是一个静态的记录本，它随着我的学习进度不断更新，时刻在变化中成长。每篇文章和每段内容，都在见证我的成长和进步。未来，我会继续添加更多有趣的内容，分享技术心得和创意探索。希望这个博客能够成为一个交流与分享的平台，结识更多志同道合的朋友，一起学习和进步。
 
-```markdown
-{% tabs tabs_a %}
+在这里，你不仅能找到实用的技术干货，还能感受到我作为一名充满活力和创意的大学生对技术的热情。不管你是技术小白还是有经验的开发者，都可以在这里收获灵感，和我一起探讨有趣的技术话题。
 
-<!-- tab default -->
 
-{% notel default 可自定义 %}
-默认的大号提示块
-{% endnotel %}
 
-<!-- endtab -->
-
-<!-- tab blue -->
-
-{% notel blue 可自定义 %}
-蓝色的大号提示块
-{% endnotel %}
-
-<!-- endtab -->
-
-<!-- tab red -->
-
-{% notel red 可自定义 %}
-红色的大号提示块
-{% endnotel %}
-
-<!-- endtab -->
-
-<!-- tab cyan -->
-
-{% notel cyan 可自定义 %}
-Cyan色的大号提示块
-{% endnotel %}
-
-<!-- endtab -->
-
-<!-- tab purple -->
-
-{% notel purple 可自定义 %}
-紫色的大号提示块
-{% endnotel %}
-
-<!-- endtab -->
-
-<!-- tab orange -->
-
-{% notel orange 可自定义 %}
-橘色的大号提示块
-{% endnotel %}
-
-<!-- endtab -->
-
-<!-- tab yellow -->
-
-{% notel yellow 可自定义 %}
-黄色的大号提示块
-{% endnotel %}
-
-<!-- endtab -->
-
-<!-- tab green -->
-
-{% notel cyan 可自定义 %}
-绿色的大号提示块
-{% endnotel %}
-
-<!-- endtab -->
-
-{% endtabs %}
-```
-
-{% note %} 默认 提示块标签 {% endnote %} 
-
-{% note default %} default 提示块标签{% endnote %} 
-
-{% note primary %} primary 提示块标签 {% endnote %} 
-
-{% note success %} success 提示块标签 {% endnote %} 
-
-{% note info %} info 提示块标签 {% endnote %}
-
- {% note warning %} warning 提示块标签 {% endnote %} 
-
-{% note danger %}danger 提示块标签 {% endnote %} 
-
-{% note red fa-bolt %} 自定义提示块标签 {% endnote %}
+#### 欢迎大家常来捧场，也希望你能在这里找到感兴趣的内容。如果你有任何问题或建议，欢迎留言交流！让我们一起学习，一起进步！
 
