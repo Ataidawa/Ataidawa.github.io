@@ -22,6 +22,14 @@ thumbnail: images/start-head.png
 
 {% tabs tabs-1 %}
 
+<!-- tab default -->
+
+{% notel default 可自定义 %}
+默认的大号提示块
+{% endnotel %}
+
+<!-- endtab -->
+
 <!-- tab blue -->
 
 {% notel blue 可自定义 %}
