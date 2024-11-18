@@ -440,39 +440,9 @@ plugins:
     enable: false # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
-    enable: true # Whether to enable
+    enable: false # Whether to enable
     type: fixed # fixed, mini
     audios:
-      - name: 幹物女(WeiWei)
-        artist: 封茗囧菌
-        cover: music/幹物女(WeiWei) - 封茗囧菌.png
-        url: music/幹物女(WeiWei) - 封茗囧菌.mp3
-        lrc: music/幹物女(WeiWei) - 封茗囧菌.lrc
-
-      - name: 故梦
-        artist: 橙翼
-        cover: music/故梦 - 橙翼.jpg
-        url: music/故梦 - 橙翼.flac
-        lrc: music/故梦 - 橙翼.lrc
-
-      - name: 世末歌者
-        artist: 乐正绫/COP
-        cover: music/世末歌者 - 乐正绫,COP.png
-        url: music/世末歌者 - 乐正绫,COP.mp3
-        lrc: music/世末歌者 - 乐正绫,COP.lrc
-
-      - name: 外婆桥
-        artist: 任然
-        cover: music/外婆桥 - 任然.png
-        url: music/外婆桥 - 任然.flac
-        lrc: music/外婆桥 - 任然.lrc
-
-      - name: 在意识里过一生
-        artist: 张婉清
-        cover: music/在意识里过一生 - 张婉清.jpg
-        url: music/在意识里过一生 - 张婉清.flac
-        lrc: music/在意识里过一生 - 张婉清.lrc
-
 #      - name: # audio name
 #        artist: # audio artist
 #        url: # audio url
