@@ -213,8 +213,8 @@ navbar:
     #     "抖音": "https://v.douyin.com/iA4W5ee1/ 7@1.com"
     #     "网易云": https://music.163.com/#/user?id=544478723
     #     "翻咔": https://www.finkapp.cn/user/finka-h-I8-wlxOJs
-    "克隆":
-      path: https://github.com/Ataidawa/Ataidawa.github.io
+    "复刻":
+      path: https://github.com/Ataidawa/Ataidawa.github.io/fork
       icon: fa-regular fa-code-fork
         
     # Status: 
