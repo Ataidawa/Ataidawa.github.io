@@ -255,12 +255,15 @@ home:
     announcement: # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      "说说":
+      "随笔记":
         path: /essays
         icon: fa-regular fa-comments
       "行影录":
-        path: /masony
+        path: /masonry
         icon: fa-regular fa-image-polaroid
+      "云星簿":
+        path: /tags
+        icon: fa-regular fa-tags
       # Archives: 
       #   path: /archives 
       #   icon: fa-regular fa-archive # can be empty
