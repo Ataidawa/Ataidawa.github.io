@@ -11,18 +11,19 @@ excerpt: 为了避免日后自己遗忘制作个人网站的流程，在此写�
 
 #### 
 
-{% notel blue 提示 %}
+## 提示
 
 1. 本网站基于[hexo](https://github.com/hexojs/hexo-deployer-git)框架 
 2. 基于[redefine](https://github.com/EvanNotFound/hexo-theme-redefine)主题做了修改
-3. **一定要将三个官方文档结合着看**
-   - [GitHub Pages 快速入门](https://docs.github.com/zh/pages/quickstart)
-   - [文档 | Hexo](https://hexo.io/zh-cn/docs/)
-   - [快速开始 | Hexo Theme Redefine Docs](https://redefine-docs.ohevan.com/zh/getting-started)
-4. 我自己比起官方文档提到的内容，还有很多功能我没有成功实现。
-5. 我搭建时使用的是Windows 10系统，使用Linux与MacOS的同志**只可参考**。
+3. 我自己比起官方文档提到的内容，还有很多功能我没有成功实现。
 
-{% endnotel %}
+4. 我搭建时使用的是Windows 10系统，使用Linux与MacOS的同志**只可参考**。
+
+5. **一定要将三个官方文档结合着看**
+
+- [GitHub Pages 快速入门](https://docs.github.com/zh/pages/quickstart)
+- [文档 | Hexo](https://hexo.io/zh-cn/docs/)
+- [快速开始 | Hexo Theme Redefine Docs](https://redefine-docs.ohevan.com/zh/getting-started)
 
 
 
