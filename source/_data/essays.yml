@@ -1,8 +1,4 @@
-- content: 神创造了这个页面！
-  date: 2024-11-21 04:30:05
-
 - content: |
-    我正在处理一个
-    换行
-    你看到了吗？
-  date: 2024-11-21 04:30:20
+    你知道吗？
+    使用 *[Beeftext](https://beeftext.org/)* 新建组合`#{dateTime:yyyy-MM-dd HH:mm:ss}`可以快速填写时间戳
+  date: 2024-11-21 04:35:57

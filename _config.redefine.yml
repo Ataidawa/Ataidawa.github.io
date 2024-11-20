@@ -258,6 +258,9 @@ home:
       "说说":
         path: /essays
         icon: fa-regular fa-comments
+      "行影录":
+        path: /masony
+        icon: fa-regular fa-image-polaroid
       # Archives: 
       #   path: /archives 
       #   icon: fa-regular fa-archive # can be empty
