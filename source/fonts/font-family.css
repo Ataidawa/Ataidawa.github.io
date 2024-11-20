@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'MiSans-中文'; /* 字体名称，可以自定义 */
+  src: url('/MiSans-Normal.woff2') format('woff2'),  /* 优先使用 WOFF2 */
+       url('/MiSans-Normal.woff') format('woff'),   /* 其次使用 WOFF */
+       url('MiSans-Normal.ttf') format('truetype'); /* 最后使用 TTF */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '得意黑'; /* 字体名称，可以自定义 */
+  src: url('/SmileySans-Oblique.ttf.woff2') format('woff2'),  /* 优先使用 WOFF2 */
+       url('SmileySans-Oblique.ttf') format('truetype'); /* 最后使用 TTF */
+  font-weight: normal;
+  font-style: normal;
+}

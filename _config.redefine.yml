@@ -197,24 +197,18 @@ navbar:
     pages: 1000px #other pages
   # Navbar links
   links:
-    "首页": 
+    Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
     "随笔记":
-        path: /essays
-        icon: fa-regular fa-comments
+      path: /essays
+      icon: fa-regular fa-comments
     "行影录":
       path: /masonry
       icon: fa-regular fa-image-polaroid
     "星潮站":
       icon: fa-regular fa-stars
-      path: /links
-    # "收藏夹":
-    #   icon: fa-regular fa-bookmark
-    #   path: /bookmarks
-    "复刻":
-      path: https://github.com/Ataidawa/Ataidawa.github.io/fork
-      icon: fa-regular fa-code-fork
+      path: /links/
     # About: 
     #   icon: fa-regular fa-square-info
     #   submenus:
@@ -222,6 +216,10 @@ navbar:
     #     "抖音": "https://v.douyin.com/iA4W5ee1/ 7@1.com"
     #     "网易云": https://music.163.com/#/user?id=544478723
     #     "翻咔": https://www.finkapp.cn/user/finka-h-I8-wlxOJs
+    "复刻":
+      path: https://github.com/Ataidawa/Ataidawa.github.io/fork
+      icon: fa-regular fa-code-fork
+        
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
