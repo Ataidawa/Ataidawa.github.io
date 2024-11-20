@@ -9,8 +9,6 @@ thumbnail: images/hexo-head.png
 excerpt: 为了避免日后自己遗忘制作个人网站的流程，在此写一份建立懒事屋时的步骤记录。
 ---
 
-#### 
-
 ## 提示
 
 1. 本网站基于[hexo](https://github.com/hexojs/hexo-deployer-git)框架 
