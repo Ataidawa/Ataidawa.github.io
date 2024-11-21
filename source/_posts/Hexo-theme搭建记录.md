@@ -3,7 +3,7 @@ title: 懒事屋 - 辅助手册
 date: 2024-11-14 18:46:00
 tags:
   - "Hexo"
-  - "hexo-theme"
+  - "Hexo-theme"
   - "Github Pages"
 thumbnail: images/hexo-head.png
 excerpt: 为了避免日后自己遗忘制作个人网站的流程，在此写一份建立懒事屋时的步骤记录。
