@@ -254,8 +254,8 @@ home:
   sidebar:
     enable: true # Whether to enable sidebar
     position: left # Sidebar position. left, right
-    first_item: menu # First item in sidebar. menu, info
-    announcement: # Announcement text
+    first_item: info # First item in sidebar. menu, info
+    announcement: '愿你找到有趣的内容，也期待我们一起学习，发掘更多可能！' # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
       "时间线": 
