@@ -261,7 +261,7 @@ home:
       "时间线": 
         path: /archives 
         icon: fa-regular fa-archive # can be empty
-      "云星簿":
+      "标签集":
         path: /tags
         icon: fa-regular fa-tags
       "归类册":
