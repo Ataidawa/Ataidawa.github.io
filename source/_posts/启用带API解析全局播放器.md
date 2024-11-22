@@ -1,11 +1,12 @@
 ---
 title: Hexo主题启用带API解析全局播放器
-date: 2024-11-22 01:45:54
 tags:
-  - "Hexo"
-  - "Hexo-theme"
+  - Hexo
+  - Hexo-theme
 thumbnail: images/qjbfq-head.png
 excerpt: 为了能有更方便的播放器体验，我重构了网站……
+abbrlink: 3334
+date: 2024-11-22 01:45:54
 ---
 
 ## 实现逻辑

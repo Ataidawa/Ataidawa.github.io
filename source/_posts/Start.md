@@ -1,11 +1,12 @@
 ---
 title: 懒事屋正式建立
-date: 2024-11-15 06:43:00
-tags:	
-  - "Introduction"
+tags:
+  - Introduction
 thumbnail: images/start-head.png
 excerpt: 点击了解我和我的网站！
 sticky: 999
+abbrlink: 40770
+date: 2024-11-15 06:43:00
 ---
 
 ## 基本介绍
