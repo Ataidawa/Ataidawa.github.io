@@ -28,21 +28,21 @@ excerpt: 为了能有更方便的播放器体验，我重构了网站……
 
 4. 在`%theme%\layout\components\plugins\`中新建`meting_js_only.ejs`文件，内容为以下代码：
 
-   ```ejs
+   ```html
    <%- renderJS('js/libs/APlayer.min.js') %>
    <%- renderJS('js/libs/Meting.min.js') %>
    ```
 
 5. 仍在此目录下新建`meting.ejs`文件，内容为以下代码：
 
-   ```ejs
+   ```html
    <div id="meting-container"></div>
    <%- renderJS('js/plugins/meting.js') %>
    ```
 
 6. 在`%theme%\source\build\js\plugins\`目录下新建`meting.js`文件，内容如下：
 
-   ```js
+   ```javascript
    // 从主题配置中获取 meting 配置
    const metingConfig = theme.plugins.meting;
    console.log('Meting Config:', metingConfig);
@@ -130,7 +130,7 @@ excerpt: 为了能有更方便的播放器体验，我重构了网站……
 
 7. 找到`%theme%\layout\layout.ejs`，在`<body>···</body>`中注入以下代码：
 
-   ```ejs
+   ```html
    	<% if (theme.plugins.meting.enable) { %>
    		<%- partial('components/plugins/meting_js_only') %>
    	<% } %>
@@ -141,7 +141,7 @@ excerpt: 为了能有更方便的播放器体验，我重构了网站……
 
    - 代码注入后长这个样子就是正常的
 
-   ```ejs
+   ```html
    <!DOCTYPE html>
    <html lang="<%= config.language %>">
    <%- partial('components/header/head') %>
@@ -173,7 +173,6 @@ excerpt: 为了能有更方便的播放器体验，我重构了网站……
    $ git push -u origin main
    ```
 
- /** "hexo-theme-redefine": "^2.8.1",**/
 
 ## 导入主题
 
