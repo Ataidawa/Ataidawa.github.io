@@ -5,10 +5,32 @@ on:
     branches:
       - main # default branch
 
+env:
+  tz: Asia/Shanghai
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 设定时区
+      - name: Check the current timezone database
+        run: |
+          ls /usr/share/zoneinfo
+          echo "---"
+          date
+          echo "---"
+          ls /usr/share/zoneinfo/Asia
+          echo "---"
+          
+      - name: Add the custom timezone database file
+        run: |
+          sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+      - name: Show the timezone
+        run: |
+          echo "The timezone is $TZ"
+          date
+
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
