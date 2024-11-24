@@ -1,8 +1,11 @@
 ---
 title: Hexo主题启用带API解析全局播放器
+categories:
+  - "主题改造"
 tags:
   - Hexo
   - Hexo-theme
+  - Hexo-redefine-theme
 thumbnail: images/qjbfq-head.png
 excerpt: 为了能有更方便的播放器体验，我重构了网站……
 abbrlink: 3334
