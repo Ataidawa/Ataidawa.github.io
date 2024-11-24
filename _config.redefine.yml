@@ -170,6 +170,8 @@ home_banner:
       email: ataida2391@outlook.com # your email
       github: https://github.com/Ataidawa/ # your GitHub URL
       tiktok: "https://v.douyin.com/iA4W5ee1/ 7@1.com"
+      # coolapk: https://www.coolapk.com/u/2949284
+      iconfont icon-coolapk: https://www.coolapk.com/u/2949284
       # zhihu: https://www.zhihu.com/people/burn-81-60 # your ZhiHu URL
       # instagram: # your Instagram URL
       # twitter:  # your twitter URL
@@ -432,11 +434,10 @@ footer:
 # Docs: https://redefine-docs.ohevan.com/inject
 inject:
   # Whether to enable inject
-  enable: false
+  enable: true
   # Inject custom head html code
   head: 
-    -
-    -
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4757263_f741695ycow.css">
   # Inject custom footer html code
   footer:
     -
