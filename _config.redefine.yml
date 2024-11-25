@@ -438,6 +438,7 @@ inject:
   # Inject custom head html code
   head: 
     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4757263_31kdm5bbblj.css">
+    - 
   # Inject custom footer html code
   footer:
     -
