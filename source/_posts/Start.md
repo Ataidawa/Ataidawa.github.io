@@ -33,18 +33,18 @@ date: 2024-11-15 06:43:00
 ## 作品展示
 ### 超正经的
 #### Musae - 电商视觉设计结课作品
-<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border: 2px solid #43A047; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=411822088&bvid=BV1ZV411Q7tR&cid=1419223204&p=1&autoplay=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe></div>
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border: 3px solid #43A047; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=411822088&bvid=BV1ZV411Q7tR&cid=1419223204&p=1&autoplay=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe></div>
 
 #### 田趣共享农庄 - 毕业设计作品
-<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border: 2px solid #43A047; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=880908557&bvid=BV1vK4y167rz&cid=1397077410&p=1&autoplay=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe></div>
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border: 3px solid #43A047; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=880908557&bvid=BV1vK4y167rz&cid=1397077410&p=1&autoplay=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe></div>
 
 ### 兴趣爱好类
 #### MMD视频制作（虽然已经很久没碰过了）
-<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border: 2px solid #43A047; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=870290873&bvid=BV1AV4y1174w&cid=1178461315&p=1&autoplay=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe></div>
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border: 3px solid #43A047; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=870290873&bvid=BV1AV4y1174w&cid=1178461315&p=1&autoplay=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe></div>
 
 #### 安卓设备刷机（下面这个是我写的教程）
 
-<div style="position: relative; width: 100%; aspect-ratio: 1 / 1; border: 2px solid #43A047; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"><iframe src="https://kdocs.cn/l/cke7zj8L2Kps" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe></div>
+<div style="position: relative; width: 100%; aspect-ratio: 1 / 1; border: 3px solid #43A047; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"><iframe src="https://kdocs.cn/l/cke7zj8L2Kps" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 {% notel success fa-circle-check 结束语 %}

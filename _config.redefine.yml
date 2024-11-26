@@ -171,7 +171,7 @@ home_banner:
       github: https://github.com/Ataidawa/ # your GitHub URL
       tiktok: "https://v.douyin.com/iA4W5ee1/ 7@1.com"
       # iconfont icon-finka: https://www.finkapp.cn/user/finka-h-I8-wlxOJs
-      iconfont icon-coolapk: https://www.coolapk.com/u/2949284
+      icon-coolapk: https://www.coolapk.com/u/2949284
       # zhihu: https://www.zhihu.com/people/burn-81-60 # your ZhiHu URL
       # instagram: # your Instagram URL
       # twitter:  # your twitter URL
@@ -301,9 +301,11 @@ articles:
   style:
     font_size: 16px # Font size
     line_height: 1.5 # Line height
-    image_border_radius: 14px # image border radius
+    image_border_radius: 8px # image border radius
     image_alignment: center # image alignment. left, center
     image_caption: false # Whether to display image caption
+    image_border_width: 3px
+    image_border_style: solid
     link_icon: true # Whether to display link icon
     title_alignment: left # Title alignment. left, center
     headings_top_spacing: # Top spacing for headings from h1-h6
@@ -437,7 +439,7 @@ inject:
   enable: true
   # Inject custom head html code
   head: 
-    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4757263_31kdm5bbblj.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4757263_4q05xmc454g.css">
     - 
   # Inject custom footer html code
   footer:
