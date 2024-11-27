@@ -219,7 +219,7 @@ navbar:
     #     "网易云": https://music.163.com/#/user?id=544478723
     #     "翻咔": https://www.finkapp.cn/user/finka-h-I8-wlxOJs
     "复刻":
-      path: https://github.com/Ataidawa/Ataidawa.github.io/fork
+      path: https://github.com/Ataidawa/hexo-theme-redefine/fork
       icon: fa-regular fa-code-fork
         
     # Status: 
