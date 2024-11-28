@@ -33,6 +33,18 @@
         description: 很有干货的博客网站！
         avatar: https://blog.qiusyan.top/img/avatar.webp
         thumbnail: 
+      
+      - name: Krazyu风宇
+        link: https://krazyu.com
+        description: 我超级喜好欢他的背景！
+        avatar: https://krazyu.com/images/avatar.svg
+        thumbnail: 
+
+      - name: 夏沫花火zzz🌙 (Muska_Ami)のLife
+        link: https://1l1.icu
+        description: 好喜欢ta的鼠标样式！
+        avatar: https://blog.1l1.icu/images/avatar.jpg
+        thumbnail:
 
 - links_category: 好朋友
   has_thumbnail: false
