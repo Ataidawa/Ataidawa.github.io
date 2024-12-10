@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>播放器插件</title>
+    <link rel="stylesheet" href="https:////at.alicdn.com/t/c/font_4764125_euw2mf9dxkj.css">
+    <style>
+        #base {
+            width: 310px;
+            height: 90px;
+        }
+        #main {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            border: 3px solid #43A047;
+            box-shadow: 5px 8px 10px 0 #43A047;
+            position: relative; /* 使内部元素可以相对定位 */
+        }
+        /* 播放器标题 */
+        #biao-ti {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: bold;
+            color: #43A047;
+            white-space: nowrap; /* 防止换行 */
+            overflow: hidden; /* 超出范围的部分隐藏 */
+            max-width: calc(100% - 50px); /* 让标题区域留出播放按钮的空间 */
+            display: block;
+        }
+        /* 标题滚动动画 */
+        #biao-ti span {
+            display: inline-block;
+            white-space: nowrap;
+        }
+        /* 滚动动画 */
+        @keyframes scrollTitle {
+            0% {
+                transform: translateX(100%); /* 从右侧开始 */
+            }
+            100% {
+                transform: translateX(-100%); /* 向左滚动 */
+            }
+        }
+        /* 播放与暂停按钮 */
+        #play {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            color: #43A047;
+            cursor: pointer;
+        }
+        /* 播放进度条区域 */
+        #bofang {
+            position: absolute;
+            top: 40px;
+            left: 8px;
+            width: 95%;
+            height: 7px;
+            border-radius: 3px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+        }
+        /* 完整的进度条（灰色） */
+        #bofang .all-bar {
+            width: 100%;
+            height: 100%;
+            background-color: #ddd;
+            border-radius: 3px;
+        }
+        /* 已播放的进度条（绿色） */
+        #bofang .fin-bar {
+            height: 60%;
+            max-width: 98%;
+            background-color: #43A047;
+            border-radius: 3px;
+            position: absolute;
+            top: 20%;
+            left: 1%;
+            width: 30%; /* 假设进度为30% */
+        }
+        /* 控制小球 */
+        #bofang .bar-ball {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 3px solid #43A047;
+            position: absolute;
+            top: 50%;
+            left: 30%; /* 假设进度为30% */
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+         /* 时长显示区域 */
+         #info {
+            position: absolute;
+            bottom: 10px;
+            left: 8px;
+            font-size: 12px;
+            color: #43A047;
+        }
+        /* 音量控制区域 */
+        #vol {
+            position: absolute;
+            bottom: 10px;
+            right: 8px;
+            display: flex;
+            align-items: center;
+        }
+        /* 音量图标 */
+        .vol-icon {
+            font-size: 20px;
+            color: #43A047;
+            margin-right: 8px;
+        }
+        /* 音量控制条 */
+        #yinliang {
+            width: 50px; /* 之前是60px，宽度变小 */
+            height: 4px; /* 之前是5px，变细 */
+            border-radius: 4px;
+            background: #eee;
+            position: relative;
+        }
+        /* 音量填充条（绿色） */
+        #yinliang .fin-bar {
+            height: 60%;
+            max-width: 98%;
+            background-color: #43A047;
+            border-radius: 3px;
+            position: absolute;
+            top: 22%;
+            left: 2%;
+            width: 60%; /* 假设音量为60% */
+        }
+        /* 音量控制小球 */
+        #yinliang .bar-ball {
+            width: 8px; /* 小球变小，之前是12px，改为8px */
+            height: 8px; /* 之前是12px，改为8px */
+            background-color: white;
+            border-radius: 50%;
+            border: 2px solid #43A047;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            left: 60%; /* 假设音量为60% */
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="audio" src="东京不太热 - 封茗囧菌.mp3" preload="metadata"></audio>
+    <!-- 临时窗口 -->
+    <div id="base">
+        <!-- 播放器核心 -->
+        <div id="main">
+            <!-- 标题：位于左上角 -->
+            <div id="biao-ti">
+                <span>东京不太热 - 封茗囧菌</span>
+            </div>
+            <!-- 播放与暂停按钮：位于右上角 -->
+            <div id="play">
+                <!-- 点击后会与“iconfont icon-Pause”切换 -->
+                <i class="iconfont icon-play"></i>
+            </div>
+            <!-- 播放进度条 -->
+            <div id="bofang">
+                <!-- 全部进度条 -->
+                <div class="all-bar"></div>
+                <!-- 已播放进度 -->
+                <div class="fin-bar"></div>
+                <!-- 控制小球 -->
+                <div class="bar-ball"></div>
+            </div>
+            <!-- 总时长与当前时长：位于左下角 -->
+            <div id="info">
+                <span>00:01 | 03:22</span>
+            </div>
+            <!-- 静音按钮与音量控制条：位于右下角 -->
+            <div id="vol">
+                <!-- 静音按钮 -->
+                <div class="vol-icon">
+                    <!-- 点击后会与“iconfont icon-mute”切换 -->
+                    <i class="iconfont icon-vol"></i>
+                </div>
+                <!-- 音量控制条 -->
+                <div id="yinliang">
+                    <!-- 全部进度条 -->
+                    <div class="all-bar"></div>
+                    <!-- 已播放进度 -->
+                    <div class="fin-bar"></div>
+                    <!-- 控制小球 -->
+                    <div class="bar-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        // 获取音频元素、进度条、音量条等相关 DOM 元素
+        const audioElement = document.getElementById('audio');  // 假设 audio 元素已经在 HTML 中
+        const progressBar = document.querySelector('#bofang');
+        const barBall = document.querySelector('.bar-ball');
+        const timeDisplay = document.querySelector('#info span');
+        
+        const volumeBar = document.querySelector('#yinliang');
+        const volumeBall = document.querySelector('#yinliang .bar-ball');
+        
+        let totalDuration = 0;
+        let currentTime = 0;
+        let isPlaying = false;
+        let isMuted = false;
+        
+        // 格式化时间
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+            return `${minutes < 10 ? '0' + minutes : minutes}:${remainingSeconds < 10 ? '0' + remainingSeconds : remainingSeconds}`;
+        }
+
+        // 音频元数据加载完成时，获取总时长
+        audioElement.addEventListener('loadedmetadata', () => {
+            totalDuration = audioElement.duration;
+            updateTimeDisplay();
+        });
+
+        // 更新时间显示和进度条
+        function updateTimeDisplay() {
+            const formattedTime = formatTime(currentTime);
+            const formattedTotalTime = formatTime(totalDuration);
+            timeDisplay.textContent = `${formattedTime} | ${formattedTotalTime}`;
+            
+            const progress = (currentTime / totalDuration) * 100;
+            barBall.style.left = `${progress}%`;
+        }
+
+        // 播放/暂停按钮
+        document.getElementById('play').addEventListener('click', () => {
+            if (isPlaying) {
+                audioElement.pause();
+                isPlaying = false;
+            } else {
+                audioElement.play();
+                isPlaying = true;
+            }
+        });
+
+        // 音量按钮（切换静音）
+        document.querySelector('.vol-icon').addEventListener('click', () => {
+            if (isMuted) {
+                audioElement.muted = false;
+                isMuted = false;
+            } else {
+                audioElement.muted = true;
+                isMuted = true;
+            }
+        });
+
+        // 更新播放位置
+        function setCurrentTime(time) {
+            audioElement.currentTime = time;
+            currentTime = time;
+            updateTimeDisplay();
+        }
+
+        // 监听音频播放时长更新
+        audioElement.addEventListener('timeupdate', () => {
+            currentTime = audioElement.currentTime;
+            updateTimeDisplay();
+        });
+
+        // 拖动进度条
+        barBall.addEventListener('mousedown', (e) => {
+            const progressBarRect = progressBar.getBoundingClientRect();
+            const initialX = e.clientX;
+
+            function onMouseMove(e) {
+                const offsetX = e.clientX - progressBarRect.left;
+                const newProgress = Math.max(0, Math.min(1, offsetX / progressBarRect.width));
+                const newTime = newProgress * totalDuration;
+                setCurrentTime(newTime);
+            }
+
+            function onMouseUp() {
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
+            }
+
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+        });
+
+        // 拖动音量条
+        volumeBall.addEventListener('mousedown', (e) => {
+            const volumeBarRect = volumeBar.getBoundingClientRect();
+            const initialX = e.clientX;
+
+            function onMouseMove(e) {
+                const offsetX = e.clientX - volumeBarRect.left;
+                const newVolume = Math.max(0, Math.min(1, offsetX / volumeBarRect.width));
+                audioElement.volume = newVolume;
+                updateVolumeDisplay();
+            }
+
+            function onMouseUp() {
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
+            }
+
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+        });
+
+        // 更新音量条显示
+        function updateVolumeDisplay() {
+            const volume = audioElement.volume;
+            const volumeBarFill = volumeBar.querySelector('.fin-bar');
+            volumeBarFill.style.width = `${volume * 100}%`;
+        }
+
+        // 监听进度条点击事件
+        progressBar.addEventListener('click', (e) => {
+            const progressBarRect = progressBar.getBoundingClientRect();
+            const offsetX = e.clientX - progressBarRect.left;
+            const newProgress = Math.max(0, Math.min(1, offsetX / progressBarRect.width));
+            const newTime = newProgress * totalDuration;
+            setCurrentTime(newTime);
+        });
+
+        // 监听音量条点击事件
+        volumeBar.addEventListener('click', (e) => {
+            const volumeBarRect = volumeBar.getBoundingClientRect();
+            const offsetX = e.clientX - volumeBarRect.left;
+            const newVolume = Math.max(0, Math.min(1, offsetX / volumeBarRect.width));
+            audioElement.volume = newVolume;
+            updateVolumeDisplay();
+        });
+    });
+    </script>
+    <script>
+        // 获取播放按钮和相关元素
+        const playButton = document.querySelector('#play i');
+        let isPlaying = false; // 用于标记播放器状态
+    
+        // 播放/暂停切换功能
+        playButton.addEventListener('click', function() {
+            // 判断当前按钮状态并切换
+            if (playButton.classList.contains('icon-play')) {
+                // 当前是播放按钮，点击后变为暂停按钮
+                playButton.classList.remove('icon-play');
+                playButton.classList.add('icon-Pause');
+                isPlaying = true;
+                // 这里可以调用播放函数
+                console.log("播放");
+            } else {
+                // 当前是暂停按钮，点击后变为播放按钮
+                playButton.classList.remove('icon-Pause');
+                playButton.classList.add('icon-play');
+                isPlaying = false;
+                // 这里可以调用暂停函数
+                console.log("暂停");
+            }
+        });
+    </script>
+    <script>
+        // 获取进度条、时间显示等相关元素
+        const progressBar = document.querySelector('#bofang');
+        const barBall = document.querySelector('#bofang .bar-ball');
+        const timeDisplay = document.querySelector('#info span');
+        
+        const totalDuration = 202;  // 假设总时长是202秒（你可以动态获取实际时长）
+        let currentTime = 0; // 当前播放时间（初始为0）
+    
+        // 格式化时间显示函数（例如 "00:01 | 03:22"）
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+            return `${minutes < 10 ? '0' + minutes : minutes}:${remainingSeconds < 10 ? '0' + remainingSeconds : remainingSeconds}`;
+        }
+    
+        // 更新进度条和时间显示
+        function updateProgressBar() {
+            const progress = currentTime / totalDuration * 100; // 计算当前进度的百分比
+            barBall.style.left = `${progress}%`; // 设置小球的位置
+            document.querySelector('.fin-bar').style.width = `${progress}%`; // 更新已播放的进度
+            timeDisplay.textContent = `${formatTime(currentTime)} | ${formatTime(totalDuration)}`; // 更新时间显示
+        }
+    
+        // 处理鼠标拖动过程
+        let isDragging = false;
+        barBall.addEventListener('mousedown', (e) => {
+            isDragging = true;
+    
+            // 鼠标移动过程中，更新进度
+            const progressBarRect = progressBar.getBoundingClientRect(); // 获取进度条的位置和尺寸
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    let newLeft = e.clientX - progressBarRect.left; // 获取当前鼠标的位置
+                    if (newLeft < 0) newLeft = 0; // 防止小球超过左边界
+                    if (newLeft > progressBarRect.width) newLeft = progressBarRect.width; // 防止小球超过右边界
+    
+                    const progress = (newLeft / progressBarRect.width) * 100; // 计算新的进度百分比
+                    currentTime = (progress / 100) * totalDuration; // 根据百分比更新当前时间
+                    updateProgressBar(); // 更新进度条和时间显示
+                }
+            });
+    
+            // 当鼠标松开时停止拖动
+            document.addEventListener('mouseup', () => {
+                if (isDragging) {
+                    isDragging = false;
+                }
+            });
+        });
+    
+        // 初始化时更新进度条和时间
+        updateProgressBar();
+    </script>
+    <script>
+        // 获取音量控制条、音量小球和相关元素
+        const volControlBar = document.querySelector('#yinliang .fin-bar');
+        const volBall = document.querySelector('#yinliang .bar-ball');
+        const volBarContainer = document.querySelector('#yinliang');
+        const volIcon = document.querySelector('.vol-icon i');
+
+        // 当前音量状态和音量值
+        let isMuted = false; // 是否静音
+        let currentVolume = 60; // 当前音量（假设初始为60%）
+
+        // 更新音量条和小球的样式
+        function updateVolumeDisplay() {
+            if (!isMuted) {
+                volControlBar.style.width = `${currentVolume}%`; // 更新音量条宽度
+                volBall.style.left = `${currentVolume}%`; // 更新小球的位置
+            }
+        }
+
+        // 音量控制条拖动功能
+        volBall.addEventListener('mousedown', (e) => {
+            if (isMuted) return; // 如果是静音状态，禁止拖动
+
+            const volBarRect = volBarContainer.getBoundingClientRect();
+            const startX = e.clientX;
+            const startLeft = parseFloat(volBall.style.left);
+
+            // 监听鼠标移动
+            function onMouseMove(e) {
+                const deltaX = e.clientX - startX;
+                let newLeft = startLeft + (deltaX / volBarRect.width) * 100;
+
+                // 限制小球在音量条内移动
+                if (newLeft < 0) newLeft = 0;
+                if (newLeft > 100) newLeft = 100;
+
+                // 更新音量小球的位置
+                volBall.style.left = `${newLeft}%`;
+                volControlBar.style.width = `${newLeft}%`; // 更新音量条的宽度
+
+                currentVolume = newLeft; // 更新当前音量值
+            }
+
+            // 监听鼠标抬起
+            function onMouseUp() {
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
+            }
+
+            // 绑定鼠标移动和抬起事件
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+        });
+
+        // 点击音量条时，更新音量
+        volBarContainer.addEventListener('click', (e) => {
+            if (isMuted) return; // 如果是静音状态，禁止点击
+
+            const volBarRect = volBarContainer.getBoundingClientRect();
+            const clickX = e.clientX - volBarRect.left; // 计算点击位置相对音量条的位置
+            const newLeft = (clickX / volBarRect.width) * 100; // 计算新的音量百分比
+
+            currentVolume = newLeft; // 更新当前音量值
+            volBall.style.left = `${newLeft}%`; // 更新音量小球的位置
+            volControlBar.style.width = `${newLeft}%`; // 更新音量条宽度
+        });
+
+        // 静音按钮点击事件
+        volIcon.addEventListener('click', () => {
+            if (isMuted) {
+                // 如果当前是静音状态，恢复音量
+                isMuted = false;
+                volIcon.classList.remove('iconfont', 'icon-mute');  // 去掉静音图标
+                volIcon.classList.add('iconfont', 'icon-vol');  // 恢复音量图标
+                volControlBar.style.width = `${currentVolume}%`;  // 恢复音量条宽度
+                volBall.style.left = `${currentVolume}%`;  // 恢复音量小球的位置
+            } else {
+                // 如果当前不是静音状态，静音
+                isMuted = true;
+                volIcon.classList.remove('iconfont', 'icon-vol');  // 去掉音量图标
+                volIcon.classList.add('iconfont', 'icon-mute');  // 显示静音图标
+                currentVolume = parseFloat(volControlBar.style.width) || 60;  // 保存当前音量
+                volControlBar.style.width = '0%';  // 将音量条设置为0
+                volBall.style.left = '0%';  // 将小球移至最左边
+            }
+        });
+    </script>
+    <script>
+       window.onload = function() {
+            const titleElement = document.querySelector('#biao-ti span');
+            const containerWidth = document.querySelector('#biao-ti').offsetWidth;
+            const titleWidth = titleElement.offsetWidth;
+
+            // 如果标题宽度大于容器宽度，启动滚动效果
+            if (titleWidth > containerWidth) {
+                titleElement.style.animation = 'scrollTitle 10s linear infinite'; // 启动滚动动画
+            } else {
+                titleElement.style.animation = ''; // 禁用滚动动画
+            }
+        }
+    </script>
+</body>
+
+</html>

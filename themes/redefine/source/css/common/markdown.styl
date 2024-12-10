@@ -202,7 +202,6 @@
     border-width $usr-img-border-width
     border-style $usr-img-border-style
     border-color $usr-img-border-color
-    box-shadow 0 0 12px 0 $usr-img-border-color
     max-width 100%
     cursor zoom-in
     display block
@@ -212,6 +211,24 @@
       margin 1rem auto 1rem
     else
       margin 1rem 0 1rem
+
+  
+  del.mask
+    text-decoration none !important
+    transition .2s cubic-bezier(.25, .46, .45, .94) color, .2s cubic-bezier(.25, .46, .45, .94) background
+
+    * 
+      transition .35s cubic-bezier(.25, .46, .45, .94) opacity
+
+    &:not(:hover)
+      color transparent !important
+      background #000 !important
+
+      * 
+        opacity 0 !important
+
+      &, *
+        border none !important
 
   
 

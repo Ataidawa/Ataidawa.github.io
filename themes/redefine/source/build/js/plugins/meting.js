@@ -22,8 +22,6 @@ function initMetingPlayer() {
     metingElement.setAttribute('type', metingConfig.type);
     metingElement.setAttribute('id', metingConfig.id);
 
-    // 关闭歌词
-    metingElement.setAttribute('lrc-type', '0');
     // 根据播放器类型设置 fixed 或 mini
     if (metingConfig.playerType === 'fixed') {
         metingElement.setAttribute('fixed', 'true');
