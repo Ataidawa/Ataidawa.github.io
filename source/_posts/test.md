@@ -20,8 +20,11 @@ thumbnail:
 你也牵过手
 是左手牵右手
 
-<div><iframe src="/plugins/user_player/index.html" style="width: 100%; height: 100%;" frameborder="0"></iframe></div>
+<div><iframe id="user-player-ifr" src="/plugins/user_player/index.html" style="width: 100%; height: 100%;" frameborder="0"></iframe></div>
+<script>
+  var user-player-ifr = document.getElementBy("user-player-ifr")
 
+</script>
 叮叮叮当QQ响起会是谁呢
 NaYo
 会是她吗

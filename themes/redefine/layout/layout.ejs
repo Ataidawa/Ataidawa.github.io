@@ -8,6 +8,13 @@
 	<% if (theme.plugins.aplayer.enable) { %>
 	<%- partial('components/plugins/aplayer') %>
 	<% } %>
+	<!-- 以下为MetingJS播放器（自添加需保留） -->
+	<% if (theme.plugins.meting.enable) { %>
+		<%- partial('components/plugins/meting_js_only') %>
+	<% } %>
+	<% if (theme.plugins.meting.global_sticky_enable) { %>
+		<%- partial('components/plugins/meting') %>
+	<% } %>
 </body>
 
 </html>
