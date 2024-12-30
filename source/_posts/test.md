@@ -3,6 +3,7 @@ title: 测试
 tags:
   - test pages
 excerpt: 测试内容可见
+sticky: 998
 abbrlink: 37774
 date: 2024-12-07 14:11:51
 thumbnail:
