@@ -46,6 +46,7 @@
 
 - content: |
     兄弟萌！看！我自己做了一个播放器组件~功能实现是捏捏太一做的，我负责UI设计。
+
     <div><iframe id="user-player-ifr" src="/plugins/user_player/index.html" style="width: 100%; height: 100%;" frameborder="0"></iframe></div>
     <script>
       var user-player-ifr = document.getElementBy("user-player-ifr")
