@@ -126,8 +126,11 @@ home_banner:
     # light: images/Mountains15.jpg # light mode
     # dark: images/Mountains15Dark.jpg # dark mode
     # Windows-365
-    light: images/Windows-365-Link-Light.jpg
-    dark: images/Windows-365-Link-Dark.jpg
+    # light: images/Windows-365-Link-Light.jpg
+    # dark: images/Windows-365-Link-Dark.jpg
+    # AIGC-STAGE
+    light: images/n1u2l.webp
+    dark: images/n1u2d.webp
   # Home banner title
   title: "就算不是理工科也要耍博客！"
   # Home banner subtitle
