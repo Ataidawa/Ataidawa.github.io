@@ -7,9 +7,10 @@ tags:
   - Hexo-theme
   - Hexo-redefine-theme
 thumbnail: images/qjbfq-head.png
-excerpt: 为了能有更方便的播放器体验，我重构了网站……
+excerpt: 为了能有更方便的播放器体验，我重构了网站…… 注：由于Hexo-Theme-Redefine在2.8.2版本中修改了结构，故修改全部失效，请按照秋水老师的“为Hexo-Redefine主题启用MetingJs”文章操作喔！
 abbrlink: 3334
 date: 2024-11-22 01:45:54
+expires: 2024-12-02 00:00:00
 ---
 
 ## 实现逻辑
