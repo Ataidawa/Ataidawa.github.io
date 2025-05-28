@@ -37,7 +37,7 @@ defaults:
 # Docs: https://redefine-docs.ohevan.com/basic/colors
 colors:
   #Primary color
-  primary: "#43A047"
+  primary: "##01b85b"
   # Secondary color (TBD)
   secondary: "#FF7043"
   # Default theme mode initial value (will be overwritten by prefer-color-scheme)
@@ -129,8 +129,10 @@ home_banner:
     # light: images/Windows-365-Link-Light.jpg
     # dark: images/Windows-365-Link-Dark.jpg
     # AIGC-STAGE
-    light: images/n1u2l.webp
-    dark: images/n1u2d.webp
+    # light: images/n1u2l.webp
+    # dark: images/n1u2d.webp
+    light: images/CPU_Light.webp
+    dark: images/CPU_Dark.webp
   # Home banner title
   title: "就算不是理工科也要耍博客！"
   # Home banner subtitle
