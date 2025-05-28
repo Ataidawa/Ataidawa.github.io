@@ -133,6 +133,7 @@ home_banner:
     # dark: images/n1u2d.webp
     light: images/CPU_Light.webp
     dark: images/CPU_Dark.webp
+
   # Home banner title
   title: "就算不是理工科也要耍博客！"
   # Home banner subtitle
@@ -150,7 +151,7 @@ home_banner:
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
   text_color: 
-    light: "#E6F2F1" # light mode
+    light: "#343a3c" # light mode
     dark: "#D0E6E5" # dark mode
   # Specific style of the text
   text_style: 
