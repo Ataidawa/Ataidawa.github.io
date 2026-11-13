@@ -1,0 +1,80 @@
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #F0EFED;
+}
+
+.contact-name {
+  flex: 0 0 80px;
+  font-size: 13px;
+  color: #AFAEA9;
+  letter-spacing: 0.02em;
+}
+
+.contact-main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.contact-value {
+  font-size: 16px;
+  color: #373633;
+  text-decoration: none;
+}
+
+a.contact-value:hover {
+  color: #002FA7;
+}
+
+.contact-note {
+  font-size: 12px;
+  color: #AFAEA9;
+}
+
+.contact-copy {
+  flex: 0 0 auto;
+  font-size: 12px;
+  color: #AFAEA9;
+  background: transparent;
+  border: 1px solid #E8E8E8;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact-copy:hover {
+  color: #373633;
+  border-color: #373633;
+}
+
+.contact-copy.copied {
+  color: #002FA7;
+  border-color: #002FA7;
+}
+
+@media (max-width: 688px) {
+  .contact-row { gap: 12px; }
+  .contact-name { flex: 0 0 56px; }
+}
+
+.footer-contact {
+  color: #AFAEA9;
+  text-decoration: none;
+}
+
+.footer-contact:hover {
+  color: #373633;
+}
+

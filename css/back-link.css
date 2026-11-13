@@ -1,0 +1,3 @@
+.back-link{display:inline-flex;align-items:center;gap:6px;margin:32px 0 0;font-size:13px;letter-spacing:.02em;color:var(--muted);text-decoration:none;transition:color .2s ease}
+.back-link:hover{color:var(--ink)}
+@media (max-width:688px){.back-link{margin-top:20px}}
