@@ -1,4 +1,4 @@
 enabled: true
 playlist: https://music.163.com/playlist?id=18598014323
 # Compatible Meting JSON endpoint, replace if this public service is unavailable.
-api: https://api.injahow.cn/meting/
+api: https://ataidawa-github-io.vercel.app/api/playlist
