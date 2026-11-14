@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+function initPortfolio(){
   var buttons = document.querySelectorAll('[data-filter]');
   var cards = document.querySelectorAll('[data-category]');
   buttons.forEach(function (button) {
@@ -17,4 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('work-count').textContent = count + ' 个项目';
     });
   });
-});
+}
+document.addEventListener("DOMContentLoaded",initPortfolio);
+document.addEventListener("jopolis:navigate",initPortfolio);
