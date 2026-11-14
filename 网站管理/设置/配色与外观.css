@@ -1,3 +1,9 @@
+@import url('/managed-assets/fonts/noto-sans-sc/font.css');
+.legacy-embed { position:relative; width:100%; margin:24px 0; overflow:hidden; border:1px solid var(--line); border-radius:var(--radius-panel); background:var(--surface); }
+.legacy-embed iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+#post audio { max-width:100%; }
+.demo-tabs [role=tablist] { overflow-x:auto; }
+.demo-tabs [role=tab] { flex-shrink:0; }
 /* Jopolis design system — authoritative tokens and component geometry.
    Layout/behavior: codex.css. Change site-wide appearance here. */
 :root {
@@ -146,13 +152,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
 .hero-badge[data-status=unavailable] { --status-light:var(--muted); }
 .hero-badge .dot { width:7px; height:7px; flex:0 0 7px; background:var(--status-light); box-shadow:0 0 0 3px color-mix(in srgb,var(--status-light) 12%,transparent); }
 /* Local variable typography: Noto Sans SC, SIL OFL 1.1 (license beside font). */
-@font-face {
- font-family:'Jopolis Sans';
- src:url('/managed-assets/fonts/noto-sans-sc/NotoSansSC-Variable.ttf') format('truetype');
- font-style:normal;
- font-weight:100 900;
- font-display:swap;
-}
+
 :root { --font-sans:'Jopolis Sans','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif; --font-code:'Roboto Mono','Cascadia Code',Consolas,monospace; --weight-body:400; --weight-medium:500; --weight-heading:600; --weight-strong:700; }
 html,body { font-family:var(--font-sans); font-weight:var(--weight-body); }
 body :is(h1,h2,h3,h4,h5,h6,p,a,span,button,input,select,textarea,summary,th,td,figcaption,label,li,em,strong,small) { font-family:var(--font-sans); }
@@ -232,3 +232,5 @@ body .copy-code { font-family:var(--font-sans); }
 .music-dock.list-below .music-list[hidden] { transform:translateY(-6px) scale(.98); }
 @media(prefers-reduced-motion:reduce) { .music-dock .music-list,.music-dock .music-list[hidden] { transition:none; transform:none; } }
 @media(prefers-reduced-motion:no-preference) { .music-dock.music-ready:not([hidden]) { animation:music-ready-enter .22s cubic-bezier(.2,0,0,1); } @keyframes music-ready-enter { from{opacity:0;translate:0 8px} to{opacity:1;translate:0 0} } }
+
+.friend-avatar[hidden], .friend-card img[hidden] { display:none; }

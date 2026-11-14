@@ -136,7 +136,7 @@ tags:
 
 全站界面与正文已统一为 **Noto Sans SC**，支持 100–900 可变字重；正文 400、控件 500、标题 600、强调 700。代码区域保留等宽字体，Logo 是矢量字标，不随正文换字体。
 
-字体与授权保存在“网站管理/素材/fonts/noto-sans-sc/”。采用本地加载与 font-display:swap，不依赖用户访问 Google Fonts。字体较大（完整 TTF 约 17.8 MB），首访会先显示回退字体，加载完成后替换。
+字体与授权保存在“网站管理/素材/fonts/noto-sans-sc/”。采用本地加载与 font-display:swap，不依赖用户访问 Google Fonts。现采用 WOFF2 Unicode 分包，浏览器仅下载页面实际用到的字符包；保留 font-display:swap，加载期间使用回退字体。
 
 官方资料：[字重与元数据](https://github.com/google/fonts/blob/main/ofl/notosanssc/METADATA.pb) · [SIL OFL 授权](https://github.com/google/fonts/blob/main/ofl/notosanssc/OFL.txt)。
 

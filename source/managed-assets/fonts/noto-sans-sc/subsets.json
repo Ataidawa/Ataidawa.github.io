@@ -1,0 +1,169 @@
+{
+  "unicode_characters": 30890,
+  "axes": [
+    [
+      "wght",
+      100.0,
+      900.0
+    ]
+  ],
+  "original_bytes": 17772300,
+  "woff2_bytes": 9451288,
+  "files": [
+    {
+      "file": "latin.woff2",
+      "characters": 1473,
+      "bytes": 190292
+    },
+    {
+      "file": "common-00.woff2",
+      "characters": 512,
+      "bytes": 136696
+    },
+    {
+      "file": "common-01.woff2",
+      "characters": 417,
+      "bytes": 127348
+    },
+    {
+      "file": "extended-00.woff2",
+      "characters": 1024,
+      "bytes": 241184
+    },
+    {
+      "file": "extended-01.woff2",
+      "characters": 1024,
+      "bytes": 310508
+    },
+    {
+      "file": "extended-02.woff2",
+      "characters": 1024,
+      "bytes": 333888
+    },
+    {
+      "file": "extended-03.woff2",
+      "characters": 1024,
+      "bytes": 350560
+    },
+    {
+      "file": "extended-04.woff2",
+      "characters": 1024,
+      "bytes": 351488
+    },
+    {
+      "file": "extended-05.woff2",
+      "characters": 1024,
+      "bytes": 344512
+    },
+    {
+      "file": "extended-06.woff2",
+      "characters": 1024,
+      "bytes": 360264
+    },
+    {
+      "file": "extended-07.woff2",
+      "characters": 1024,
+      "bytes": 314264
+    },
+    {
+      "file": "extended-08.woff2",
+      "characters": 1024,
+      "bytes": 277968
+    },
+    {
+      "file": "extended-09.woff2",
+      "characters": 1024,
+      "bytes": 286532
+    },
+    {
+      "file": "extended-10.woff2",
+      "characters": 1024,
+      "bytes": 301924
+    },
+    {
+      "file": "extended-11.woff2",
+      "characters": 1024,
+      "bytes": 317484
+    },
+    {
+      "file": "extended-12.woff2",
+      "characters": 1024,
+      "bytes": 322908
+    },
+    {
+      "file": "extended-13.woff2",
+      "characters": 1024,
+      "bytes": 293004
+    },
+    {
+      "file": "extended-14.woff2",
+      "characters": 1024,
+      "bytes": 325116
+    },
+    {
+      "file": "extended-15.woff2",
+      "characters": 1024,
+      "bytes": 365004
+    },
+    {
+      "file": "extended-16.woff2",
+      "characters": 1024,
+      "bytes": 322320
+    },
+    {
+      "file": "extended-17.woff2",
+      "characters": 1024,
+      "bytes": 298336
+    },
+    {
+      "file": "extended-18.woff2",
+      "characters": 1024,
+      "bytes": 386036
+    },
+    {
+      "file": "extended-19.woff2",
+      "characters": 1024,
+      "bytes": 308552
+    },
+    {
+      "file": "extended-20.woff2",
+      "characters": 1024,
+      "bytes": 322272
+    },
+    {
+      "file": "extended-21.woff2",
+      "characters": 1024,
+      "bytes": 332580
+    },
+    {
+      "file": "extended-22.woff2",
+      "characters": 1024,
+      "bytes": 320328
+    },
+    {
+      "file": "extended-23.woff2",
+      "characters": 1024,
+      "bytes": 318232
+    },
+    {
+      "file": "extended-24.woff2",
+      "characters": 1024,
+      "bytes": 334296
+    },
+    {
+      "file": "extended-25.woff2",
+      "characters": 1024,
+      "bytes": 364848
+    },
+    {
+      "file": "extended-26.woff2",
+      "characters": 1024,
+      "bytes": 389256
+    },
+    {
+      "file": "extended-27.woff2",
+      "characters": 840,
+      "bytes": 203288
+    }
+  ]
+}

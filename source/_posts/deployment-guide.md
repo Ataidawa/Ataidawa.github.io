@@ -27,7 +27,7 @@ EdgeOne 提供免费计划及平台默认子域名，但默认子域名不是你
 
 ## 没有账号：从注册开始
 
-1. 打开 [EdgeOne Pages 官方入口](https://pages.edgeone.ai/)，选择免费开始，按页面要求注册账号。涉及实名、验证码、协议或支付信息的步骤由你本人完成。
+1. 中国大陆用户先打开 [腾讯云中国站](https://cloud.tencent.com/) 注册或登录，再进入 [EdgeOne Pages 中国站](https://edgeone.cloud.tencent.com/pages/) 或 [EdgeOne 控制台](https://console.cloud.tencent.com/edgeone/)。若注册区号只有香港、澳门、台湾，说明进入了国际站，应返回中国站，不要填写与本人不符的地区。涉及实名、验证码、协议或支付信息的步骤由你本人完成。
 2. 创建项目，选择“导入 Git 仓库”。连接 GitHub，优先只授权 `Ataidawa/Ataidawa.github.io` 这个仓库。
 3. 选择仓库和 **main** 分支，不选 gh-pages 或 Dependabot 分支。
 4. 按下表填写构建配置并部署。仓库根目录已提供 `edgeone.json`，仍建议核对控制台实际识别值。

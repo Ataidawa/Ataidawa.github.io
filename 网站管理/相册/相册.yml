@@ -1,13 +1,12 @@
-# 展示用占位内容；替换为真实照片后修改 placeholder。
-- title: 视觉片段
-  description: 留给设计过程、灵感采集与日常观察的相册。
-  placeholder: true
+- title: 日常与朋友
+  description: 2023—2025，留住一些想记得的时刻。
+  placeholder: false
   photos:
-    - image: /managed-assets/work/main-01.svg
-      caption: 主图设计 · 占位素材
-    - image: /managed-assets/work/detail-01.svg
-      caption: 页面构图 · 占位素材
-    - image: /managed-assets/work/brand-01.svg
-      caption: 品牌色彩 · 占位素材
-    - image: /managed-assets/work/kv-01.svg
-      caption: 活动视觉 · 占位素材
+    - image: /managed-assets/legacy/images/2023-6-23-020600.jpg
+      caption: 2023-6-23 02:06:00 · 大一暑假的时候留校跟老师录公开课，和老师跟室友拍了好多照片，最喜欢这个老师啦( •̀ ω •́ )✧
+    - image: /managed-assets/legacy/images/2023-11-29-134400.jpg
+      caption: 2023-11-29 13:44:00 · 今天提前拍了大学的毕业照，我还是很喜欢我的室友的，跟他们也留了照片，希望可以一直好下去(‾◡◝)
+    - image: /managed-assets/legacy/images/2024-12-29-210622.jpg
+      caption: 2024-12-28 21:06:22 · 今天和朋友们重新爬了亭溪岭登上了山顶，可惜没有看完日落……下一次还是一起约看日出吧！\^o^/
+    - image: /managed-assets/legacy/images/2025-03-06-192400.jpg
+      caption: 2025-03-06 19:24:00 · 正了八经的入职照片，哈哈哈~
