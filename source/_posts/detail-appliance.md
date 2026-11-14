@@ -4,7 +4,7 @@ title: 小家电详情页 · 参数可视化
 date: 2024-09-15 10:00:00
 categories:
   - 详情页设计
-featured_image: /managed-assets/work/detail-02.svg
+featured_image: "/managed-assets/work/detail-02.svg"
 tags:
   - 详情页
   - 家电

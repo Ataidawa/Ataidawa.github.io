@@ -4,7 +4,7 @@ title: 香氛包装设计
 date: 2024-03-10 10:00:00
 categories:
   - 品牌与包装
-featured_image: /managed-assets/work/brand-02.svg
+featured_image: "/managed-assets/work/brand-02.svg"
 tags:
   - 品牌
   - 包装

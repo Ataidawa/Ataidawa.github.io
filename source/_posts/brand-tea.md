@@ -4,7 +4,7 @@ title: 茶饮品牌视觉升级
 date: 2025-02-26 10:00:00
 categories:
   - 品牌与包装
-featured_image: /managed-assets/work/brand-01.svg
+featured_image: "/managed-assets/work/brand-01.svg"
 tags:
   - 品牌
   - 茶饮

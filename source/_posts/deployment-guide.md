@@ -1,4 +1,5 @@
 ---
+typora-copy-images-to: "./deployment-guide.assets"
 short_id: "99477ac1"
 title: 部署指南：GitHub Pages、EdgeOne 与部署邮件说明
 date: 2026-11-15 12:00:00

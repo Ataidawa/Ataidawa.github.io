@@ -1,4 +1,5 @@
 ---
+typora-copy-images-to: "./如何为Windows-PC搭配自己的声音方案.assets"
 short_id: "fe309eb9"
 title: 如何为Windows搭配自己喜欢的声音方案
 tags:
@@ -8,7 +9,7 @@ tags:
 categories:
   - 文章
   - 电脑美化
-thumbnail: /managed-assets/legacy/images/Lonely%20Cat-head.jpg
+thumbnail: "/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/Lonely%20Cat-head.jpg"
 excerpt: 分析Windows系统的默认声音方案，利用替换文件的方式快速更改系统声音。
 abbrlink: 8968
 date: '2024-12-17 03:01:12'
@@ -24,16 +25,16 @@ Windows 10的默认声音方案听起来很闷，我更喜欢Windows 8和Windows
 
 ### Windows 11 专业版
 
-> <audio controls src="/managed-assets/legacy/sounds/Win%2011/Windows%20Foreground.wav"></audio>
+<audio controls preload="metadata" data-title="Windows 11 示例音效" src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/sounds/Win%2011/Windows%20Foreground.wav"></audio>
 
 
 
 
 
-<div class="demo-tabs"><div role="tablist" aria-label="Win11SoundsConfig"><button id="import-tab-1-button-0" role="tab" aria-selected="true" aria-controls="import-tab-1-panel-0">总览</button><button id="import-tab-1-button-1" role="tab" aria-selected="false" aria-controls="import-tab-1-panel-1" tabindex="-1">Windows</button><button id="import-tab-1-button-2" role="tab" aria-selected="false" aria-controls="import-tab-1-panel-2" tabindex="-1">文件资源管理器</button><button id="import-tab-1-button-3" role="tab" aria-selected="false" aria-controls="import-tab-1-panel-3" tabindex="-1">Windows 语音识别</button></div><div id="import-tab-1-panel-0" role="tabpanel" aria-labelledby="import-tab-1-button-0"><p><img src="/managed-assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win11/Windows11.png" alt="Windows_Windows 11.png"></p>
-</div><div id="import-tab-1-panel-1" role="tabpanel" aria-labelledby="import-tab-1-button-1" hidden><p><img src="/managed-assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win11/Windows.png" alt="Windows_Windows.png"></p>
-</div><div id="import-tab-1-panel-2" role="tabpanel" aria-labelledby="import-tab-1-button-2" hidden><p><img src="/managed-assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win11/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png" alt="Windows_文件资源管理器.png"></p>
-</div><div id="import-tab-1-panel-3" role="tabpanel" aria-labelledby="import-tab-1-button-3" hidden><p><img src="/managed-assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win11/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB.png" alt="Windows_Windows 语音识别.png"></p>
+<div class="demo-tabs"><div role="tablist" aria-label="Win11SoundsConfig"><button id="import-tab-1-button-0" role="tab" aria-selected="true" aria-controls="import-tab-1-panel-0">总览</button><button id="import-tab-1-button-1" role="tab" aria-selected="false" aria-controls="import-tab-1-panel-1" tabindex="-1">Windows</button><button id="import-tab-1-button-2" role="tab" aria-selected="false" aria-controls="import-tab-1-panel-2" tabindex="-1">文件资源管理器</button><button id="import-tab-1-button-3" role="tab" aria-selected="false" aria-controls="import-tab-1-panel-3" tabindex="-1">Windows 语音识别</button></div><div id="import-tab-1-panel-0" role="tabpanel" aria-labelledby="import-tab-1-button-0"><p><img src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win11/Windows11.png" alt="Windows_Windows 11.png"></p>
+</div><div id="import-tab-1-panel-1" role="tabpanel" aria-labelledby="import-tab-1-button-1" hidden><p><img src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win11/Windows.png" alt="Windows_Windows.png"></p>
+</div><div id="import-tab-1-panel-2" role="tabpanel" aria-labelledby="import-tab-1-button-2" hidden><p><img src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win11/%E6%96%87%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png" alt="Windows_文件资源管理器.png"></p>
+</div><div id="import-tab-1-panel-3" role="tabpanel" aria-labelledby="import-tab-1-button-3" hidden><p><img src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win11/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB.png" alt="Windows_Windows 语音识别.png"></p>
 </div></div>
 
 
@@ -118,16 +119,16 @@ Windows 10的默认声音方案听起来很闷，我更喜欢Windows 8和Windows
 
 ### Windows 7 专业版
 
-> <audio controls src="/managed-assets/legacy/sounds/Win%207/Windows%20Notify.wav"></audio>
+<audio controls preload="metadata" data-title="Windows 7 示例音效" src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/sounds/Win%207/Windows%20Notify.wav"></audio>
 
 
 
 
 
-<div class="demo-tabs"><div role="tablist" aria-label="Win7SoundsConfig"><button id="import-tab-2-button-0" role="tab" aria-selected="true" aria-controls="import-tab-2-panel-0">总览</button><button id="import-tab-2-button-1" role="tab" aria-selected="false" aria-controls="import-tab-2-panel-1" tabindex="-1">Windows</button><button id="import-tab-2-button-2" role="tab" aria-selected="false" aria-controls="import-tab-2-panel-2" tabindex="-1">文件资源管理器</button><button id="import-tab-2-button-3" role="tab" aria-selected="false" aria-controls="import-tab-2-panel-3" tabindex="-1">Windows 语音识别</button></div><div id="import-tab-2-panel-0" role="tabpanel" aria-labelledby="import-tab-2-button-0"><p><img src="/managed-assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win7/Windows7.png" alt="Windows_Windows 7.png"></p>
-</div><div id="import-tab-2-panel-1" role="tabpanel" aria-labelledby="import-tab-2-button-1" hidden><p><img src="/managed-assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win7/Windows.png" alt="Windows_Windows.png"></p>
-</div><div id="import-tab-2-panel-2" role="tabpanel" aria-labelledby="import-tab-2-button-2" hidden><p><img src="/managed-assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win7/Windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png" alt="Windows_文件资源管理器.png"></p>
-</div><div id="import-tab-2-panel-3" role="tabpanel" aria-labelledby="import-tab-2-button-3" hidden><p><img src="/managed-assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win7/Windows%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB.png" alt="Windows_Windows 语音识别.png"></p>
+<div class="demo-tabs"><div role="tablist" aria-label="Win7SoundsConfig"><button id="import-tab-2-button-0" role="tab" aria-selected="true" aria-controls="import-tab-2-panel-0">总览</button><button id="import-tab-2-button-1" role="tab" aria-selected="false" aria-controls="import-tab-2-panel-1" tabindex="-1">Windows</button><button id="import-tab-2-button-2" role="tab" aria-selected="false" aria-controls="import-tab-2-panel-2" tabindex="-1">文件资源管理器</button><button id="import-tab-2-button-3" role="tab" aria-selected="false" aria-controls="import-tab-2-panel-3" tabindex="-1">Windows 语音识别</button></div><div id="import-tab-2-panel-0" role="tabpanel" aria-labelledby="import-tab-2-button-0"><p><img src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win7/Windows7.png" alt="Windows_Windows 7.png"></p>
+</div><div id="import-tab-2-panel-1" role="tabpanel" aria-labelledby="import-tab-2-button-1" hidden><p><img src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win7/Windows.png" alt="Windows_Windows.png"></p>
+</div><div id="import-tab-2-panel-2" role="tabpanel" aria-labelledby="import-tab-2-button-2" hidden><p><img src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win7/Windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8.png" alt="Windows_文件资源管理器.png"></p>
+</div><div id="import-tab-2-panel-3" role="tabpanel" aria-labelledby="import-tab-2-button-3" hidden><p><img src="/managed-assets/articles/fe309eb9/%E5%A6%82%E4%BD%95%E4%B8%BAWindows-PC%E6%90%AD%E9%85%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88.assets/legacy/images/%E5%A3%B0%E9%9F%B3%E6%96%B9%E6%A1%88%E7%BB%93%E6%9E%84/Win7/Windows%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB.png" alt="Windows_Windows 语音识别.png"></p>
 </div></div>
 
 

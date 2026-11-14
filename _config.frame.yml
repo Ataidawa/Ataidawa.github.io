@@ -35,6 +35,7 @@ scripts:
 - /js/portfolio-filter.js
 - /js/text-cursor.js
 - /js/experience.js
+- /js/article-audio.js
 - /js/article-details.js
 - /js/article-outline.js
 - /js/button-feedback.js

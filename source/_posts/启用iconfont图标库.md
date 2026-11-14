@@ -1,4 +1,5 @@
 ---
+typora-copy-images-to: "./启用iconfont图标库.assets"
 short_id: "6117f170"
 title: 如何在redefine中启用iconfont图标库
 categories:
@@ -9,7 +10,7 @@ tags:
   - Hexo-theme
   - Hexo-redefine-theme
   - iconfont
-thumbnail: /managed-assets/legacy/images/dsftbk-head.png
+thumbnail: "/managed-assets/articles/6117f170/%E5%90%AF%E7%94%A8iconfont%E5%9B%BE%E6%A0%87%E5%BA%93.assets/legacy/images/dsftbk-head.png"
 excerpt: 比起Font Awesome，我选择更适合中国宝宝体质的Iconfont！
 abbrlink: 10986
 date: '2024-11-27 04:07:21'
@@ -41,23 +42,23 @@ date: '2024-11-27 04:07:21'
 
 2. 登录后在`资源管理-我的项目`中`新建项目`。
 
-   ![新建项目](/managed-assets/legacy/images/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)
+   ![新建项目](/managed-assets/articles/6117f170/%E5%90%AF%E7%94%A8iconfont%E5%9B%BE%E6%A0%87%E5%BA%93.assets/legacy/images/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png)
 
 3. 项目信息随便填，自己清楚就好。
 
-   ![项目信息](/managed-assets/legacy/images/%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF.png)
+   ![项目信息](/managed-assets/articles/6117f170/%E5%90%AF%E7%94%A8iconfont%E5%9B%BE%E6%A0%87%E5%BA%93.assets/legacy/images/%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF.png)
 
 4. 接下来我们在iconfont中搜索想要加入的图标，点击` 添加入库`
 
-   ![添加入库](/managed-assets/legacy/images/%E6%B7%BB%E5%8A%A0%E5%85%A5%E5%BA%93.png)
+   ![添加入库](/managed-assets/articles/6117f170/%E5%90%AF%E7%94%A8iconfont%E5%9B%BE%E6%A0%87%E5%BA%93.assets/legacy/images/%E6%B7%BB%E5%8A%A0%E5%85%A5%E5%BA%93.png)
 
 5. 此时右上角的购物车图标会有一个红色的角标非常显眼，点击购物车图标，点击`添加至项目`
 
-   ![加入项目](/managed-assets/legacy/images/%E5%8A%A0%E5%85%A5%E9%A1%B9%E7%9B%AE.png)
+   ![加入项目](/managed-assets/articles/6117f170/%E5%90%AF%E7%94%A8iconfont%E5%9B%BE%E6%A0%87%E5%BA%93.assets/legacy/images/%E5%8A%A0%E5%85%A5%E9%A1%B9%E7%9B%AE.png)
 
 6. 回到`资源管理-我的项目`中，在项目中即可看到我们刚刚添加的图标。请将类型从`Unicode`切换为`Font class`然后点击 `查看在线链接`
 
-   ![获取在线链接](/managed-assets/legacy/images/%E8%8E%B7%E5%8F%96%E5%9C%A8%E7%BA%BF%E9%93%BE%E6%8E%A5.png)
+   ![获取在线链接](/managed-assets/articles/6117f170/%E5%90%AF%E7%94%A8iconfont%E5%9B%BE%E6%A0%87%E5%BA%93.assets/legacy/images/%E8%8E%B7%E5%8F%96%E5%9C%A8%E7%BA%BF%E9%93%BE%E6%8E%A5.png)
 
 7. 第一次生成会没有在线链接，我们需要点击  `🔄暂无代码，点击生成`
 
@@ -119,7 +120,7 @@ date: '2024-11-27 04:07:21'
 
 - 由于redefine主题中`social.links`是由`home-banner.ejs`文件处理的。他和iconfont提供的在线样式有**重叠**，造成了两个样式同时发挥着作用出现下图的情况：
 
-  ![样式异常](/managed-assets/legacy/images/%E6%A0%B7%E5%BC%8F%E5%BC%82%E5%B8%B8.png)
+  ![样式异常](/managed-assets/articles/6117f170/%E5%90%AF%E7%94%A8iconfont%E5%9B%BE%E6%A0%87%E5%BA%93.assets/legacy/images/%E6%A0%B7%E5%BC%8F%E5%BC%82%E5%B8%B8.png)
 
   ```css
   /* IconFont在线地址所提供的样式 */
@@ -147,7 +148,7 @@ date: '2024-11-27 04:07:21'
   }
   ```
 
-  ![F12](/managed-assets/legacy/images/%E9%85%8D%E7%BD%AE%E4%BC%9A%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E9%95%BF%E6%96%B9%E5%BD%A2.png)
+  ![F12](/managed-assets/articles/6117f170/%E5%90%AF%E7%94%A8iconfont%E5%9B%BE%E6%A0%87%E5%BA%93.assets/legacy/images/%E9%85%8D%E7%BD%AE%E4%BC%9A%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E9%95%BF%E6%96%B9%E5%BD%A2.png)
 
 - 所以我们需要在`home-banner.ejs`中添加判断逻辑。
 

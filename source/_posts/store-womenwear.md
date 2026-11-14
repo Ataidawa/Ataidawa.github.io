@@ -4,7 +4,7 @@ title: 女装店铺首页改版
 date: 2025-04-18 10:00:00
 categories:
   - 店铺视觉
-featured_image: /managed-assets/work/store-01.svg
+featured_image: "/managed-assets/work/store-01.svg"
 tags:
   - 店铺
   - 女装

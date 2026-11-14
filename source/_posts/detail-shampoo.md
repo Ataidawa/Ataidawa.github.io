@@ -4,7 +4,7 @@ title: 洗护套装详情页 · 卖点结构化
 date: 2025-09-03 10:00:00
 categories:
   - 详情页设计
-featured_image: /managed-assets/work/detail-01.svg
+featured_image: "/managed-assets/work/detail-01.svg"
 tags:
   - 详情页
   - 个护

@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {publishMarkdown}=require('../tools/article-assets.cjs');
+const dir=path.resolve('.runtime/asset-test');fs.mkdirSync(path.join(dir,'文章.assets'),{recursive:true});
+fs.writeFileSync(path.join(dir,'文章.assets','声音 1.wav'),'fixture');
+const prefix='/managed-assets/articles/12345678/';
+const input='---\nthumbnail: 文章.assets/声音%201.wav\n---\n![说明](文章.assets/声音%201.wav)\n<audio controls src="./文章.assets/声音%201.wav"></audio>\n[录音][clip]\n[clip]: 文章.assets/声音%201.wav\n\n`![示例](不存在.png)`\n\n```html\n<audio src="不存在.wav"></audio>\n```\n';
+const result=publishMarkdown(input,dir,prefix);
+assert.equal((result.match(/\/managed-assets\/articles\/12345678\//g)||[]).length,4);
+assert(result.includes('`![示例](不存在.png)`'));
+assert(result.includes('<audio src="不存在.wav"></audio>'));
+assert.throws(()=>publishMarkdown('![x](不存在.png)',dir,prefix),/找不到文章素材/);
+assert.throws(()=>publishMarkdown('![x](../outside.png)',dir,prefix),/素材必须位于文章目录内/);
+assert.equal(publishMarkdown('[x](https://example.com/) [章节](#标题)',dir,prefix),'[x](https://example.com/) [章节](#标题)');
+assert.equal(publishMarkdown('<!-- ![示例](尚未插入.png) -->',dir,prefix),'<!-- ![示例](尚未插入.png) -->');
+console.log('Passed: local previews, encoded asset paths, covers, HTML, reference links and unchanged code samples.');

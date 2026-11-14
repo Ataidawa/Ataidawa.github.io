@@ -1,4 +1,5 @@
 ---
+typora-copy-images-to: "./website-operation-guide.assets"
 short_id: "75ef4c84"
 title: 网站操作手册：内容与设置的统一入口
 date: 2026-11-15 11:00:00
@@ -15,7 +16,7 @@ tags:
 
 | 想做什么 | 编辑哪里 |
 | --- | --- |
-| 发文章 | 网站管理/文章/*.md |
+| 发文章 | 网站管理/文章/文章名/文章名.md |
 | 加作品 | 网站管理/作品/*.md |
 | 管理作品类别 | 网站管理/作品/分类.yml |
 | 管理相册簿 | 网站管理/相册/相册.yml |
@@ -220,3 +221,26 @@ GitHub Pages 为纯静态站，会跨域调用这个 Vercel 接口，因此其�
 播放器先读取同站点 `素材/music/playlist.json`，数据准备好后显示；再在后台请求实时歌单。国内网络无法连接 Vercel 时，仍可显示最近发布的歌单。实时接口恢复后会尝试更新，后台刷新不会重置当前播放进度。实际音频仍依赖外部音源。
 
 `npm run build` 会先运行 `tools/update-playlist.cjs`，尝试更新备用歌单；接口失败时保留现有数据并继续构建。更改歌单仍修改 `设置/播放器.yml` 后构建。兼容了不支持 AbortSignal.timeout 的移动浏览器。
+
+
+## Markdown 与素材放在一起（Typora）
+
+文章采用“一篇一个文件夹”：
+
+```text
+网站管理/文章/我的文章/
+  我的文章.md
+  我的文章.assets/
+    配图.png
+    录音.m4a
+```
+
+Markdown 写 `![配图](我的文章.assets/配图.png)` 即可本地预览，音频可写 `<audio controls preload="metadata" data-title="现场录音" src="我的文章.assets/录音.m4a"></audio>`。文件名有空格时让 Typora 自动转义路径，或使用 `%20`。
+
+在 Typora 的偏好设置 → 图像中，将插入图片设为复制到 `./${filename}.assets`，启用“优先使用相对路径”，并对本地图片、剪贴板图片启用该规则。先保存 Markdown，再粘贴或拖入图片。已迁移的文章也各自设置了 `typora-copy-images-to` 字段，直接指向旁边的素材文件夹。
+
+也可以用菜单“格式 → 图像 → 插入本地图片时 → 复制图片到指定路径”选择素材目录。Typora 会在文档头部写入 `typora-copy-images-to`。参考 [Typora 官方图片说明](https://support.typora.io/Images/)。
+
+网站构建自动递归读取文章目录，将相对图片、音频、附件和封面路径转换为站点地址；源 Markdown 中保留相对路径，不需要手工写 `/managed-assets/`。短链接 `short_id` 保持不变。代码块里的路径示例不会被改写。文章素材应在自己的目录内，避免使用磁盘绝对路径和跨目录的 `../`。
+
+新建时可复制“网站管理/模板/文章模板.md”到新文章文件夹，改文件名、标题和日期；首次构建会自动写入短链接。Typora 全局复制规则会按实际 Markdown 文件名创建 `.assets` 文件夹。全站 Logo、字体与相册等共享素材继续在“素材”管理。

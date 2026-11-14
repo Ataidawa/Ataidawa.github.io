@@ -4,7 +4,7 @@ title: 家居店铺视觉规范
 date: 2024-06-02 10:00:00
 categories:
   - 店铺视觉
-featured_image: /managed-assets/work/store-02.svg
+featured_image: "/managed-assets/work/store-02.svg"
 tags:
   - 店铺
   - 家居

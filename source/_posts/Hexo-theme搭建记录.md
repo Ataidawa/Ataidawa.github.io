@@ -1,4 +1,5 @@
 ---
+typora-copy-images-to: "./Hexo-theme搭建记录.assets"
 short_id: "f9985495"
 title: 懒事屋 - 辅助手册
 tags:
@@ -6,7 +7,7 @@ tags:
   - Hexo-theme
   - Hexo-redefine-theme
   - Github Pages
-thumbnail: /managed-assets/legacy/images/hexo-head.png
+thumbnail: "/managed-assets/articles/f9985495/Hexo-theme%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95.assets/legacy/images/hexo-head.png"
 excerpt: 为了避免日后自己遗忘制作个人网站的流程，在此写一份建立懒事屋时的步骤记录。
 abbrlink: 16985
 date: '2024-11-14 18:46:00'

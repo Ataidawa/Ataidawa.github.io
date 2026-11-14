@@ -1,4 +1,5 @@
 ---
+typora-copy-images-to: "./启用带API解析全局播放器.assets"
 short_id: "063dac72"
 title: Hexo主题启用带API解析全局播放器
 categories:
@@ -8,7 +9,7 @@ tags:
   - Hexo
   - Hexo-theme
   - Hexo-redefine-theme
-thumbnail: /managed-assets/legacy/images/qjbfq-head.png
+thumbnail: "/managed-assets/articles/063dac72/%E5%90%AF%E7%94%A8%E5%B8%A6API%E8%A7%A3%E6%9E%90%E5%85%A8%E5%B1%80%E6%92%AD%E6%94%BE%E5%99%A8.assets/legacy/images/qjbfq-head.png"
 excerpt: 为了能有更方便的播放器体验，我重构了网站…… 注：由于Hexo-Theme-Redefine在2.8.2版本中修改了结构，故修改全部失效，请按照秋水老师的“为Hexo-Redefine主题启用MetingJs”文章操作喔！
 abbrlink: 3334
 date: '2024-11-22 01:45:54'
@@ -19,7 +20,7 @@ expires: '2024-12-02 00:00:00'
 
 ## 实现逻辑
 
-![](/managed-assets/legacy/images/%E6%8F%92%E4%BB%B6%E6%A4%8D%E5%85%A5%E4%B8%BB%E9%A2%98%E6%AD%A5%E9%AA%A4.jpg)
+![](/managed-assets/articles/063dac72/%E5%90%AF%E7%94%A8%E5%B8%A6API%E8%A7%A3%E6%9E%90%E5%85%A8%E5%B1%80%E6%92%AD%E6%94%BE%E5%99%A8.assets/legacy/images/%E6%8F%92%E4%BB%B6%E6%A4%8D%E5%85%A5%E4%B8%BB%E9%A2%98%E6%AD%A5%E9%AA%A4.jpg)
 
 ## 重构前的准备
 

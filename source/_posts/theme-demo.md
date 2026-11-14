@@ -1,4 +1,5 @@
 ---
+typora-copy-images-to: "./theme-demo.assets"
 short_id: "28170245"
 title: Jopolis 界面与文章效果演示
 date: 2026-11-14 23:30:00
@@ -49,7 +50,7 @@ tags:
 
 点击下方图片打开大图，按 Esc、点击关闭按钮或图片外空白区域退出。
 
-![主图设计占位示例](/managed-assets/work/main-01.svg)
+![主图设计占位示例](/managed-assets/articles/28170245/theme-demo.assets/work/main-01.svg)
 
 ## 列表与表格
 

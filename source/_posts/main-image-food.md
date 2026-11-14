@@ -4,7 +4,7 @@ title: 食品类主图 · 食欲感优先
 date: 2024-11-08 10:00:00
 categories:
   - 主图设计
-featured_image: /managed-assets/work/main-03.svg
+featured_image: "/managed-assets/work/main-03.svg"
 tags:
   - 主图
   - 食品

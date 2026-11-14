@@ -4,7 +4,7 @@ title: 护肤品牌主图 · 极简白底
 date: 2025-08-12 10:00:00
 categories:
   - 主图设计
-featured_image: /managed-assets/work/main-01.svg
+featured_image: "/managed-assets/work/main-01.svg"
 tags:
   - 主图
   - 美妆

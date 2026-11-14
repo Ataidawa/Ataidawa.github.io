@@ -4,7 +4,7 @@ title: 家电品类主图 · 场景化改造
 date: 2025-06-20 10:00:00
 categories:
   - 主图设计
-featured_image: /managed-assets/work/main-02.svg
+featured_image: "/managed-assets/work/main-02.svg"
 tags:
   - 主图
   - 家电

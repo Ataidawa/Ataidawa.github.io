@@ -1,9 +1,10 @@
 ---
+typora-copy-images-to: "./Start.assets"
 short_id: "ee042599"
 title: 懒事屋正式建立
 tags:
   - Introduction
-thumbnail: /managed-assets/legacy/images/start-head.png
+thumbnail: "/managed-assets/articles/ee042599/Start.assets/legacy/images/start-head.png"
 excerpt: 点击了解我和我的网站！
 abbrlink: 40770
 date: '2024-11-15 06:43:00'
