@@ -10,6 +10,10 @@ await new Promise(r=>setTimeout(r,10));
 assert.equal(audios.length,2);assert.equal(w.document.querySelectorAll('.inline-cover').length,1);assert.equal(w.document.querySelector('.music-inline[data-title] strong').textContent,'测试歌曲');
 const play=w.document.querySelector('.music-cover');play.click();assert.equal(audios[0].paused,false);
 audios[0].pause();await new Promise(r=>setTimeout(r,500));const card=w.document.querySelector('.music-call');const ripple=w.document.createElement('span');ripple.className='button-ripple';card.appendChild(ripple);card.click();await new Promise(r=>setTimeout(r,20));assert.equal(audios[0].paused,false);assert.equal(card.querySelector('.music-card-state').textContent,'Ⅱ');assert.equal(ripple.textContent,'');card.click();await new Promise(r=>setTimeout(r,500));assert.equal(card.querySelector('.music-card-state').textContent,'▶');
+// Refresh a changed playlist without resetting the current audio or progress.
+play.click();audios[0].currentTime=25;const beforeSrc=audios[0].src;
+w.fetch=async()=>({ok:true,json:async()=>[{name:'测试歌曲',artist:'测试作者',url:'https://example.com/new-audio.mp3'},{name:'新增歌曲',artist:'作者',url:'https://example.com/second.mp3'}]});
+w.document.querySelector('[data-action=refresh]').click();await new Promise(r=>setTimeout(r,20));assert.equal(w.document.querySelectorAll('.music-list button').length,2);assert.equal(audios[0].currentTime,25);assert.equal(audios[0].src,beforeSrc);assert.equal(audios[0].paused,false);
 const toggle=w.document.querySelector('[data-list]');toggle.click();assert.equal(toggle.getAttribute('aria-expanded'),'true');toggle.click();assert.equal(toggle.getAttribute('aria-expanded'),'false');
 assert.equal(w.document.querySelector('.music-dock a'),null);
 const dock=w.document.querySelector('.music-dock');dock.querySelector('[data-action=hide]').click();assert(dock.hidden);
