@@ -2,3 +2,5 @@ enabled: true
 playlist: https://music.163.com/playlist?id=18598014323
 # Compatible Meting JSON endpoint, replace if this public service is unavailable.
 api: https://ataidawa-github-io.vercel.app/api/playlist
+# 同站点备用歌单，每次构建自动尝试更新；实时接口失败也能显示播放器。
+snapshot: /managed-assets/music/playlist.json

@@ -1,0 +1,38 @@
+{
+  "playlist_id": "18598014323",
+  "tracks": [
+    {
+      "id": "31426746",
+      "name": "idfc",
+      "artist": "Blackbear",
+      "pic": "http://p2.music.126.net/A5M2fD3LtLz0qFUnt5vGfQ==/7801034999769746.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=31426746",
+      "duration": 245172
+    },
+    {
+      "id": "2729473649",
+      "name": "词不达意",
+      "artist": "万能日记",
+      "pic": "http://p2.music.126.net/AbhVMj1LS_4xX1ZVr56Ypg==/109951171513237180.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=2729473649",
+      "duration": 131632
+    },
+    {
+      "id": "2146772076",
+      "name": "忘却",
+      "artist": "马格南MAGNUM",
+      "pic": "http://p2.music.126.net/gTVHWsX07BIp0cwQ9J7h7w==/109951169505148858.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=2146772076",
+      "duration": 273966
+    },
+    {
+      "id": "1342743435",
+      "name": "Ibuprofen",
+      "artist": "Alicks",
+      "pic": "http://p2.music.126.net/S7reWj8cuhvdfMpc0RfHxQ==/109951165290760627.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=1342743435",
+      "duration": 284240
+    }
+  ],
+  "updated_at": "2026-11-14T20:40:08.5705035Z"
+}

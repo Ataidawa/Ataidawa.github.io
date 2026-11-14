@@ -1,5 +1,5 @@
 <% var music = site.data.music || {}; if (music.enabled) { %>
-<section class="music-dock" hidden aria-label="全站音乐播放器" data-music-player data-playlist="<%= music.playlist %>" data-api="<%= music.api %>">
+<section class="music-dock" hidden aria-label="全站音乐播放器" data-music-player data-playlist="<%= music.playlist %>" data-api="<%= music.api %>" data-snapshot="<%= url_for(music.snapshot || '/managed-assets/music/playlist.json') %>">
   <div class="music-grip"><span>♫ Jopolis Radio</span><div><button type="button" data-action="hide" aria-label="隐藏播放器" title="隐藏播放器">−</button></div></div>
   <div class="music-body"></div>
 </section>
