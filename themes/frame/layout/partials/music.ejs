@@ -1,7 +1,7 @@
 <% var music = site.data.music || {}; if (music.enabled) { %>
-<section class="music-dock" aria-label="全站音乐播放器" data-music-player data-playlist="<%= music.playlist %>" data-api="<%= music.api %>">
-  <div class="music-grip"><span>♫ Jopolis Radio</span><div><button type="button" data-action="reset" aria-label="恢复默认位置" title="恢复默认位置">↺</button><button type="button" data-action="hide" aria-label="隐藏播放器" title="隐藏播放器">−</button></div></div>
+<section class="music-dock" hidden aria-label="全站音乐播放器" data-music-player data-playlist="<%= music.playlist %>" data-api="<%= music.api %>">
+  <div class="music-grip"><span>♫ Jopolis Radio</span><div><button type="button" data-action="hide" aria-label="隐藏播放器" title="隐藏播放器">−</button></div></div>
   <div class="music-body"></div>
 </section>
-<button class="music-launcher" type="button" aria-label="展开音乐播放器" title="展开音乐播放器">♫</button>
+<button class="music-launcher" hidden type="button" aria-label="展开音乐播放器" title="展开音乐播放器">♫</button>
 <% } %>
