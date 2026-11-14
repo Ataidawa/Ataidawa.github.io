@@ -219,3 +219,15 @@ body .copy-code { font-family:var(--font-sans); }
   98% { transform:translate(1px,0); clip-path:inset(0); }
  }
 }
+/* Playlist overlay transitions preserve the fixed player's anchor. */
+.music-dock .music-list,.music-dock .music-list[hidden] {
+ display:block; opacity:1; visibility:visible; pointer-events:auto; transform:translateY(0) scale(1); transform-origin:bottom center;
+ transition:opacity var(--duration-control,.18s) ease,transform var(--duration-control,.18s) cubic-bezier(.2,0,0,1),visibility 0s;
+}
+.music-dock .music-list[hidden] {
+ opacity:0; visibility:hidden; pointer-events:none; transform:translateY(6px) scale(.98);
+ transition:opacity var(--duration-control,.18s) ease,transform var(--duration-control,.18s) cubic-bezier(.2,0,0,1),visibility 0s .18s;
+}
+.music-dock.list-below .music-list { transform-origin:top center; }
+.music-dock.list-below .music-list[hidden] { transform:translateY(-6px) scale(.98); }
+@media(prefers-reduced-motion:reduce) { .music-dock .music-list,.music-dock .music-list[hidden] { transition:none; transform:none; } }

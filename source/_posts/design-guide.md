@@ -147,3 +147,5 @@ tags:
 来源：[Remix Icon 官方仓库](https://github.com/Remix-Design/RemixIcon)，授权随文件保存。
 
 页脚统一使用 Noto Sans SC：电脑端主要信息 14px、字段名称 13px；手机端主要信息 13px、字段名称 12px。时间和版本数字使用等宽数字特性，不再另切换等宽字体。
+
+播放列表采用约 180ms 渐显与 6px 位移，展开／收起均不改变播放器位置；系统减少动态效果时直接切换。
