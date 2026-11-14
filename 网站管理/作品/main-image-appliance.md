@@ -1,4 +1,5 @@
 ---
+short_id: "fac90f6e"
 title: 家电品类主图 · 场景化改造
 date: 2025-06-20 10:00:00
 categories:

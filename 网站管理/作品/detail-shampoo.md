@@ -1,4 +1,5 @@
 ---
+short_id: "0782f3ae"
 title: 洗护套装详情页 · 卖点结构化
 date: 2025-09-03 10:00:00
 categories:

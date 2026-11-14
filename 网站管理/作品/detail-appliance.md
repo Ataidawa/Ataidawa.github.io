@@ -1,4 +1,5 @@
 ---
+short_id: "a51a4c30"
 title: 小家电详情页 · 参数可视化
 date: 2024-09-15 10:00:00
 categories:

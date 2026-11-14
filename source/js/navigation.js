@@ -29,7 +29,7 @@
   // External destinations preserve the portfolio; internal navigation stays in this tab.
   document.querySelectorAll('a[href]').forEach(function (link) {
     var url = new URL(link.href, location.href);
-    if (/^https?:$/.test(url.protocol) && (url.origin !== location.origin || /\/posts\//.test(url.pathname))) {
+    if (/^https?:$/.test(url.protocol) && (url.origin !== location.origin || /\/(?:posts|p)\//.test(url.pathname))) {
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
     }

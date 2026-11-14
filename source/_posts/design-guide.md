@@ -1,4 +1,5 @@
 ---
+short_id: "3cdca2da"
 title: Jopolis 网站设计规范与维护指南
 date: 2026-11-15 10:00:00
 updated: 2026-11-15

@@ -1,4 +1,5 @@
 ---
+short_id: "3bb14c7b"
 title: 护肤品牌主图 · 极简白底
 date: 2025-08-12 10:00:00
 categories:

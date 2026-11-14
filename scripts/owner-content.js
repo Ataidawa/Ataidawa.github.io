@@ -13,6 +13,13 @@ function sync() {
   const names=new Set();
   for(const folder of ['文章','作品'])for(const name of fs.readdirSync(path.join(owner,folder))){
     if(!name.endsWith('.md'))continue;
+    const original=path.join(owner,folder,name);
+    let markdown=fs.readFileSync(original,'utf8');
+    if(!/^short_id:/m.test(markdown.split(/\r?\n---/)[0])){
+      const id=require('crypto').createHash('sha256').update(name).digest('hex').slice(0,8);
+      markdown=markdown.replace(/^---\r?\n/,'---\nshort_id: '+JSON.stringify(id)+'\n');
+      fs.writeFileSync(original,markdown);
+    }
     if(names.has(name))throw new Error('文章与作品文件名重复：'+name);
     names.add(name);copyFile(folder+'/'+name,'_posts/'+name);
   }

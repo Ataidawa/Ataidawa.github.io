@@ -1,4 +1,5 @@
 ---
+short_id: "fa17b57e"
 title: 茶饮品牌视觉升级
 date: 2025-02-26 10:00:00
 categories:

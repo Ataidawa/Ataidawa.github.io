@@ -10,7 +10,7 @@
       if(push)history.pushState(null,'',url.href);
       document.querySelectorAll('.menu-item').forEach(function(li){li.classList.toggle('menu-item-active',new URL(li.querySelector('a').href).pathname===url.pathname);});
       document.getElementById('site-navigation').classList.remove('is-open');document.body.classList.remove('nav-open');document.getElementById('menu-btn').setAttribute('aria-expanded','false');
-      document.querySelectorAll('.main a[href]').forEach(function(a){if(new URL(a.href).pathname.includes('/posts/')){a.target='_blank';a.rel='noopener noreferrer';}});
+      document.querySelectorAll('.main a[href]').forEach(function(a){if(new URL(a.href).pathname.match(/\/(?:posts|p)\//)){a.target='_blank';a.rel='noopener noreferrer';}});
       document.dispatchEvent(new Event('jopolis:navigate'));window.scrollTo(0,0);
     }catch(e){if(e.name!=='AbortError')location.assign(url.href);}
   }

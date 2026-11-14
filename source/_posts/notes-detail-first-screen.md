@@ -1,4 +1,5 @@
 ---
+short_id: "0aa63724"
 title: 详情页第一屏，大部分人做错了什么
 date: 2025-11-02 10:00:00
 categories:

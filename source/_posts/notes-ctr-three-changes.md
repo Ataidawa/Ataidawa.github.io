@@ -1,4 +1,5 @@
 ---
+short_id: "abed31fa"
 title: 主图点击率，我只改了三个地方
 date: 2025-07-14 10:00:00
 categories:

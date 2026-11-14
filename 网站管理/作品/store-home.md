@@ -1,4 +1,5 @@
 ---
+short_id: "d0c63900"
 title: 家居店铺视觉规范
 date: 2024-06-02 10:00:00
 categories:

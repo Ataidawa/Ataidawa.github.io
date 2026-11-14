@@ -1,4 +1,5 @@
 ---
+short_id: "b7ab7ba5"
 title: 食品类主图 · 食欲感优先
 date: 2024-11-08 10:00:00
 categories:

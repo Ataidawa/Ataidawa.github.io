@@ -1,4 +1,5 @@
 ---
+short_id: "5a8a9945"
 title: 香氛包装设计
 date: 2024-03-10 10:00:00
 categories:

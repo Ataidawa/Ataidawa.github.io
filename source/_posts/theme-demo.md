@@ -1,4 +1,5 @@
 ---
+short_id: "28170245"
 title: Jopolis 界面与文章效果演示
 date: 2026-11-14 23:30:00
 categories:

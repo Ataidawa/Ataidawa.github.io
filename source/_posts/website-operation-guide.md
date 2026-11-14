@@ -1,4 +1,5 @@
 ---
+short_id: "75ef4c84"
 title: 网站操作手册：内容与设置的统一入口
 date: 2026-11-15 11:00:00
 updated: 2026-11-15
@@ -174,3 +175,11 @@ api: https://api.injahow.cn/meting/
 左上角使用取景框＋Jopolis. 字标，加载后每约 12 秒自动播放一次短 glitch 效果，不依赖悬停；减少动态效果时停用。首页姓名 `profile.title` 为“周城栋”，标签页站点名 `site.title` 仍为“Jopolis.”，两者互不影响。标签页小图标采用相同的取景框＋J，并独立配置。
 
 Logo 自动 glitch 的间隔在“设置/配色与外观.css”末尾 `brand-ambient-glitch 12s` 中调整，数字越大越安静。减少动态效果时停止自动动画。
+
+## 自动短链接
+
+新文章和作品保存后，首次生成会在 Markdown 开头写入 `short_id`（8 位十六进制 ID），正式地址为 `/p/ID/`。修改标题不影响地址；重命名文件时保留 short_id 即可，复制文章作为新内容时请删除复制来的 short_id，让系统重新生成。重复 ID 会阻止构建，避免覆盖页面。
+
+旧的 `/posts/文件名/` 路径继续生成完整页面，已有分享和手册链接可继续使用；旧站 abbrlink 数字地址若需要全部兼容，需额外导入旧站 ID 对照表，当前没有自动猜测旧 ID。
+
+源码在 main 分支，GitHub Actions 从 main 构建并部署 Pages；gh-pages 保留静态发布快照。修改源码后应提交 main，Pages 设置中的 Source 使用 GitHub Actions。
