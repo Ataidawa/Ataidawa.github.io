@@ -1,0 +1,30 @@
+# 页脚配置
+# 左侧：框架与主题版本；中间：北京时间 + 最近更新时间（自动）；右侧：联系方式图标
+
+framework:
+  name: Hexo
+  version: "7.3.0"
+
+theme:
+  name: Frame
+  version: "1.0.0"
+  customization: Codex客制化
+
+# key 决定图标与点击行为：
+#   qq / wechat  -> 点击复制号码
+#   email        -> mailto 直接发信
+#   phone        -> tel 直接拨号（手机上）
+# value 留空时，点击会提示「还没填」
+contacts:
+  - key: qq
+    name: QQ
+    value: ""
+  - key: wechat
+    name: 微信
+    value: ""
+  - key: email
+    name: 邮箱
+    value: ""
+  - key: phone
+    name: 电话
+    value: ""

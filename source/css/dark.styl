@@ -1,0 +1,60 @@
+// ============================================================
+// 深色版样式：复用 Frame 全部组件，只把调色板换成 iOS 深色语义色
+// 由 /js/theme-mode.js 在夜间自动启用（<link id="css-dark">）
+// 注意：不要 @import color.styl，否则会覆盖下面的调色板
+// ============================================================
+
+// media & 基础变量
+@import "../../themes/frame/source/css/media.styl"
+@import "../../themes/frame/source/css/variable.styl"
+@import "../../themes/frame/source/css/normalize.styl"
+
+// ---- iOS 深色语义色 ----
+// label / secondaryLabel / tertiaryLabel
+$color-text-primary   = #F2F2F7
+$color-text-secondary = #98989D
+$color-text-third     = #AEAEB2
+$color-text-fourth    = #98989D
+// systemBackground / secondarySystemBackground
+$color-background     = #1C1C1E
+
+$color-code-background = #1C1C1E
+$color-code-highlight  = #0A84FF
+$color-code-default    = #A1A1A6
+$color-code-marker     = #636366
+
+$color-search-marker = #3A3A3C
+$color-overlay       = rgba(0, 0, 0, 0.6)
+
+// 深色代码高亮
+@import "../../themes/frame/source/css/highlight/dark.styl"
+
+// 结构
+@import "../../themes/frame/source/css/font.styl"
+@import "../../themes/frame/source/css/layout.styl"
+@import "../../themes/frame/source/css/base.styl"
+@import "../../themes/frame/source/css/motion.styl"
+
+// partials
+@import "../../themes/frame/source/css/partials/header.styl"
+@import "../../themes/frame/source/css/partials/footer.styl"
+@import "../../themes/frame/source/css/partials/post_list.styl"
+@import "../../themes/frame/source/css/partials/post_gallery.styl"
+@import "../../themes/frame/source/css/partials/paginator.styl"
+@import "../../themes/frame/source/css/partials/profile.styl"
+@import "../../themes/frame/source/css/partials/search.styl"
+
+// post
+@import "../../themes/frame/source/css/post/post_content.styl"
+@import "../../themes/frame/source/css/post/post_head.styl"
+@import "../../themes/frame/source/css/post/post_footer.styl"
+@import "../../themes/frame/source/css/post/post_comment.styl"
+@import "../../themes/frame/source/css/post/code.styl"
+@import "../../themes/frame/source/css/post/table.styl"
+@import "../../themes/frame/source/css/post/media.styl"
+@import "../../themes/frame/source/css/post/tag_plugin.styl"
+@import "../../themes/frame/source/css/post/task_list.styl"
+
+// component
+@import "../../themes/frame/source/css/component/icon.styl"
+@import "../../themes/frame/source/css/component/component.styl"

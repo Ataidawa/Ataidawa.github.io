@@ -1,0 +1,35 @@
+- name: 邮箱
+  value: hello@example.com
+  note: 上线前换成真实邮箱
+  link: mailto:hello@example.com
+  copy: hello@example.com
+
+- name: 手机
+  value: 待填写
+  note: 待填写
+  link: ""
+  copy: ""
+
+- name: QQ
+  value: 待填写
+  note: 待填写
+  link: ""
+  copy: ""
+
+- name: 微信
+  value: 待填写
+  note: 待填写
+  link: ""
+  copy: ""
+
+- name: 小红书
+  value: 待填写
+  note: 待填写
+  link: ""
+  copy: ""
+
+- name: 站酷
+  value: 待填写
+  note: 待填写
+  link: ""
+  copy: ""

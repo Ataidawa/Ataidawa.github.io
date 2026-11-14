@@ -1,0 +1,21 @@
+profile:
+  status: employed
+  specialty: 电商视觉
+  title: 周城栋
+  role: 电商视觉设计师 · 杭州
+  body: |
+    2024 年毕业，现在在杭州做电商视觉。日常产出是主图、详情页、活动 KV 和店铺装修。
+    做图之前我会先看卖点和人群，再决定视觉往哪个方向走。比起堆素材，我更在意一张图能不能让人停下来、看下去。
+    目前在找电商视觉 / 品牌视觉方向的岗位，杭州优先，也接受远程。
+  image: /managed-assets/portrait.svg
+  links:
+    查看作品: /work/
+    查看文章: /notes/
+logo_image:
+  enable: true
+  image_path: /managed-assets/logo.svg
+site:
+  title: Jopolis.
+  author: Jopolis.
+  description: Jopolis. 的作品集与文章。主图、详情页、店铺视觉、活动 KV、品牌包装。
+favicon: /managed-assets/favicon.svg?v=3

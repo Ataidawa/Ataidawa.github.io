@@ -1,0 +1,33 @@
+<%
+  var portfolio = site.data.portfolio || [];
+%>
+<div class="work-list">
+<% portfolio.forEach(function(item, i){
+    var cat = site.categories.findOne({ name: item.name });
+    var posts = cat ? cat.posts.sort('-date').toArray() : [];
+    var thumbs = [];
+    posts.forEach(function(p){
+      if (p.featured_image && thumbs.length < 3) { thumbs.push(p.featured_image); }
+    });
+    var link = cat ? url_for(cat.path) : '#';
+%>
+  <a class="work-row" href="<%= link %>">
+    <div class="work-meta">
+      <span class="work-index"><%= ('0' + (i + 1)).slice(-2) %></span>
+      <div class="work-meta-text">
+        <h3 class="work-name"><%= item.name %></h3>
+        <p class="work-desc"><%= item.desc %></p>
+        <span class="work-count"><%= posts.length %> 个项目</span>
+      </div>
+      <span class="work-arrow">→</span>
+    </div>
+    <% if (thumbs.length) { %>
+    <div class="work-thumbs">
+      <% thumbs.forEach(function(t){ %>
+        <div class="work-thumb"><img src="<%= url_for(t) %>" alt="<%= item.name %>"></div>
+      <% }); %>
+    </div>
+    <% } %>
+  </a>
+<% }); %>
+</div>

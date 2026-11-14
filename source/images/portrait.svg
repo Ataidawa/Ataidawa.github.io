@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125">
+  <defs>
+    <linearGradient id="p" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8E6E1"/>
+      <stop offset="100%" stop-color="#CFCAC1"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1125" fill="url(#p)"/>
+  <circle cx="450" cy="430" r="130" fill="#373633" fill-opacity="0.13"/>
+  <path d="M210 1050 C210 830 330 720 450 720 C570 720 690 830 690 1050 Z" fill="#373633" fill-opacity="0.13"/>
+  <text x="450" y="1085" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="4" fill="#373633" fill-opacity="0.35">PORTRAIT</text>
+</svg>

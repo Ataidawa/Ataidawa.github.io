@@ -1,0 +1,44 @@
+<div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="<%= url_for()%>" aria-label="Jopolis · 首页">
+          <% if (theme.logo_image.enable) {%>
+            <img class="logo-img" src="<%= url_for(theme.logo_image.image_path)%>" alt="Jopolis">
+          <%} else {%>
+            <%= theme.site_brand_name %>
+          <% } %>
+        </a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换深浅色">
+        <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a8.7 8.7 0 1 0 10.8 10.8Z"/></svg>
+      </button>
+      <button id="menu-btn" class="menu-btn" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="site-navigation">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="主导航">
+        <div class="nav-caption">浏览 Jopolis</div>
+        <ul class="menu-list">
+          <% Object.keys(theme.menu).forEach(key => { %>
+            <% if (url_for(theme.menu[key]) + "index.html" == url_for(page.path)) {%>
+              <li class="menu-item menu-item-active">
+                <a href="<%=url_for(theme.menu[key])%>"><span class="nav-icon ri-icon" data-icon="<%= ({'/':'home-5-line','/work/':'briefcase-4-line','/notes/':'article-line','/albums/':'gallery-line','/friends/':'links-line'})[theme.menu[key]] || 'article-line' %>" aria-hidden="true"></span><span><%=key%></span><span class="nav-chevron" aria-hidden="true">→</span></a>
+              </li> 
+            <%} else {%>
+              <li class="menu-item">
+                <a href="<%=url_for(theme.menu[key])%>"><span class="nav-icon ri-icon" data-icon="<%= ({'/':'home-5-line','/work/':'briefcase-4-line','/notes/':'article-line','/albums/':'gallery-line','/friends/':'links-line'})[theme.menu[key]] || 'article-line' %>" aria-hidden="true"></span><span><%=key%></span><span class="nav-chevron" aria-hidden="true">→</span></a>
+              </li> 
+            <% }%>       
+          <% }); %>
+          <% if (theme.local_search.enable) {%>
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          <% } %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="<%= url_for('/js/navigation.js') %>" defer></script>

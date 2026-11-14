@@ -1,0 +1,18 @@
+<%
+  var notesCat = site.categories.findOne({ name: '文章' });
+  var notes = notesCat ? notesCat.posts.sort('-date').toArray() : [];
+%>
+<div class="page-head">
+  <h1 class="page-title">文章</h1>
+  <p class="page-desc">设计复盘、工具和一点行业观察，共 <%= notes.length %> 篇</p>
+</div>
+
+<div class="blog-list blog-list-page">
+  <% notes.forEach(function(p){ %>
+    <a class="blog-row" href="<%= url_for(p.path) %>">
+      <span class="blog-date"><%= date(p.date, 'YYYY.MM') %></span>
+      <span class="blog-title"><%= p.title %></span>
+      <span class="blog-arrow">→</span>
+    </a>
+  <% }); %>
+</div>

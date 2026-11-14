@@ -1,706 +1,125 @@
----
-title: 懒事屋 - Ataida's Blog Website - 辅助手册
-date: 2024-11-14 18:46:00
-tags:
-  - "Hexo"
-  - "hexo-theme"
-  - "Github Pages"
----
+# 周城栋 · 个人站
 
-## 基本介绍和要点
+**日常维护统一使用 [`网站管理/先看这里.md`](网站管理/先看这里.md)。**
+文章、作品、相册、友链、首页简介、求职状态、Logo、配色、播放器和素材都集中在这个文件夹；Hexo 启动／生成时自动同步。下文涉及 source/ 的旧维护说明，以统一入口手册为准。
 
-#### 为了防止日后自己遗忘与更好地帮助别人制作个人网站，在此写一份ReadMe指导。
+## 当前界面更新
 
-1. 本网站基于[hexo](https://github.com/hexojs/hexo-deployer-git)框架 
-2. 基于[redefine](https://github.com/EvanNotFound/hexo-theme-redefine)做了修改
-3. 一定要将三个官方文档结合着看
-   - [GitHub Pages 快速入门](https://docs.github.com/zh/pages/quickstart)
-   - [文档 | Hexo](https://hexo.io/zh-cn/docs/)
-   - [快速开始 | Hexo Theme Redefine Docs](https://redefine-docs.ohevan.com/zh/getting-started)
-4. 比起官方文档提到的内容，还有很多功能我没有成功实现。
-5. 我搭建时使用的是Windows 10系统，使用Linux与MacOS的同志只可参考。
+视觉规范统一入口：`source/css/design-system.css`；说明见 `docs/design-system.md`。新增页面：`/albums/` 相册簿（`source/_data/albums.yml` 维护图片和说明）、`/friends/` 友链（`source/_data/friends.yml` 维护真实链接、头像与简介）。相册当前为明确标注的占位预览。
 
+音乐配置位于 `source/_data/music.yml`，填写网易云歌单 URL 和兼容 Meting 的 JSON 接口。全站播放器支持拖动、位置记忆、隐藏与恢复。文章内嵌格式：`<div class="music-inline" data-music-player data-playlist="https://music.163.com/playlist?id=歌单ID"></div>`。内嵌与全站播放器互斥，不自动播放；公共接口及歌曲授权可能影响实际播放。换页会重新加载播放器，位置和隐藏状态保留，播放不跨页续接。
 
+采用 Hexo + Frame 的 Codex客制化 1.0.0，视觉向 Google Material 风格统一，覆盖样式位于 `source/css/codex.css`。
+作品集标签在 `/work/` 原地筛选，旧分类链接保留兼容。
+北京时间通过 `Intl.DateTimeFormat` 的 `Asia/Shanghai` 时区转换，依赖访问者设备时钟，无需联网获取；首次访问每天 07:00–19:00 浅色，其余时段深色。图标按钮仅切换浅色/深色，手动选择保存在浏览器。左上角标志路径在 `_config.frame.yml` 的 `logo_image.image_path` 配置，当前使用临时 SVG 标志，待替换用户文件。
+联系方式在 `source/_data/footer.yml` 填写，版权位于联系方式图标下方；不再需要独立联系页面。
+首页肖像桌面为 200px、手机为 120px；作品入口保持方形预览。
+作品详情保持电脑左图右文、手机先文字后图片。
+生成后运行 `node tests/check-apple.cjs` 检查时间边界、手动切换、筛选与页脚结构。
+以下旧说明中的标签跳转规则，以本节为准。
 
-## 基本操作
+Hexo 7 + Frame 主题。作品集优先的个人站，部署在 GitHub Pages。
 
-1. 第一步一定要有一个状态正常的Github账号。
-
-2. 本地下载好[Git](https://git-scm.com/downloads/win)和[Node.js](https://nodejs.org/zh-cn)一路默认安装即可（可以修改安装位置）。
-
-3. 桌面空白处右键`Open Git Bash Here`配置Git。
-
-   ```bash
-   $ git config --global user.name "UserName"  # 配置用户名
-   $ git config --global user.email "UserEmail"  # 配置用户邮箱
-   $ git config --global https.proxy https://IP:Port  # （可选）配置代理
-   $ ssh-keygen -t rsa -b 4096 -C "UserEmail"  # 生成SSH Key
-   ```
-
-4. 复制`%homepath%\用户名\.ssh\id_rsa.pub`文件中的内容。
-
-5. 访问[Add new SSH key](https://github.com/settings/ssh/new)(访问的是Github>Settings>SSH>Add)`Title`随便取，`Key type`不变，`Key`为`id_rsa.pub`文件中的内容。
-
-6. 执行这句指令测试SSH是否连通。（首次测试需要输入一次`yes`）
-
-   ```bash
-   $ ssh -T git@github.com
-   ```
-
-7. [创建新仓库](https://github.com/new)
-
-   - `Repository name`为`UserName.github.io`(用户名大小写要相同)
-   - Github Pages要求仓库为`Public`模式
-   - `License`可以选择`None`、`MIT`、`GNU General Public License v3.0`（按照主题制作者的许可证来）
-   - 创建完成后进入`Settings`在左侧导航中找到`Pages`，右侧找到`Build and deployment`将`Source`修改为`GitHub Actions`
-
-
-
-## 安装框架与主题
-
-1. 在本地选择合适的位置（例如`D:\Website\Blog\`)使用这句命令创建`Hexo基本框架`
-
-   ```bash
-   $ npm install hexo-cli -g
-   ```
-
-   - 要求`Blog`文件夹为空
-   - 可能会有较长时间的等待，请不要进行其他操作
-
-2. 使用该命令（二选一执行）正式新建站点
-
-   ```bash
-   $ hexo init  # 将打开Git Bash的位置设定为工作目录
-   $ hexo init D:\Website\Blog  # 手动设定工作目录
-   ```
-
-3. 安装主题(可以使用git克隆也可以使用npm下载) 推荐使用npm
-
-   ```bash
-   $ npm install hexo-theme-redefine@latest
-   ```
-
-4. 修改`_config.yml`
-
-   ```yaml
-   language: zh-CN  # Line 11 设定语言
-   timezone: 'Asia/Shanghai'  # Line 12 设定时区
-   theme: redefine  # Line 99 启用主题
-   ```
-
-   - 一般`_config.yml`中有`theme`，修改其值就可以
-   - 如果文件中出现`remote_theme`请删除，他与`theme`不能并存
-
-5. 在根目录新建`_config.redefine.yml`文件，并填入模板代码
-
-   ```yaml
-   # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # THEME REDEFINE CONFIGURATION FILE V2
-   # BY EVANNOTFOUND
-   # GITHUB: https://github.com/EvanNotFound/hexo-theme-redefine
-   # DOCUMENTATION: https://redefine-docs.ohevan.com
-   # DEMO: https://redefine.ohevan.com
-   # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # BASIC INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/basic/info
-   info:
-     # Site title
-     title: Theme Redefine
-     # Site subtitle
-     subtitle: Redefine Your Hexo Journey.
-     # Author name
-     author: The Redefine Team
-     # Site URL
-     url: https://redefine.ohevan.com
-   # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/basic/defaults
-   defaults:
-     # Favicon
-     favicon: /images/redefine-favicon.svg
-     # Site logo
-     logo: 
-     # Site avatar
-     avatar: /images/redefine-avatar.svg
-   # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # COLORS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/basic/colors
-   colors:
-     #Primary color
-     primary: "#A31F34"
-     # Secondary color (TBD)
-     secondary:
-     # Default theme mode initial value (will be overwritten by prefer-color-scheme)
-     default_mode: light # light, dark
-   # COLORS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # SITE CUSTOMIZATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/basic/global
-   global:
-     # Custom global fonts
-     fonts:
-       # Chinese fonts
-       chinese: 
-         enable: false # Whether to enable custom chinese fonts
-         family:  # Font family
-         url:  # Font URL to CSS file
-       # English fonts
-       english: 
-         enable: false # Whether to enable custom english fonts
-         family:  # Font family
-         url:  # Font URL to CSS file
-       # Custom title fonts (navbar, sidebar)
-       title:
-         enable: false # Whether to enable custom title fonts
-         family:  # Font family
-         url:  # Font URL to CSS file
-     # Content max width
-     content_max_width: 1000px
-     # Sidebar width
-     sidebar_width: 210px
-     # Effects on mouse hover
-     hover:
-       shadow: true # shadow effect
-       scale: false # scale effect
-     # Scroll progress
-     scroll_progress:
-       bar: false # progress bar
-       percentage: true # percentage
-     # Website counter
-     website_counter:
-       url: https://cn.vercount.one/js # counter API URL (no need to change)
-       enable: true # enable website counter or not
-       site_pv: true # site page view
-       site_uv: true # site unique visitor
-       post_pv: true # post page view
-     # Whether to enable single page experience (using swup). See https://swup.js.org/. similar to pjax
-     single_page: true
-     # Whether to enable Preloader.
-     preloader:
-       enable: false
-       custom_message: # Custom message. If empty, the site title will be displayed
-     # Whether to enable open graph
-     open_graph: true
-     # Google Analytics
-     google_analytics:
-       enable: false # Whether to enable Google Analytics
-       id:  # Google Analytics Measurement ID
-   # SITE CUSTOMIZATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-       
-   
-   # FONTAWESOME >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/basic/fontawesome
-   fontawesome: # Pro v6.2.1
-     # Thin version
-     thin: false
-     # Light version
-     light: false
-     # Duotone version
-     duotone: false
-     # Sharp Solid version
-     sharp_solid: false
-   # FONTAWESOME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # HOME BANNER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/home/home_banner
-   home_banner:
-     # Whether to enable home banner
-     enable: true
-     # style of home banner
-     style: fixed # static or fixed
-     # Home banner image
-     image: 
-       light: /images/wallhaven-wqery6-light.webp # light mode
-       dark: /images/wallhaven-wqery6-dark.webp # dark mode
-     # Home banner title
-     title: Theme Redefine
-     # Home banner subtitle
-     subtitle:
-       text: [] # subtitle text, array
-       hitokoto:  # 一言配置
-         enable: false # Whether to enable hitokoto
-         show_author: false # Whether to show author
-         api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
-       typing_speed: 100 # Typing speed (ms)
-       backing_speed: 80 # Backing speed (ms)
-       starting_delay: 500 # Start delay (ms)
-       backing_delay: 1500 # Backing delay (ms)
-       loop: true # Whether to loop
-       smart_backspace: true # Whether to smart backspace
-     # Color of home banner text
-     text_color: 
-       light: "#fff" # light mode
-       dark: "#d1d1b6" # dark mode
-     # Specific style of the text
-     text_style: 
-       # Title font size
-       title_size: 2.8rem
-       # Subtitle font size
-       subtitle_size: 1.5rem
-       # Line height between title and subtitle
-       line_height: 1.2
-     # Home banner custom font
-     custom_font: 
-       # Whether to enable custom font
-       enable: false
-       # Font family
-       family: 
-       # URL to font CSS file
-       url:
-     # Home banner social links
-     social_links:
-       # Whether to enable
-       enable: false
-       # Social links style
-       style: default # default, reverse, center
-       # Social links
-       links:
-         github:  # your GitHub URL
-         instagram: # your Instagram URL
-         zhihu:  # your ZhiHu URL
-         twitter:  # your twitter URL
-         email:  # your email
-         # ...... # you can add more
-       # Social links with QRcode drawers
-       qrs:
-         weixin:  # your Wechat QRcode image URL
-         # ...... # you can add more
-   # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # NAVIGATION BAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/home/navbar
-   navbar:
-     # Auto hide navbar
-     auto_hide: false
-     # Navbar background color
-     color:
-       left: "#f78736" #left side 
-       right: "#367df7"  #right side
-       transparency: 35 #percent (10-99)
-     # Navbar width (usually no need to modify)
-     width:
-       home: 1200px #home page
-       pages: 1000px #other pages
-     # Navbar links
-     links:
-       Home: 
-         path: / 
-         icon: fa-regular fa-house # can be empty
-       # Archives: 
-       #   path: /archives 
-       #   icon: fa-regular fa-archive # can be empty
-       # Status: 
-       #   path: https://status.ohevan.com/
-       #   icon: fa-regular fa-chart-bar
-       # About: 
-       #   icon: fa-regular fa-user
-       #   submenus:
-       #     Me: /about
-       #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-       #     Blog: https://ohevan.com
-       #     Friends: /friends
-       # Links: 
-       #   icon: fa-regular fa-link
-       #   submenus:
-       #     Link1: /link1
-       #     Link2: /link2
-       #     Link3: /link3
-       # ...... # you can add more
-     # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
-     search:
-       # Whether to enable
-       enable: false
-       # Preload search data when the page loads
-       preload: true
-   # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # HOME PAGE ARTICLE SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/home/home
-   home:
-     # Sidebar settings
-     sidebar:
-       enable: true # Whether to enable sidebar
-       position: left # Sidebar position. left, right
-       first_item: menu # First item in sidebar. menu, info
-       announcement: # Announcement text
-       show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
-       links:
-         # Archives: 
-         #   path: /archives 
-         #   icon: fa-regular fa-archive # can be empty
-         # Tags: 
-         #   path: /tags 
-         #   icon: fa-regular fa-tags # can be empty
-         # Categories: 
-         #   path: /categories 
-         #   icon: fa-regular fa-folder # can be empty
-         # ...... # you can add more
-     # Article date format
-     article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
-     # Article excerpt length
-     excerpt_length: 200 # Max length of article excerpt
-     # Article categories visibility
-     categories:
-       enable: true  # Whether to enable
-       limit: 3 # Max number of categories to display
-     # Article tags visibility
-     tags:
-       enable: true  # Whether to enable
-       limit: 3  # Max number of tags to display
-   # HOME PAGE ARTICLE SETTINGS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # ARTICLE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/posts/articles
-   articles:
-     # Set the styles of the article
-     style:
-       font_size: 16px # Font size
-       line_height: 1.5 # Line height
-       image_border_radius: 14px # image border radius
-       image_alignment: center # image alignment. left, center
-       image_caption: false # Whether to display image caption
-       link_icon: true # Whether to display link icon
-       title_alignment: left # Title alignment. left, center
-       headings_top_spacing: # Top spacing for headings from h1-h6
-         h1: 3.2rem
-         h2: 2.4rem
-         h3: 1.9rem
-         h4: 1.6rem
-         h5: 1.4rem
-         h6: 1.3rem
-     # Word count. Requires hexo-wordcount (npm install hexo-wordcount). See https://github.com/willin/hexo-wordcount
-     word_count:
-       enable: true # Whether to enable
-       count: true # Whether to display word count
-       min2read: true # Whether to display reading time
-     # Author label
-     author_label: 
-       enable: true # Whether to enable
-       auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
-       list: []
-     # Code block settings
-     code_block:
-       copy: true # Whether to enable code block copy button
-       style: mac # mac | simple
-       highlight_theme: # Color scheme for highlightjs code highlighting. For preview, see https://highlightjs.org/examples
-         light: github # light mode theme, support: github, atom-one-light, default
-         dark: vs2015 # dark mode theme, support: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate
-       font: # Custom font
-         enable: false # Whether to enable
-         family: # Font family
-         url: # Font URL to CSS file
-     # Table of contents settings
-     toc:
-       enable: true # Whether to enable TOC
-       max_depth: 3 # TOC depth
-       number: false # Whether to add number to TOC automatically
-       expand: true # Whether to expand TOC
-       init_open: true # Open toc by default
-     # Whether to enable copyright notice
-     copyright:
-       enable: true # Whether to enable
-       default: cc_by_nc_sa # Default license, can be cc_by_nc_sa, cc_by_nd, cc_by_nc, cc_by_sa, cc_by, all_rights_reserved, public_domain
-     # Whether to enable lazyload for images
-     lazyload: true
-     # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
-     recommendation:
-       # Whether to enable article recommendation
-       enable: false
-       # Article recommendation title
-       title: 推荐阅读
-       # Max number of articles to display
-       limit: 3
-       # Max number of articles to display mobile
-       mobile_limit: 2
-       # Placeholder image
-       placeholder: /images/wallhaven-wqery6-light.webp
-       # Skip directory
-       skip_dirs: []
-   # ARTICLE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # COMMENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/posts/comment
-   comment:
-     # Whether to enable comment
-     enable: true
-     # Comment system
-     system: waline # waline, gitalk, twikoo, giscus
-     # System configuration
-     config:
-       # Waline comment system. See https://waline.js.org/
-       waline:
-         serverUrl: https://example.example.com # Waline server URL. e.g. https://example.example.com
-         lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
-         emoji: [] # Waline emojis, see https://waline.js.org/guide/features/emoji.html
-         recaptchaV3Key: # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
-         turnstileKey: # Turnstile key. See https://waline.js.org/reference/client/props.html#turnstilekey
-         reaction: false # Waline reaction. See https://waline.js.org/reference/client/props.html#reaction
-       # Gitalk comment system. See https://github.com/gitalk/gitalk
-       gitalk:
-         clientID: # GitHub Application Client ID
-         clientSecret: # GitHub Application Client Secret
-         repo: # GitHub repository
-         owner: # GitHub repository owner
-         proxy: # GitHub repository proxy
-       # Twikoo comment system. See https://twikoo.js.org/
-       twikoo:
-         version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
-         server_url: # Twikoo server URL. e.g. https://example.example.com
-         region: # Twikoo region. can be empty
-       # Giscus comment system. See https://giscus.app/
-       giscus:
-         repo: # Github repository name e.g. EvanNotFound/hexo-theme-redefine
-         repo_id: # Github repository id
-         category: # Github discussion category
-         category_id: # Github discussion category id
-         mapping: pathname # Which value to use as the unique identifier for the page. e.g. pathname, url, title, og:title. DO NOT USE og:title WITH PJAX ENABLED since pjax will not update og:title when the page changes
-         strict: 0 # Whether to enable strict mode. e.g. 0, 1
-         reactions_enabled: 1 # Whether to enable reactions. e.g. 0, 1
-         emit_metadata: 0 # Whether to emit metadata. e.g. 0, 1
-         lang: en # Giscus language. e.g. en, zh-CN, zh-TW
-         input_position: bottom # Place the comment box above/below the comments. e.g. top, bottom
-         loading: lazy # Load the comments lazily
-   # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/footer
-   footer:
-     # Show website running time
-     runtime: true # show website running time or not
-     # Icon in footer, write fontawesome icon code here
-     icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
-     # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-     start: 2022/8/17 11:45:14
-     # Site statistics
-     statistics: true # show site statistics or not (total articles, total words)
-     # Footer message
-     customize:
-     # ICP record number. See https://beian.miit.gov.cn/
-     icp:
-       enable: false # Whether to enable
-       number: # ICP record number
-       url: # ICP record url
-   # FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # INJECT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/inject
-   inject:
-     # Whether to enable inject
-     enable: false
-     # Inject custom head html code
-     head: 
-       -
-       -
-     # Inject custom footer html code
-     footer:
-       -
-       -
-   # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # PLUGINS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/plugins
-   plugins:
-     # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
-     feed:
-       enable: false # Whether to enable
-     # Aplayer. See https://github.com/DIYgod/APlayer
-     aplayer:
-       enable: false # Whether to enable
-       type: fixed # fixed, mini
-       audios:
-         - name: # audio name
-           artist: # audio artist
-           url: # audio url
-           cover: # audio cover url
-           lrc: # audio cover lrc
-   #      - name: # audio name
-   #        artist: # audio artist
-   #        url: # audio url
-   #        cover: # audio cover url
-   #        lrc: # audio cover lrc
-         # .... you can add more audios here
-     # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
-     mermaid:
-       enable: false # enable mermaid or not
-       version: "9.3.0" # default v9.3.0
-   # PLUGINS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # PAGE TEMPLATES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/page_templates
-   page_templates:
-     # Friend Links page column number
-     friends_column: 2
-     # Tags page style
-     tags_style: blur # blur, cloud
-   # PAGE TEMPLATES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   
-   # CDN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/cdn
-   cdn:
-     # Whether to enable CDN
-     enable: false
-     # CDN Provider
-     provider: npmmirror # npmmirror, zstatic, sustech, cdnjs, jsdelivr, unpkg, custom
-     # Custom CDN URL
-     # format example: https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}
-     # The ${path} must leads to the root of the "source" folder of the theme
-     custom_url: 
-   # CDN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   
-   # DEVELOPER MODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-   # Docs: https://redefine-docs.ohevan.com/developer
-   developer:
-     # Whether to enable developer mode (only for developers who want to modify the theme source code, not for ordinary users)
-     enable: false
-   # DEVELOPER MODE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-   ```
-
-   - 英文好的话可以直接看文件内的注释，不好的话看主题官网[Hexo Theme Redefine Docs](https://redefine-docs.ohevan.com/zh/basic)
-   - 按照需求修改键值对
-
-
-
-## 预览与推送
+## 本地跑起来
 
 ```bash
-$ hexo generate  # 生成静态页面
-$ hexo server  # 启动服务器
-# 访问 https://localhost:4000 检查完成后执行下面这句命令
-$ hexo clean  # 清除缓存(db.json与public/内的静态页面)
+npm install
+npx hexo server -p 4000
 ```
 
-1. 检查页面无问题后可以开始推送到Github仓库中
+打开 http://localhost:4000
 
-2. 前面我们已经配置好了Git与Github的SSH连接，现在前往远程仓库复制SSH地址
+## 页面结构
 
-3. 在本地站点使用`Git Bash`中执行这几句命令
+```
+/                       首页：简介（求职）→ 作品集大入口 → 文章列表
+/work/                  作品集：5 个类目 tag 按钮 + 全部作品网格
+/categories/<slug>/     某个类目的作品展示（最里层的内容页）
+/posts/<slug>/          单个作品 / 单篇文章
+/notes/                 全部文章（只含「文章」分类，菜单里叫「文章」）
+/archives/              全站归档（作品 + 文章混排，菜单里没挂，需要时再加）
+```
 
-   ```bash
-   $ git init  # 创建Git工作目录
-   $ git add .  # 添加目录中的所有文件
-   $ git commit -m "第一次推送"  # 填写提交描述
-   $ git remote add origin git@github.com:UserName/UserName.github.io.git  # 关联远程仓库
-   $ git push -u origin main  # 推送到main分支（也可以是master\gh-pages）
-   ```
+首页不放五个类目的平铺列表，只放一个「作品集」大入口（标题 + 项目数 + 五个类目各一张封面拼成的一排缩览图），整块可点。点进去是 tag 按钮页，点 tag 直接到类目内容页，中间不再多一层。
 
-   - 分支可以是`main`、`master`或`gh-pages`，现在已无硬性要求
+## 响应式
 
-   - 如果Git显示默认分支为`master`，可以使用这句指令切换（创建）分支
+版心宽度按屏幕分档，不是固定值：
 
-     ```bash
-     $ git branch main
-     ```
+| 屏幕宽度 | 版心 |
+|---|---|
+| ≥1400px | 1200px |
+| 1100–1399px | 1040px |
+| 900–1099px | 880px |
+| 689–899px | 720px |
+| ≤688px | 100%（左右各 20px 内边距） |
 
-     
+手机上额外做的调整：Hero 改成文字在上、图片在下；作品集缩览图变成可横向滑动的图片条；tag 按钮和作品网格改成两列；类目页的信息和图片改成上下堆叠。正文页单独限制在 780px，保证阅读行长。
 
+改这些在 `source/css/custom.css`，按注释里的编号找。
 
+## 目录说明
 
-## 配置Github Actions
+```
+_config.yml            站点配置（标题、网址、分类映射）
+_config.frame.yml      主题配置（首页简介、菜单、页脚）★ 主要改这里
+source/_posts/         作品和文章，一个 md 一个条目
+source/_data/portfolio.yml   作品集大类（首页顺序）
+source/images/         图片
+source/css/custom.css  自定义样式（版心宽度、响应式、各区块样式）
+themes/frame/          Frame 主题（尽量别改，改了升级会覆盖）
+docs/                  内容清单、预览截图
+scripts/               占位图生成脚本
+```
 
-1. 先记录本地`node.js`版本号
+## 加一个作品
 
-   ```bash
-   $ node --version
-   ```
+1. 在 `source/_posts/` 新建 `英文文件名.md`
+2. front-matter 里 `categories` 写作品集大类名（要和 `portfolio.yml` 里的 `name` 一致）
+3. `featured_image` 指向 4:5 的图
+4. 正文按「背景 / 问题 / 做法 / 结果」四段写
 
-   > 输出：v22.11.0
+详细模板见 `docs/content-spec.md`。
 
-2. 在`.github/workflows/`中创建`pages.yml`文件
+## 常用命令
 
-   ```yaml
-   name: Pages
-   
-   on:
-     push:
-       branches:
-         - main # default branch
-   
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v4
-           with:
-             token: ${{ secrets.GITHUB_TOKEN }}
-             # If your repository depends on submodule, please see: https://github.com/actions/checkout
-             submodules: recursive
-         - name: Use Node.js 22.11.0
-           uses: actions/setup-node@v4
-           with:
-             # Examples: 20, 18.19, >=16.20.2, lts/Iron, lts/Hydrogen, *, latest, current, node
-             # Ref: https://github.com/actions/setup-node#supported-version-syntax
-             node-version: "22.11.0"
-         - name: Cache NPM dependencies
-           uses: actions/cache@v4
-           with:
-             path: node_modules
-             key: ${{ runner.OS }}-npm-cache
-             restore-keys: |
-               ${{ runner.OS }}-npm-cache
-         - name: Install Dependencies
-           run: npm install
-         - name: Build
-           run: npm run build
-         - name: Upload Pages artifact
-           uses: actions/upload-pages-artifact@v3
-           with:
-             path: ./public
-     deploy:
-       needs: build
-       permissions:
-         pages: write
-         id-token: write
-       environment:
-         name: github-pages
-         url: ${{ steps.deployment.outputs.page_url }}
-       runs-on: ubuntu-latest
-       steps:
-         - name: Deploy to GitHub Pages
-           id: deployment
-           uses: actions/deploy-pages@v4
-   ```
+```bash
+npx hexo clean       # 清缓存
+npx hexo generate    # 生成静态文件到 public/
+npx hexo server      # 本地预览
+npx hexo new post "标题"   # 新建文章
+```
 
-   - 如果远程仓库分支名不为`main`，请修改文件第6行代表`default branch`的`main`为你的分支名
+## 发布到 GitHub Pages
 
-## 网站使用方法
+仓库：`Ataidawa/Ataidawa.github.io`
 
-1. 如何攥写博客请查阅[写作指南 | Hexo Theme Redefine Docs](https://redefine-docs.ohevan.com/zh/tips)
+```bash
+npm install hexo-deployer-git --save
+```
 
-2. 攥写博客在`website\source\`目录下进行
+在 `_config.yml` 里把 deploy 段改成：
 
-3. 图片文件请在`source\`目录下创建文件夹存放，攥写博客插入图片时填写相对路径。
+```yaml
+deploy:
+  type: git
+  repo: https://github.com/Ataidawa/Ataidawa.github.io.git
+  branch: gh-pages
+  message: "site update"
+```
 
-4. 该主题在文章开头不适合使用一级标题，请使用`fornt-matter`中的`title`键值对。(输入`---`后回车即可创建文件标头)
+然后：
 
-   ```markdown
-   ---
-   title: 博客建立帮助文档
-   date: 2024-11-14 18:46:00
-   tags:
-     - "Hexo"
-     - "hexo-theme"
-     - "Github Pages"
-   ---
-   ```
+```bash
+npx hexo clean && npx hexo generate && npx hexo deploy
+```
 
+首次部署会要求输入 GitHub 用户名和 token。
 
+## 注意
 
-### 感谢您看到这里，官方文档各有缺陷，遇到问题一定要多文档结合检查，祝您一切顺利！
-
+- `themes/frame/_config.yml` 里的 `menu` 和 `profile.links` 已经清空成 `{}`，配置统一放在根目录 `_config.frame.yml`，因为 Hexo 对主题配置是**深合并**，主题里留着旧键会和新键叠在一起
+- 字体已本地化：`themes/frame/layout/partials/head.ejs` 里原来的 Google Fonts `@import` 已删掉，改为 `custom.css` 顶部用 `@font-face` 加载 `source/fonts/` 下的 Inter 和 Roboto Mono；中文走系统字体（PingFang SC / 微软雅黑 / 思源黑体），国内打开不会卡字体
+- `<meta name="viewport">` 去掉了 `maximum-scale` / `minimum-scale`，保留双指缩放
+- `_archive/` 里是废弃的旧仓库 git 目录和 Hexo 自带的示例文章，可以删
+- 占位图在 `source/images/`，全是 SVG，换成真实图片时注意保持 4:5

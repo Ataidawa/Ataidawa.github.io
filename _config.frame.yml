@@ -1,0 +1,106 @@
+﻿# Frame 主题配置
+# 说明：这里是覆盖配置，主题升级时不会被覆盖
+
+# html lang
+language: zh-CN
+
+# header
+site_brand_name: 周城栋
+
+logo_image:
+  enable: true
+  image_path: /images/site-logo.svg
+
+menu:
+  首页: /
+  作品集: /work/
+  文章: /notes/
+  相册簿: /albums/
+  友链: /friends/
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/style.css
+- /css/dark.css
+- /css/custom.css
+- /css/back-link.css
+- /css/contact.css
+- /css/codex.css
+- /css/design-system.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/theme-switch.js
+- /js/footer.js
+- /js/portfolio-filter.js
+- /js/text-cursor.js
+- /js/experience.js
+- /js/article-details.js
+- /js/article-outline.js
+- /js/button-feedback.js
+- /js/material-motion.js
+- /js/music.js
+- /js/page-navigation.js
+
+# favicon
+favicon: /favicon.ico
+
+date_format: YYYY.MM
+
+# 首页简介（求职向）
+profile:
+  badge: 求职中 · 电商视觉设计
+  title: 周城栋
+  role: 电商视觉设计师 · 杭州
+  body: |
+    2024 年毕业，现在在杭州做电商视觉。日常产出是主图、详情页、活动 KV 和店铺装修。
+    做图之前我会先看卖点和人群，再决定视觉往哪个方向走。比起堆素材，我更在意一张图能不能让人停下来、看下去。
+    目前在找电商视觉 / 品牌视觉方向的岗位，杭州优先，也接受远程。
+  image: /images/portrait.svg
+
+  links:
+    查看作品: /work/
+    查看文章: /notes/
+
+# footer
+footer:
+  copyright_info:
+    enable: false
+    author: © 2026 周城栋
+
+  powered_by: # Powered by Hexo & Frame
+    enable: false
+
+  other_info:
+    enable: true
+    content: © 2026 周城栋
+
+# color mode: default / classic / dark
+color_mode: default
+
+# mathjax setting
+mathjax_enable: false
+
+# comments
+valine:
+  enable: false
+  appId:
+  appKey:
+  lang: 'zh-cn'
+  placeholder: '说点什么'
+  avatar: 'mp'
+  meta: ['nick', 'mail']
+
+disqus:
+  enable: false
+  disqus_url:
+  language: 'zh-cn'
+
+# local search
+local_search:
+  enable: false
+  place_holder: 搜索
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false

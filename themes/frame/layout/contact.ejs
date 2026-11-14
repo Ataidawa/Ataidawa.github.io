@@ -1,0 +1,30 @@
+<%
+  var contacts = site.data.contact || [];
+%>
+<div class="page-head">
+  <h1 class="page-title">联系方式</h1>
+  <p class="page-desc">有事直接找我，哪种都行</p>
+</div>
+
+<div class="contact-list">
+  <% contacts.forEach(function(c){ %>
+    <div class="contact-row">
+      <span class="contact-name"><%= c.name %></span>
+      <div class="contact-main">
+        <% if (c.link) { %>
+          <a class="contact-value contact-link" href="<%= c.link %>"><%= c.value %></a>
+        <% } else { %>
+          <span class="contact-value"><%= c.value %></span>
+        <% } %>
+        <% if (c.note) { %>
+          <span class="contact-note"><%= c.note %></span>
+        <% } %>
+      </div>
+      <% if (c.copy) { %>
+        <button class="contact-copy" data-copy="<%= c.copy %>">复制</button>
+      <% } %>
+    </div>
+  <% }); %>
+</div>
+
+<script src="<%= url_for('/js/contact.js') %>"></script>

@@ -1,0 +1,94 @@
+<%
+  var pf = theme.profile || {};
+  var bodyLines = (pf.body || '').split('\n').filter(function(l){ return l.trim() !== ''; });
+  var linkKeys = pf.links ? Object.keys(pf.links) : [];
+  function hrefOf(h) {
+    if (!h) return '#';
+    if (h.charAt(0) === '#' || h.indexOf('http') === 0 || h.indexOf('mailto:') === 0) return h;
+    return url_for(h);
+  }
+
+  var portfolio = site.data.portfolio || [];
+  var strip = [];
+  var totalWorks = 0;
+  portfolio.forEach(function(item){
+    var cat = site.categories.findOne({ name: item.name });
+    if (!cat) return;
+    var posts = cat.posts.sort('-date').toArray();
+    totalWorks += posts.length;
+    var first = null;
+    for (var i = 0; i < posts.length; i++) {
+      if (posts[i].featured_image) { first = posts[i]; break; }
+    }
+    if (first) { strip.push({ img: first.featured_image, name: item.name }); }
+  });
+
+  var blogCat = site.categories.findOne({ name: '文章' });
+  var blogs = blogCat ? blogCat.posts.sort('-date').toArray().slice(0, 5) : [];
+%>
+
+<section class="hero">
+  <div class="hero-text">
+    <% var states={seeking:'求职中',available:'开放合作',employed:'在职',unavailable:'暂不接单'}; var status=states[pf.status] ? pf.status : 'seeking'; if (pf.status || pf.badge) { %>
+      <div class="hero-badge" data-status="<%= status %>"><span class="dot" aria-hidden="true"></span><span><%= states[status] %><% if(pf.specialty) { %> · <%= pf.specialty %><% } %></span></div>
+    <% } %>
+    <h1 class="hero-name"><%= pf.title %></h1>
+    <% if (pf.role) { %><p class="hero-role"><%= pf.role %></p><% } %>
+    <div class="hero-intro">
+      <% bodyLines.forEach(function(line){ %><p><%= line.trim() %></p><% }); %>
+    </div>
+    <div class="hero-links">
+      <% linkKeys.forEach(function(key, i){ %>
+        <a class="hero-link<%= i === 0 ? ' hero-link-primary' : '' %>" href="<%= hrefOf(pf.links[key]) %>"><%= key %></a>
+      <% }); %>
+    </div>
+  </div>
+  <% if (pf.image) { %>
+    <div class="hero-portrait">
+      <img src="<%= url_for(pf.image) %>" alt="<%= pf.title %>">
+    </div>
+  <% } %>
+</section>
+
+<section class="section" id="work">
+  <a class="work-entry" href="<%= url_for('/work/') %>">
+    <div class="work-entry-top">
+      <div class="work-entry-heading">
+        <h2>作品集</h2>
+        <p><%= portfolio.length %> 个类目 · <%= totalWorks %> 个项目</p>
+      </div>
+      <span class="work-entry-cta">进入作品集 <em>→</em></span>
+    </div>
+    <% if (strip.length) { %>
+    <div class="work-entry-strip">
+      <% strip.forEach(function(s){ %>
+        <div class="work-entry-thumb">
+          <img src="<%= url_for(s.img) %>" alt="<%= s.name %>">
+          <span class="work-entry-tag"><%= s.name %></span>
+        </div>
+      <% }); %>
+    </div>
+    <% } %>
+  </a>
+</section>
+
+<section class="section" id="blog">
+  <div class="section-head">
+    <h2>文章</h2>
+    <div class="section-summary"><p>设计复盘、工具和一点行业观察。</p><a class="section-more" href="<%= url_for('/notes/') %>">全部文章 →</a></div>
+  </div>
+  <div class="blog-list">
+    <% blogs.forEach(function(p){ %>
+      <a class="blog-row" href="<%= url_for(p.path) %>">
+        <span class="blog-date"><%= date(p.date, 'YYYY.MM') %></span>
+        <span class="blog-title"><%= p.title %></span>
+        <span class="blog-arrow">→</span>
+      </a>
+    <% }); %>
+  </div>
+</section>
+
+<section class="section home-extras">
+ <div class="home-extra"><div class="section-head"><h2>相册簿</h2><a class="section-more" href="<%= url_for('/albums/') %>">全部相册 →</a></div><div class="home-album-grid"><% var previewPhotos=[]; (site.data.albums||[]).forEach(function(a){previewPhotos=previewPhotos.concat(a.photos||[]);}); previewPhotos.slice(0,3).forEach(function(p){ %><a href="<%= url_for('/albums/') %>" aria-label="浏览相册：<%= p.caption %>"><img src="<%= url_for(p.image) %>" alt="<%= p.caption %>" loading="lazy"></a><% }); %></div></div>
+ <div class="home-extra"><div class="section-head"><h2>友链</h2><a class="section-more" href="<%= url_for('/friends/') %>">全部友链 →</a></div><div class="home-friends"><% (site.data.friends||[]).slice(0,2).forEach(function(f){ %><a class="friend-card" href="<%= f.url %>" target="_blank" rel="noopener noreferrer"><% if(f.avatar){ %><img src="<%= url_for(f.avatar) %>" alt=""><% }else{ %><span class="friend-avatar"><%= f.name.slice(0,1) %></span><% } %><div><h2><%= f.name %></h2><p><%= f.description %></p></div><span>↗</span></a><% }); %></div></div>
+</section>

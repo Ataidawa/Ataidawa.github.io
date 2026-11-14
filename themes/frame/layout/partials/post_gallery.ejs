@@ -1,0 +1,50 @@
+<div class="post-gallery">
+    <div class="post-gallery-list">
+        <% page.posts.each(function (post) { %>
+            <div class="post-gallery-item">
+                <div class="post-info">
+                    <div class="tag-list">
+                        <% if (post.tags && post.tags.data && post.tags.data.length > 0) {%>
+                            <% post.tags.data.forEach(function(tag) { %>
+                                <span class="post-tag">
+                                    <a href="<%-url_for(tag.path)%>">
+                                        <%=tag.name%>
+                                    </a>
+                                </span>   
+                            <% }) %>           
+                        <% } %>
+                    </div>
+                    <div class="post-title">
+                        <a href="<%=url_for(post.path)%>">
+                            <% if (post.title) {%>
+                                <%= post.title %>
+                            <% } else {%>
+                                *Untitled
+                            <% } %>
+                        </a>
+                    </div>
+                    <%
+                      var plain = strip_html(post.content || '').replace(/\s+/g, ' ').trim();
+                      if (plain.length > 78) { plain = plain.substring(0, 78) + '…'; }
+                    %>
+                    <% if (plain) { %>
+                        <p class="post-excerpt"><%= plain %></p>
+                    <% } %>
+                    <span class="post-date">
+                        <%- date(post.date, theme.date_format) %>
+                    </span>
+                    <a class="post-more" href="<%=url_for(post.path)%>">查看项目 →</a>
+                </div>
+                <div class="post-img">
+                <% if (post.featured_image) {%>
+                    <img src="<%= url_for(post.featured_image)%>" alt="featured_image">
+                <% } %>  
+                </div>
+            </div>
+            <div class="h-line-secondary"></div>
+        <% }) %>
+    </div>
+    <div id="paginator">
+        <%- partial('partials/paginator') %>
+    </div>
+</div>

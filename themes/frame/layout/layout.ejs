@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="<%=config.language%>">
+  <head>
+    <%- partial('partials/head') %>
+  </head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <%- partial('partials/header') %>
+
+      <div class="main">
+        <div class="flex-container">
+          <% if (!is_home()) { %>
+            <a class="back-link" href="<%= url_for('/') %>" onclick="if (document.referrer && history.length > 1) { history.back(); return false; }">← 返回</a>
+          <% } %>
+          <%- body %>
+        </div>
+      </div>
+      
+      <%- partial('partials/footer') %>
+
+    </div>
+    <%- partial('partials/music') %>
+
+    <% if (theme.local_search.enable) {%>
+      <%- partial('partials/search') %>
+    <% } %>
+    
+
+  </body>
+</html>

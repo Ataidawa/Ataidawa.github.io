@@ -1,0 +1,13 @@
+# 展示用占位内容；替换为真实照片后修改 placeholder。
+- title: 视觉片段
+  description: 留给设计过程、灵感采集与日常观察的相册。
+  placeholder: true
+  photos:
+    - image: /managed-assets/work/main-01.svg
+      caption: 主图设计 · 占位素材
+    - image: /managed-assets/work/detail-01.svg
+      caption: 页面构图 · 占位素材
+    - image: /managed-assets/work/brand-01.svg
+      caption: 品牌色彩 · 占位素材
+    - image: /managed-assets/work/kv-01.svg
+      caption: 活动视觉 · 占位素材

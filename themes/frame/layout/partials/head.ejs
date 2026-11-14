@@ -1,0 +1,110 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<% if(config.author){ %>
+    <meta name="author" content="<%- config.author %>">
+<% } %>
+<% if(config.subtitle){ %>
+    <meta name="subtitle" content="<%- config.subtitle %>">
+<% } %>
+<% if(config.description){ %>
+    <meta name="description" content="<%- config.description %>">
+<% } %>
+<% if(config.keywords){ %>
+    <meta name="keywords" content="<%- config.keywords %>">
+<% } %>
+
+<%
+var title = page.title;
+
+if (is_archive()){
+    title = __('Archive');
+
+    if (is_month()){
+        title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+        title += ': ' + page.year;
+    }
+} else if (is_category()){
+    title = __('Category') + ': ' + page.category;
+} else if (is_tag()){
+    title = __('Tag') + ': ' + page.tag;
+}
+%>
+
+<title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+
+<%# favicon %>
+<% if (theme.favicon){ %>
+    <link rel="icon" href="<%- url_for(theme.favicon) %>">
+<% } %>
+
+<%# font: 本地字体文件，@font-face 在 /css/custom.css 里声明，不依赖外网 CDN %>
+
+<%# css list %>
+<% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
+    <!-- stylesheets list from _config.yml -->
+    <% theme.stylesheets.forEach(url => { %>
+    <% if (String(url).indexOf('dark.css') > -1) { %>
+    <link rel="stylesheet" href="<%- url_for(url) %>" id="css-dark" media="not all">
+    <% } else { %>
+    <link rel="stylesheet" href="<%- url_for(url) %>">
+    <% } %>
+    <% }); %>
+<% } %>
+
+<%# 主题模式预判：在首次绘制前定好深浅色，避免闪白 %>
+<script>
+(function () {
+  window.__themeIsDark = function () {
+    var mode = 'auto';
+    try { mode = localStorage.getItem('theme-mode') || 'auto'; } catch (e) {}
+    // 预览用：?theme=light / ?theme=dark 临时覆盖，不写入本地
+    try {
+      var q = new URLSearchParams(location.search).get('theme');
+      if (q === 'light' || q === 'dark') mode = q;
+    } catch (e) {}
+    if (window.__themeOverride) mode = window.__themeOverride;
+    if (mode === 'dark') return true;
+    if (mode === 'light') return false;
+    var hour = Number(new Intl.DateTimeFormat('en-GB', {timeZone:'Asia/Shanghai',hour:'2-digit',hourCycle:'h23'}).format(new Date()));
+    return hour < 7 || hour >= 19;
+  };
+  window.__themeApply = function () {
+    var dark = window.__themeIsDark();
+    var root = document.documentElement;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    root.style.colorScheme = dark ? 'dark' : 'light';
+    var link = document.getElementById('css-dark');
+    if (link) link.media = dark ? 'all' : 'not all';
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      var label = dark ? '切换为浅色模式' : '切换为深色模式';
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+    }
+  };
+  window.__themeApply();
+})();
+</script>
+
+<%# javascript list %>
+<% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
+    <!-- scripts list from _config.yml -->
+    <% theme.scripts.forEach(url => { %>
+    <script src="<%- url_for(url) %>"></script>
+    <% }); %>
+<% } %>
+
+<%# mathjax support %>
+<% if(theme.mathjax_enable){ %>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<% } %>
+
+<%# valine comment support %>
+<% if(theme.valine.enable){ %>
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+<% } %>
+
+

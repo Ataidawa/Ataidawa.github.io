@@ -1,0 +1,64 @@
+<%
+  var f = site.data.footer || {};
+  var fw = f.framework || {};
+  var th = f.theme || {};
+  var contacts = f.contacts || [];
+
+  // 最近一次内容变动：文章（含作品集）与独立页面里最新的 updated
+  var latest = null;
+  site.posts.forEach(function (p) { if (!latest || p.updated > latest) latest = p.updated; });
+  site.pages.forEach(function (p) { if (p.updated && (!latest || p.updated > latest)) latest = p.updated; });
+  var lastUpdatedText = latest ? date(latest, 'YYYY.MM.DD HH:mm') : '—';
+
+  var icons = {qq:'qq-line',wechat:'wechat-line',email:'mail-line',phone:'phone-line'};
+%>
+<footer class="footer" id="contact">
+  <div class="flex-container">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <a class="footer-row footer-link" href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
+          <span class="footer-key">框架</span>
+          <span class="footer-val"><%= fw.name || 'Hexo' %> <em><%= fw.version %></em></span>
+        </a>
+        <a class="footer-row footer-link" href="https://github.com/zoeingwingkei/frame" target="_blank" rel="noopener noreferrer">
+          <span class="footer-key">主题</span>
+          <span class="footer-val"><%= th.name || 'Frame' %> <em><%= th.customization %> <%= th.version %></em></span>
+        </a>
+      </div>
+
+      <div class="footer-col footer-col-mid">
+        <p class="footer-row">
+          <span class="footer-key">北京时间</span>
+          <span class="footer-val footer-clock" id="footer-clock">--:--:--</span>
+        </p>
+        <p class="footer-row">
+          <span class="footer-key">最近更新</span>
+          <span class="footer-val"><%= lastUpdatedText %></span>
+        </p>
+      </div>
+
+      <div class="footer-col footer-col-end">
+        <div class="footer-icons">
+          <% contacts.forEach(function (c) {
+               var val = (c.value || '').trim();
+               var href = '#';
+               if (val) {
+                 if (c.key === 'email') href = 'mailto:' + val;
+                 else if (c.key === 'phone') href = 'tel:' + val;
+               }
+          %>
+          <a class="footer-ic" href="<%= href %>" data-name="<%= c.name %>" data-key="<%= c.key %>" data-copy="<%= val %>" aria-label="<%= c.name %>">
+            <span class="ri-icon" data-icon="<%= icons[c.key] || 'mail-line' %>" aria-hidden="true"></span>
+            <span class="footer-ic-tip"><%= c.name %></span>
+          </a>
+          <% }); %>
+        </div>
+        <p class="footer-row footer-meta">© <%= new Date().getFullYear() %> <%= config.author || '周城栋' %> · Hangzhou</p>
+      </div>
+
+    </div>
+
+
+  </div>
+</footer>

@@ -1,0 +1,58 @@
+<% if (is_post() && page.featured_image) { %>
+
+<article id="post" class="post-split">
+
+  <div class="post-split-media">
+    <div class="post-split-media-inner">
+      <img src="<%= url_for(page.featured_image) %>" alt="<%= page.title %>">
+    </div>
+  </div>
+
+  <div class="post-split-body">
+    <div class="post-head">
+      <div class="post-info">
+        <div class="tag-list">
+          <% if (page.tags && page.tags.data && page.tags.data.length > 0) { %>
+            <% page.tags.data.forEach(function(tag) { %>
+              <span class="post-tag">
+                <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+              </span>
+            <% }) %>
+          <% } %>
+        </div>
+        <div class="post-title"><%= page.title %></div>
+        <span class="post-date"><%- date(page.date, theme.date_format) %></span>
+      </div>
+    </div>
+
+    <%- partial('post/post_content') %>
+  </div>
+
+  <div class="post-split-footer">
+    <%- partial('post/post_footer') %>
+    <% if (!page.hide_comment) { %>
+      <%- partial('post/post_comment') %>
+    <% } %>
+  </div>
+
+</article>
+
+<% } else { %>
+
+<article id="post">
+
+  <% if (is_post()) {%>
+    <%- partial('post/post_head') %>
+    <%- partial('post/post_content') %>
+    <%- partial('post/post_footer') %>
+    <% if (!page.hide_comment) {%>
+      <%- partial('post/post_comment') %>
+    <% } %>
+  <%} else {%>
+    <%- partial('pages/page_head') %>
+    <%- partial('post/post_content') %>
+  <%} %>
+
+</article>
+
+<% } %>
