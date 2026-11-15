@@ -1,0 +1,5 @@
+# 原图正常放入文章或相册，构建时自动生成展示版本。
+display_width: 960
+display_quality: 86
+preview_width: 2560
+preview_quality: 92

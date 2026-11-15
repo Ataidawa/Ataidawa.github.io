@@ -33,7 +33,7 @@ function initExperience(){
     button.setAttribute('aria-label','查看大图：' + (img.alt || '图片'));
     var fullImage;
     function preloadFull(){if(fullImage||!img.dataset.full)return;fullImage=new Image();fullImage.decoding='async';fullImage.src=img.dataset.full;}
-    button.addEventListener('pointerenter',preloadFull,{once:true});button.addEventListener('focus',preloadFull,{once:true});button.addEventListener('pointerdown',preloadFull,{once:true});
+    // High-resolution requests start only after an explicit click.
     img.parentNode.insertBefore(button,img); button.appendChild(img);
     button.addEventListener('click',function () {
       zoom=1;panX=panY=0;transform();
