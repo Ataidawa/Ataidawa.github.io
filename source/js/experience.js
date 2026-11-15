@@ -14,7 +14,7 @@ function initExperience(){
   document.body.appendChild(dialog);
   var viewerImage=dialog.querySelector('img'),zoom=1,panX=0,panY=0,drag=null,moved=false;
   function transform(){viewerImage.style.transform='translate('+panX+'px,'+panY+'px) scale('+zoom+')';}
-  var closing=false;
+  var closing=false,previewVersion=0;
   function closeViewer(){if(closing)return;closing=true;if(reduced||!viewerImage.animate){dialog.close();closing=false;return;}var a=viewerImage.animate([{opacity:1,scale:'1'},{opacity:0,scale:'.94'}],{duration:150,easing:'ease-in'});a.onfinish=function(){dialog.close();closing=false;};}
   dialog.addEventListener('cancel',function(e){e.preventDefault();closeViewer();});
   function insideImage(x,y){var r=viewerImage.getBoundingClientRect();var nw=viewerImage.naturalWidth,nh=viewerImage.naturalHeight;if(!nw||!nh)return x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom;var ratio=Math.min(r.width/nw,r.height/nh);var width=nw*ratio,height=nh*ratio;return x>=r.left+(r.width-width)/2&&x<=r.right-(r.width-width)/2&&y>=r.top+(r.height-height)/2&&y<=r.bottom-(r.height-height)/2;}
@@ -24,17 +24,23 @@ function initExperience(){
   viewerImage.addEventListener('pointermove',function(e){if(!drag)return;panX=drag.px+e.clientX-drag.x;panY=drag.py+e.clientY-drag.y;if(Math.abs(e.clientX-drag.x)+Math.abs(e.clientY-drag.y)>4)moved=true;transform();});
   viewerImage.addEventListener('pointerup',function(){drag=null;});
   viewerImage.addEventListener('pointercancel',function(){drag=null;});
-  dialog.addEventListener('close',function(){document.body.classList.remove('viewer-open');});
+  dialog.addEventListener('close',function(){previewVersion++;document.body.classList.remove('viewer-open');document.dispatchEvent(new Event('jopolis:viewer-close'));});
   document.querySelectorAll('.post-split-media img,.post-content img,.hero-portrait img,.album-image img').forEach(function (img) {
     // Leave images that are already navigation links alone.
     if (img.closest('a')) return;
     var button = document.createElement('button');
     button.type = 'button'; button.className = 'image-zoom';
     button.setAttribute('aria-label','查看大图：' + (img.alt || '图片'));
+    var fullImage;
+    function preloadFull(){if(fullImage||!img.dataset.full)return;fullImage=new Image();fullImage.decoding='async';fullImage.src=img.dataset.full;}
+    button.addEventListener('pointerenter',preloadFull,{once:true});button.addEventListener('focus',preloadFull,{once:true});button.addEventListener('pointerdown',preloadFull,{once:true});
     img.parentNode.insertBefore(button,img); button.appendChild(img);
     button.addEventListener('click',function () {
       zoom=1;panX=panY=0;transform();
-      dialog.querySelector('img').src = img.dataset.full || img.currentSrc || img.src;
+      var token=++previewVersion;
+      viewerImage.src=img.currentSrc || img.src;
+      preloadFull();
+      if(fullImage){var upgrade=function(){var decoded=fullImage.decode?fullImage.decode():Promise.resolve();decoded.then(function(){if(token===previewVersion&&dialog.open)viewerImage.src=fullImage.src;}).catch(function(){});};if(fullImage.complete&&fullImage.naturalWidth)upgrade();else fullImage.addEventListener('load',upgrade,{once:true});}
       dialog.querySelector('img').alt = img.alt;
       dialog.querySelector('p').textContent = img.alt;
       document.body.classList.add('viewer-open'); dialog.showModal();if(!reduced&&viewerImage.animate)viewerImage.animate([{opacity:0,scale:'.94'},{opacity:1,scale:'1'}],{duration:180,easing:'ease-out'});

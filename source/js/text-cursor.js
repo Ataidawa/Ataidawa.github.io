@@ -41,11 +41,13 @@
       pending = true;
       requestAnimationFrame(function () {
         pending = false;
+        var modal=document.querySelector('.image-viewer[open]');var parent=modal||document.body;if(circle.parentNode!==parent)parent.appendChild(circle);
         circle.style.left = x + 'px'; circle.style.top = y + 'px';
         circle.classList.toggle('is-visible', nearText(x, y));
       });
     }, {passive:true});
     document.documentElement.addEventListener('pointerleave', hide);
+    document.addEventListener('jopolis:viewer-close',function(){hide();document.body.appendChild(circle);});
     window.addEventListener('blur', hide);
     window.addEventListener('scroll', hide, {passive:true});
     media.addEventListener('change', hide);
