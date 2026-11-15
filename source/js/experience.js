@@ -34,7 +34,7 @@ function initExperience(){
     img.parentNode.insertBefore(button,img); button.appendChild(img);
     button.addEventListener('click',function () {
       zoom=1;panX=panY=0;transform();
-      dialog.querySelector('img').src = img.currentSrc || img.src;
+      dialog.querySelector('img').src = img.dataset.full || img.currentSrc || img.src;
       dialog.querySelector('img').alt = img.alt;
       dialog.querySelector('p').textContent = img.alt;
       document.body.classList.add('viewer-open'); dialog.showModal();if(!reduced&&viewerImage.animate)viewerImage.animate([{opacity:0,scale:'.94'},{opacity:1,scale:'1'}],{duration:180,easing:'ease-out'});
