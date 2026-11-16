@@ -3,29 +3,33 @@
 .main:has(.portfolio-cover) { --cover-gap:16px; padding-top:var(--cover-gap); }
 .main .portfolio-cover { margin-top:0; border-radius:var(--radius-card); overflow:hidden; height:calc(100svh - var(--nav-height,80px) - var(--cover-gap)); min-height:calc(100svh - var(--nav-height,80px) - var(--cover-gap)); }
 @media(max-width:688px) { .main:has(.portfolio-cover) { --cover-gap:12px; } .main .portfolio-cover { border-radius:var(--radius-panel); } }
-.main .motion-card { --motion-rx:0deg; --motion-ry:0deg; position:relative; isolation:isolate; overflow:hidden; transition:opacity 420ms var(--motion-ease),transform var(--motion-surface) var(--motion-ease),box-shadow var(--motion-surface) var(--motion-ease),background-color var(--motion-fast) ease,border-color var(--motion-fast) ease; }
+.main .motion-card { --motion-rx:0deg; --motion-ry:0deg; position:relative; isolation:isolate; overflow:hidden; transition:opacity 420ms var(--motion-ease),transform var(--motion-surface) var(--motion-ease),box-shadow var(--motion-surface) var(--motion-ease),background-color var(--motion-fast) ease,border-color var(--motion-fast) ease; transition-delay:0s; }
+.main :is(.friend-card,.marked-card) { --card-hover-shadow:0 10px 28px color-mix(in srgb,var(--accent) 12%,transparent); background:var(--surface); border:1px solid transparent; border-radius:var(--radius-card); }
 @media(hover:hover) and (pointer:fine) {
- .main .motion-card:hover,.main .motion-card:focus-visible { transform:perspective(1100px) translateY(-4px) rotateX(var(--motion-rx)) rotateY(var(--motion-ry)); box-shadow:var(--shadow-panel); }
+ .main .motion-card:hover,.main .motion-card:focus-visible { transform:perspective(1100px) translateY(-4px) rotateX(var(--motion-rx)) rotateY(var(--motion-ry)); box-shadow:var(--card-hover-shadow,var(--shadow-panel)); }
+ .main :is(.friend-card,.marked-card):hover,.main :is(.friend-card,.marked-card):focus-visible { background:var(--hover); color:var(--ink); }
  .main .blog-row:hover { transform:perspective(1100px) translateY(-2px) rotateX(var(--motion-rx)) rotateY(var(--motion-ry)); }
  .main .motion-card.is-pointer-active { will-change:transform; }
  .main .motion-card :is(.blog-arrow,.sheet-arrow),.friend-card>span:last-child,.marked-card-top>span:last-child { transition:translate var(--motion-surface) var(--motion-ease); }
  .main .motion-card:hover :is(.blog-arrow,.marked-card-top>span:last-child),.friend-card:hover>span:last-child { translate:3px -2px; }
 }
-.motion-link { text-decoration:none; background-image:linear-gradient(currentColor,currentColor); background-repeat:no-repeat; background-position:var(--underline-origin,50%) 100%; background-size:0 1px; transition:background-size var(--motion-surface) var(--motion-ease),color var(--motion-fast) ease; }
-.motion-link:hover,.motion-link:focus-visible { color:var(--accent); background-size:100% 1px; text-decoration:none; }
-.blog-row .blog-title,.marked-card h2,.friend-card h2 { text-decoration:underline; text-decoration-color:transparent; text-underline-offset:.2em; transition:text-decoration-color var(--motion-surface) var(--motion-ease); }
-:is(.blog-row,.marked-card,.friend-card):hover :is(.blog-title,h2) { text-decoration-color:currentColor; }
+.main a.motion-link,.post-content a.text-link,.footer a.motion-link { border:0; color:var(--accent); text-decoration:none; background-image:linear-gradient(currentColor,currentColor); background-repeat:no-repeat; background-position:var(--underline-origin,50%) 100%; background-size:0 1px; transition:background-size 240ms ease,color 180ms ease; }
+.main a.motion-link:hover,.main a.motion-link:focus-visible,.post-content a.text-link:hover,.post-content a.text-link:focus-visible,.footer a.motion-link:hover,.footer a.motion-link:focus-visible { background-size:100% 1px; text-decoration:none; }
+.main a.motion-link::before,.main a.motion-link::after { content:none; }
+.blog-row .blog-title { text-decoration:underline; text-decoration-color:transparent; text-underline-offset:.2em; transition:text-decoration-color var(--motion-surface) var(--motion-ease); }
+.blog-row:hover .blog-title { text-decoration-color:currentColor; }
 .hero-link,.tag-btn { transition:background-color var(--motion-fast) ease,color var(--motion-fast) ease,box-shadow var(--motion-surface) var(--motion-ease),transform var(--motion-surface) var(--motion-ease); }
 .main :is(a,button,input):focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
 .image-zoom { position:relative; overflow:hidden; isolation:isolate; border-radius:inherit; }
 .image-zoom .button-ripple { max-width:none; max-height:none; }
+.friend-card>.button-ripple { margin:0; translate:none!important; }
 .image-viewer img { border-radius:0; }
 .marked-initial { position:relative; overflow:hidden; flex:0 0 44px; }
 .marked-initial img { position:absolute; inset:0; width:44px; height:44px; padding:7px; box-sizing:border-box; object-fit:contain; background:var(--selected); }
 .marked-initial img[hidden] { display:none; }
 .marked-card .content-chip { max-width:calc(100% - 82px); overflow:hidden; text-overflow:ellipsis; }
 @media(prefers-reduced-motion:reduce) {
- .main .motion-card,.motion-link,.blog-row .blog-title,.marked-card h2,.friend-card h2,.hero-link,.tag-btn { transition:none; }
+ .main .motion-card,.main a.motion-link,.post-content a.text-link,.footer a.motion-link,.blog-row .blog-title,.hero-link,.tag-btn { transition:none; }
  .main .motion-card:hover,.main .motion-card:focus-visible { transform:none; }
  .main .motion-card:hover :is(.blog-arrow,.marked-card-top>span:last-child),.friend-card:hover>span:last-child { translate:none; }
 }
