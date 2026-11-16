@@ -1,4 +1,4 @@
-# 浏览器书签整理；说明待补充的条目可直接在 description 中编辑。
+# 浏览器书签整理；已移除确认返回404的地址。说明待补充的条目可直接编辑 description。
 - name: Typora
   url: https://typora.io/
   category: 实用软件
@@ -566,12 +566,6 @@
   url: https://www.btdx8.vip/
   category: 兴趣与娱乐
   description: 浏览器收藏 · 比特大雄
-  tags:
-    - 兴趣与娱乐
-- name: 哔嘀影视
-  url: https://www.bdys03.com/
-  category: 兴趣与娱乐
-  description: 浏览器收藏 · 哔嘀影视
   tags:
     - 兴趣与娱乐
 - name: 电影港
@@ -1481,12 +1475,6 @@
   description: 浏览器收藏 · 深度
   tags:
     - 实用软件
-- name: Fedora
-  url: https://getfedora.org/en/iot/download/
-  category: 实用软件
-  description: 浏览器收藏 · Fedora
-  tags:
-    - 实用软件
 - name: NEXT, ITELLYOU
   url: https://next.itellyou.cn/
   category: 实用软件
@@ -1733,12 +1721,6 @@
   description: 浏览器收藏 · Copilot Designer
   tags:
     - 实用软件
-- name: Prompt Book
-  url: https://openart.ai/promptbook
-  category: 实用软件
-  description: 浏览器收藏 · Prompt Book
-  tags:
-    - 实用软件
 - name: 词魂
   url: https://www.icihun.com/
   category: 实用软件
@@ -1767,12 +1749,6 @@
   url: https://cyberguard.best/
   category: 实用软件
   description: 浏览器收藏 · CyberGuard
-  tags:
-    - 实用软件
-- name: Hikari PE
-  url: https://hikaricalyx.com/hikari-pe-sc/
-  category: 实用软件
-  description: 浏览器收藏 · Hikari PE
   tags:
     - 实用软件
 - name: 大眼仔旭
@@ -2696,12 +2672,6 @@
   description: Share-SSR-V2ray 项目的共享网络资源文档。
   tags:
     - 实用软件
-- name: KMS_VL_ALL_AIO
-  url: https://github.com/abbodi1406/KMS_VL_ALL_AIO/releases
-  category: 系统维护
-  description: 激活工具相关收藏；适用版本与使用说明待补充。
-  tags:
-    - 系统维护
 - name: Share-SS(6j5h)
   url: https://www.lanzous.com/b1008660
   category: 实用软件
