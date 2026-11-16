@@ -1,4 +1,4 @@
-# 根据本次聊天和旧站文章整理；使用或下载字体前查看各项目当前说明。
+# 浏览器书签整理；说明待补充的条目可直接在 description 中编辑。
 - name: Typora
   url: https://typora.io/
   category: 实用软件
@@ -261,3 +261,2660 @@
     - 域名
     - us.kg
     - DNS
+- name: 爬虫报错：Do you need to install a parser library
+  url: https://blog.csdn.net/qq_41996090/article/details/82313842
+  category: 学习与教程
+  description: 浏览器收藏 · 爬虫报错：Do you need to install a parser library
+  tags:
+    - 学习与教程
+- name: Python re正则表达式速查
+  url: https://www.cnblogs.com/trojan-z/p/7406335.html
+  category: 学习与教程
+  description: 浏览器收藏 · Python re正则表达式速查
+  tags:
+    - 学习与教程
+- name: 新版VMware之MacOS系统爬坑记
+  url: https://mp.weixin.qq.com/s/rqw9m8JVJ_XHi4Ufst_rsQ
+  category: 学习与教程
+  description: 浏览器收藏 · 新版VMware之MacOS系统爬坑记
+  tags:
+    - 学习与教程
+- name: PIP 更换国内安装源
+  url: https://blog.csdn.net/yuzaipiaofei/article/details/80891108
+  category: 学习与教程
+  description: 浏览器收藏 · PIP 更换国内安装源
+  tags:
+    - 学习与教程
+- name: win10 账号登陆 0x80190001
+  url: https://blog.csdn.net/sinat_29891353/article/details/80881408
+  category: 学习与教程
+  description: 浏览器收藏 · win10 账号登陆 0x80190001
+  tags:
+    - 学习与教程
+- name: 使用VMware安装Win7虚拟机并安装VM Tools总结。 - SegmentFault 思否
+  url: https://segmentfault.com/a/1190000040641247
+  category: 学习与教程
+  description: 浏览器收藏 · 使用VMware安装Win7虚拟机并安装VM Tools总结。 - SegmentFault 思否
+  tags:
+    - 学习与教程
+- name: sublime怎么设置中文
+  url: https://www.php.cn/tool/sublime/463446.html
+  category: 学习与教程
+  description: 浏览器收藏 · sublime怎么设置中文
+  tags:
+    - 学习与教程
+- name: MIUI历史版本
+  url: https://miuiver.com/
+  category: 学习与教程
+  description: 浏览器收藏 · MIUI历史版本
+  tags:
+    - 学习与教程
+- name: 解决 Executable path has been deprecated please pass in a Service object in Selenium Python 问题
+  url: https://blog.csdn.net/m0_62298204/article/details/120802053
+  category: 学习与教程
+  description: 浏览器收藏 · 解决 Executable path has been deprecated please pass in a Service object in Selenium Python 问题
+  tags:
+    - 学习与教程
+- name: selenium弃用警告
+  url: https://blog.csdn.net/qq_45007567/article/details/120829410
+  category: 学习与教程
+  description: 浏览器收藏 · selenium弃用警告
+  tags:
+    - 学习与教程
+- name: switch_to_window不建议使用问题！_鱼天龙的博客-CSDN博客_switch_to_windows使用方法
+  url: https://blog.csdn.net/weixin_44709426/article/details/89477771
+  category: 学习与教程
+  description: 浏览器收藏 · switch_to_window不建议使用问题！_鱼天龙的博客-CSDN博客_switch_to_windows使用方法
+  tags:
+    - 学习与教程
+- name: 小丸工具箱「值不能为null
+  url: https://www.bilibili.com/read/cv10133597
+  category: 学习与教程
+  description: 浏览器收藏 · 小丸工具箱「值不能为null
+  tags:
+    - 学习与教程
+- name: .NET Framework Repair Tool
+  url: https://www.microsoft.com/en-us/download/details.aspx?id=30135
+  category: 学习与教程
+  description: 浏览器收藏 · .NET Framework Repair Tool
+  tags:
+    - 学习与教程
+- name: RedmiBook Pro 15 增强版 驱动下载
+  url: https://www.mi.com/service/notebook/drivers/A29R
+  category: 学习与教程
+  description: 浏览器收藏 · RedmiBook Pro 15 增强版 驱动下载
+  tags:
+    - 学习与教程
+- name: Camera Raw 增效工具安装程序
+  url: https://helpx.adobe.com/cn/camera-raw/kb/camera-raw-plug-in-installer.html
+  category: 学习与教程
+  description: 浏览器收藏 · Camera Raw 增效工具安装程序
+  tags:
+    - 学习与教程
+- name: 联想驱动列表
+  url: https://newsupport.lenovo.com.cn/driveList.html?fromsource=driveList&selname=PF2BV52N
+  category: 学习与教程
+  description: 浏览器收藏 · 联想驱动列表
+  tags:
+    - 学习与教程
+- name: ASUS Vivobook Pro 15 OLED
+  url: >-
+    https://www.asus.com.cn/laptops/for-creators/vivobook/asus-vivobook-pro-15-oled-k6500-12th-gen-intel/helpdesk_bios/?model2Name=ASUS-Vivobook-Pro-15-OLED-K6500-12th-Gen-Intel
+  category: 学习与教程
+  description: 浏览器收藏 · ASUS Vivobook Pro 15 OLED
+  tags:
+    - 学习与教程
+- name: 小米线刷 Antirollback check error
+  url: https://miuiver.com/antirollback-check-error/
+  category: 学习与教程
+  description: 浏览器收藏 · 小米线刷 Antirollback check error
+  tags:
+    - 学习与教程
+- name: Redmi Book Pro 14 2022
+  url: https://www.mi.com/service/notebook/drivers/A28
+  category: 学习与教程
+  description: 浏览器收藏 · Redmi Book Pro 14 2022
+  tags:
+    - 学习与教程
+- name: 黑果小兵的部落阁
+  url: https://blog.daliansky.net/
+  category: 学习与教程
+  description: 浏览器收藏 · 黑果小兵的部落阁
+  tags:
+    - 学习与教程
+- name: 联想（Lenovo）小新15IIL2020款i5-1035G电脑 Hackintosh 黑苹果efi引导文件 _ 黑苹果社区
+  url: https://www.imacosx.cn/112407.html
+  category: 学习与教程
+  description: 浏览器收藏 · 联想（Lenovo）小新15IIL2020款i5-1035G电脑 Hackintosh 黑苹果efi引导文件 _ 黑苹果社区
+  tags:
+    - 学习与教程
+- name: Python3 教程
+  url: https://www.runoob.com/python3/python3-tutorial.html
+  category: 学习与教程
+  description: 浏览器收藏 · Python3 教程
+  tags:
+    - 学习与教程
+- name: Python3 实例
+  url: https://www.runoob.com/python3/python3-examples.html
+  category: 学习与教程
+  description: 浏览器收藏 · Python3 实例
+  tags:
+    - 学习与教程
+- name: 之江汇
+  url: http://yun.zjer.cn/index.php?r=portal/index/index
+  category: 学习与教程
+  description: 浏览器收藏 · 之江汇
+  tags:
+    - 学习与教程
+- name: Python 6小时网络爬虫入门课程完整版(2020年） - YouTube
+  url: https://www.youtube.com/watch?v=ZMjhBB17KVY&t=752s
+  category: 学习与教程
+  description: 浏览器收藏 · Python 6小时网络爬虫入门课程完整版(2020年） - YouTube
+  tags:
+    - 学习与教程
+- name: LOFTER
+  url: http://www.lofter.com/
+  category: 学习与教程
+  description: 浏览器收藏 · LOFTER
+  tags:
+    - 学习与教程
+- name: Topbook
+  url: https://topbook.cc/overview
+  category: 学习与教程
+  description: 浏览器收藏 · Topbook
+  tags:
+    - 学习与教程
+- name: Git教程
+  url: https://www.liaoxuefeng.com/wiki/896043488029600
+  category: 学习与教程
+  description: 浏览器收藏 · Git教程
+  tags:
+    - 学习与教程
+- name: 安全教育平台
+  url: https://ningbo.xueanquan.com/
+  category: 学习与教程
+  description: 浏览器收藏 · 安全教育平台
+  tags:
+    - 学习与教程
+- name: PHP 教程 | 菜鸟教程
+  url: https://www.runoob.com/php/php-tutorial.html
+  category: 学习与教程
+  description: 浏览器收藏 · PHP 教程 | 菜鸟教程
+  tags:
+    - 学习与教程
+- name: RIME | 中州韻輸入法引擎
+  url: https://rime.im/
+  category: 学习与教程
+  description: 浏览器收藏 · RIME | 中州韻輸入法引擎
+  tags:
+    - 学习与教程
+- name: 力扣 (LeetCode)
+  url: https://leetcode.cn/problemset/all/
+  category: 学习与教程
+  description: 浏览器收藏 · 力扣 (LeetCode)
+  tags:
+    - 学习与教程
+- name: TrackersListCollection
+  url: https://trackerslist.com/
+  category: 学习与教程
+  description: 浏览器收藏 · TrackersListCollection
+  tags:
+    - 学习与教程
+- name: LookAE
+  url: https://www.lookae.com/
+  category: 学习与教程
+  description: 浏览器收藏 · LookAE
+  tags:
+    - 学习与教程
+- name: OI Wiki
+  url: https://oi-wiki.org//
+  category: 学习与教程
+  description: 浏览器收藏 · OI Wiki
+  tags:
+    - 学习与教程
+- name: 免费压缩PDF文件
+  url: https://smallpdf.com/cn/compress-pdf
+  category: 学习与教程
+  description: 浏览器收藏 · 免费压缩PDF文件
+  tags:
+    - 学习与教程
+- name: 浙江省等级考试考生报名系统
+  url: https://crcs.zjzs.net/
+  category: 学习与教程
+  description: 浏览器收藏 · 浙江省等级考试考生报名系统
+  tags:
+    - 学习与教程
+- name: VMware Workstation 全系列合集
+  url: https://bbs.kafan.cn/thread-2133152-1-1.html
+  category: 学习与教程
+  description: 浏览器收藏 · VMware Workstation 全系列合集
+  tags:
+    - 学习与教程
+- name: Git代码提交规范
+  url: https://blog.csdn.net/chenyajundd/article/details/139322838
+  category: 学习与教程
+  description: 浏览器收藏 · Git代码提交规范
+  tags:
+    - 学习与教程
+- name: 红米 Note 7 Pro violet
+  url: https://xiaomirom.com/series/violet/
+  category: 学习与教程
+  description: 浏览器收藏 · 红米 Note 7 Pro violet
+  tags:
+    - 学习与教程
+- name: AndroidTV x86
+  url: https://archive.org/details/androidtv-x86
+  category: 学习与教程
+  description: 浏览器收藏 · AndroidTV x86
+  tags:
+    - 学习与教程
+- name: Install/Dual Boot Android TV OS on Windows PC - YouTube
+  url: https://www.youtube.com/watch?v=ahHAzll-bMI
+  category: 学习与教程
+  description: 浏览器收藏 · Install/Dual Boot Android TV OS on Windows PC - YouTube
+  tags:
+    - 学习与教程
+- name: 100 个 Python 小例子
+  url: https://zhuanlan.zhihu.com/p/260175468
+  category: 学习与教程
+  description: 浏览器收藏 · 100 个 Python 小例子
+  tags:
+    - 学习与教程
+- name: 安卓/ios鱼宝宝公式汇总
+  url: https://tieba.baidu.com/p/5484569590?
+  category: 学习与教程
+  description: 浏览器收藏 · 安卓/ios鱼宝宝公式汇总
+  tags:
+    - 学习与教程
+- name: 从Youtube，Viki，Viu，Vlive等下载字幕！ - DownSub
+  url: https://downsub.com/
+  category: 学习与教程
+  description: 浏览器收藏 · 从Youtube，Viki，Viu，Vlive等下载字幕！ - DownSub
+  tags:
+    - 学习与教程
+- name: theSimpleThing 2.0
+  url: https://www.deviantart.com/flydonkey/art/444035536
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · theSimpleThing 2.0
+  tags:
+    - 兴趣与娱乐
+- name: 3DM游戏网
+  url: https://www.3dmgame.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 3DM游戏网
+  tags:
+    - 兴趣与娱乐
+- name: 423Down 搬运站
+  url: https://itrmb.com/forum-2.htm
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 423Down 搬运站
+  tags:
+    - 兴趣与娱乐
+- name: 66影视网
+  url: http://www.66ys.co/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 66影视网
+  tags:
+    - 兴趣与娱乐
+- name: 6v电影
+  url: http://www.66s.cc/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 6v电影
+  tags:
+    - 兴趣与娱乐
+- name: 比特大雄
+  url: https://www.btdx8.vip/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 比特大雄
+  tags:
+    - 兴趣与娱乐
+- name: 哔嘀影视
+  url: https://www.bdys03.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 哔嘀影视
+  tags:
+    - 兴趣与娱乐
+- name: 电影港
+  url: http://www.dygangs.net/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 电影港
+  tags:
+    - 兴趣与娱乐
+- name: 电影天堂
+  url: https://www.dytt89.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 电影天堂
+  tags:
+    - 兴趣与娱乐
+- name: 电影镇
+  url: https://dy.town/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 电影镇
+  tags:
+    - 兴趣与娱乐
+- name: 果核剥壳
+  url: https://www.ghxi.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 果核剥壳
+  tags:
+    - 兴趣与娱乐
+- name: 全民解析-vip视频在线解析
+  url: http://www.timecn.cn/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 全民解析-vip视频在线解析
+  tags:
+    - 兴趣与娱乐
+- name: 人人影视下载分享站
+  url: https://yyets.dmesg.app/home
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 人人影视下载分享站
+  tags:
+    - 兴趣与娱乐
+- name: 如何在Malody中游玩舞立方
+  url: https://m.mugzone.net/wiki/1191
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 如何在Malody中游玩舞立方
+  tags:
+    - 兴趣与娱乐
+- name: 音范丝
+  url: https://www.yinfans.net/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 音范丝
+  tags:
+    - 兴趣与娱乐
+- name: 音乐解锁
+  url: https://demo.unlock-music.dev/
+  category: 兴趣与娱乐
+  description: Unlock Music 音乐解锁工具。
+  tags:
+    - 兴趣与娱乐
+- name: 樱花动漫
+  url: http://www.yinghuacd.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 樱花动漫
+  tags:
+    - 兴趣与娱乐
+- name: 有格调
+  url: https://www.ugediao.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 有格调
+  tags:
+    - 兴趣与娱乐
+- name: 浙江广播电台
+  url: https://www.qingting.fm/radiopage
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 浙江广播电台
+  tags:
+    - 兴趣与娱乐
+- name: 植物大战僵尸
+  url: http://jspvz.com/download.htm
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 植物大战僵尸
+  tags:
+    - 兴趣与娱乐
+- name: ACG.RIP
+  url: https://acgrip.art/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · ACG.RIP
+  tags:
+    - 兴趣与娱乐
+- name: AIDN | CONTENTS
+  url: https://aidn.jp/contents/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · AIDN | CONTENTS
+  tags:
+    - 兴趣与娱乐
+- name: BSL Shaders
+  url: https://bitslablab.com/bslshaders/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · BSL Shaders
+  tags:
+    - 兴趣与娱乐
+- name: Continuum Graphics
+  url: https://continuum.graphics/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Continuum Graphics
+  tags:
+    - 兴趣与娱乐
+- name: FitGirl
+  url: https://fitgirl-repacks.site/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · FitGirl
+  tags:
+    - 兴趣与娱乐
+- name: Forge
+  url: https://files.minecraftforge.net/net/minecraftforge/forge/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Forge
+  tags:
+    - 兴趣与娱乐
+- name: Fresh Animations
+  url: https://www.curseforge.com/minecraft/texture-packs/fresh-animations/files
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Fresh Animations
+  tags:
+    - 兴趣与娱乐
+- name: Game Jolt
+  url: https://gamejolt.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Game Jolt
+  tags:
+    - 兴趣与娱乐
+- name: Instagram
+  url: https://www.instagram.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Instagram
+  tags:
+    - 兴趣与娱乐
+- name: Inventory Tweaks
+  url: https://inventory-tweaks.readthedocs.io/en/latest/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Inventory Tweaks
+  tags:
+    - 兴趣与娱乐
+- name: Kardox
+  url: https://www.deviantart.com/fiko3535/art/Kardox-Skin-for-PotPlayer-576709785
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Kardox
+  tags:
+    - 兴趣与娱乐
+- name: M站
+  url: https://www.missevan.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · M站
+  tags:
+    - 兴趣与娱乐
+- name: Malody
+  url: https://m.mugzone.net/index
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Malody
+  tags:
+    - 兴趣与娱乐
+- name: Matteo Rizzo
+  url: https://matteorizzo.com/minecraft/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Matteo Rizzo
+  tags:
+    - 兴趣与娱乐
+- name: mikumikumoving_eng
+  url: https://sites.google.com/site/mikumikumovingeng/mikumikumoving
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · mikumikumoving_eng
+  tags:
+    - 兴趣与娱乐
+- name: 'NameMC: Minecraft用户名和皮肤查询'
+  url: https://zh-cn.namemc.com/
+  category: 兴趣与娱乐
+  description: '浏览器收藏 · NameMC: Minecraft用户名和皮肤查询'
+  tags:
+    - 兴趣与娱乐
+- name: OptiFine
+  url: https://optifine.net/home
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · OptiFine
+  tags:
+    - 兴趣与娱乐
+- name: Patchouli
+  url: https://www.curseforge.com/minecraft/mc-mods/patchouli
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Patchouli
+  tags:
+    - 兴趣与娱乐
+- name: Picrew｜つくってあそべる画像メーカー
+  url: https://picrew.me/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Picrew｜つくってあそべる画像メーカー
+  tags:
+    - 兴趣与娱乐
+- name: Pokehaan Craft - Modpacks - Minecraft - CurseForge
+  url: https://www.curseforge.com/minecraft/modpacks/pokehaan-craft/files
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Pokehaan Craft - Modpacks - Minecraft - CurseForge
+  tags:
+    - 兴趣与娱乐
+- name: QQ昵称生成器
+  url: https://www.iqshw.com/qzone/app/l/1.html
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · QQ昵称生成器
+  tags:
+    - 兴趣与娱乐
+- name: Robert Yang (杨若波)
+  url: https://debacle.us/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Robert Yang (杨若波)
+  tags:
+    - 兴趣与娱乐
+- name: RuTracker.org
+  url: https://rutracker.net/forum/index.php
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · RuTracker.org
+  tags:
+    - 兴趣与娱乐
+- name: SEUS
+  url: https://www.sonicether.com/seus/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · SEUS
+  tags:
+    - 兴趣与娱乐
+- name: Sildurs Shaders
+  url: https://sildurs-shaders.github.io/downloads/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Sildurs Shaders
+  tags:
+    - 兴趣与娱乐
+- name: Skidrow & Reloaded Games
+  url: https://www.skidrowreloaded.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Skidrow & Reloaded Games
+  tags:
+    - 兴趣与娱乐
+- name: Sonolus - Next Generation Rhythm Game
+  url: https://sonolus.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Sonolus - Next Generation Rhythm Game
+  tags:
+    - 兴趣与娱乐
+- name: Splas
+  url: https://www.deviantart.com/sasukedll7170/art/Splash-2-1-skin-for-PotPlayer-617203811
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Splas
+  tags:
+    - 兴趣与娱乐
+- name: Stardew Valley 中文维基
+  url: https://zh.stardewvalleywiki.com/Stardew_Valley_Wiki
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Stardew Valley 中文维基
+  tags:
+    - 兴趣与娱乐
+- name: Steam Unlocked
+  url: https://steamunlocked.net/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Steam Unlocked
+  tags:
+    - 兴趣与娱乐
+- name: Switch520
+  url: https://www.gamer520.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Switch520
+  tags:
+    - 兴趣与娱乐
+- name: TofuCraftReload
+  url: https://github.com/0999312/TofuCraftReload
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · TofuCraftReload
+  tags:
+    - 兴趣与娱乐
+- name: TouhouLittleMaid
+  url: https://github.com/TartaricAcid/TouhouLittleMaid
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · TouhouLittleMaid
+  tags:
+    - 兴趣与娱乐
+- name: trevor_cao's GIFs on Tenor
+  url: https://tenor.com/users/trevor_cao/stickers
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · trevor_cao's GIFs on Tenor
+  tags:
+    - 兴趣与娱乐
+- name: YouTube
+  url: https://youtube.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · YouTube
+  tags:
+    - 兴趣与娱乐
+- name: pixiv
+  url: https://www.pixiv.net/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · pixiv
+  tags:
+    - 兴趣与娱乐
+- name: 二虎zzZZZ
+  url: https://afdian.com/a/tg5296
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 二虎zzZZZ
+  tags:
+    - 兴趣与娱乐
+- name: 代理人养成指南
+  url: https://act.mihoyo.com/zzz/gt/character-builder-h/index.html
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 代理人养成指南
+  tags:
+    - 兴趣与娱乐
+- name: SMAPI
+  url: https://github.com/Pathoschild/SMAPI
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · SMAPI
+  tags:
+    - 兴趣与娱乐
+- name: Pixelmon Mod Downloads
+  url: https://pixelmonmod.com/downloads.php
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · Pixelmon Mod Downloads
+  tags:
+    - 兴趣与娱乐
+- name: 全球最好的磁力链搜索引擎
+  url: https://magnet-search.com/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 全球最好的磁力链搜索引擎
+  tags:
+    - 兴趣与娱乐
+- name: 樱花动漫地址
+  url: https://88dm.top/
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · 樱花动漫地址
+  tags:
+    - 兴趣与娱乐
+- name: PCL | 爱发电
+  url: https://afdian.com/a/LTCat
+  category: 兴趣与娱乐
+  description: 浏览器收藏 · PCL | 爱发电
+  tags:
+    - 兴趣与娱乐
+- name: SwitchHost -hosts 文件管理工具
+  url: https://github.com/oldj/SwitchHosts
+  category: 实用软件
+  description: 浏览器收藏 · SwitchHost -hosts 文件管理工具
+  tags:
+    - 实用软件
+- name: v2rayN
+  url: https://github.com/2dust/v2rayN
+  category: 实用软件
+  description: 浏览器收藏 · v2rayN
+  tags:
+    - 实用软件
+- name: 虚拟显示屏
+  url: https://www.spacedesk.net/zh/
+  category: 实用软件
+  description: 浏览器收藏 · 虚拟显示屏
+  tags:
+    - 实用软件
+- name: Motrix
+  url: https://motrix.app/
+  category: 实用软件
+  description: 浏览器收藏 · Motrix
+  tags:
+    - 实用软件
+- name: Potplayer
+  url: https://potplayer.daum.net/?lang=zh_CN
+  category: 实用软件
+  description: 浏览器收藏 · Potplayer
+  tags:
+    - 实用软件
+- name: K-Lite Codec Pack
+  url: https://www.codecguide.com/download_kl.htm
+  category: 实用软件
+  description: 浏览器收藏 · K-Lite Codec Pack
+  tags:
+    - 实用软件
+- name: Watt Toolkit
+  url: https://steampp.net/
+  category: 实用软件
+  description: 浏览器收藏 · Watt Toolkit
+  tags:
+    - 实用软件
+- name: iTop Easy Desktop
+  url: https://www.itopvpn.com/itop-easy-desktop
+  category: 实用软件
+  description: 浏览器收藏 · iTop Easy Desktop
+  tags:
+    - 实用软件
+- name: Creative Cloud Cleaner Tool
+  url: https://helpx.adobe.com/cn/creative-cloud/kb/cc-cleaner-tool-installation-problems.html
+  category: 实用软件
+  description: 浏览器收藏 · Creative Cloud Cleaner Tool
+  tags:
+    - 实用软件
+- name: Adobe Creative Cloud
+  url: https://creativecloud.adobe.com/apps/download/creative-cloud
+  category: 实用软件
+  description: 浏览器收藏 · Adobe Creative Cloud
+  tags:
+    - 实用软件
+- name: UVR GUI 人声分离
+  url: https://github.com/Anjok07/ultimatevocalremovergui
+  category: 实用软件
+  description: 浏览器收藏 · UVR GUI 人声分离
+  tags:
+    - 实用软件
+- name: DnsTools
+  url: https://github.com/Kukaina/DnsTools
+  category: 实用软件
+  description: 浏览器收藏 · DnsTools
+  tags:
+    - 实用软件
+- name: foobox-cn
+  url: https://github.com/dream7180/foobox-cn
+  category: 实用软件
+  description: 浏览器收藏 · foobox-cn
+  tags:
+    - 实用软件
+- name: mpv.net
+  url: https://github.com/mpvnet-player/mpv.net
+  category: 实用软件
+  description: 浏览器收藏 · mpv.net
+  tags:
+    - 实用软件
+- name: Camera Raw
+  url: >-
+    https://helpx.adobe.com/cn/camera-raw/kb/camera-raw-plug-in-installer.html?x-product=Helpx%2F1.0.0&x-product-location=Search%3AForums%3Alink%2F3.5.6
+  category: 实用软件
+  description: 浏览器收藏 · Camera Raw
+  tags:
+    - 实用软件
+- name: ScriptCat
+  url: https://docs.scriptcat.org/
+  category: 实用软件
+  description: 浏览器收藏 · ScriptCat
+  tags:
+    - 实用软件
+- name: 【玩的嗨】Vip工具箱
+  url: https://wiki.wandhi.com/
+  category: 实用软件
+  description: 浏览器收藏 · 【玩的嗨】Vip工具箱
+  tags:
+    - 实用软件
+- name: Platform Tools（ADB）
+  url: https://developer.android.google.cn/tools/releases/platform-tools?hl=zh-cn
+  category: 实用软件
+  description: 浏览器收藏 · Platform Tools（ADB）
+  tags:
+    - 实用软件
+- name: Windows 系统下载
+  url: https://www.microsoft.com/zh-cn/software-download
+  category: 实用软件
+  description: 浏览器收藏 · Windows 系统下载
+  tags:
+    - 实用软件
+- name: MSDN新版
+  url: https://next.itellyou.cn/Original/Index
+  category: 实用软件
+  description: 浏览器收藏 · MSDN新版
+  tags:
+    - 实用软件
+- name: MSDN
+  url: https://msdn.itellyou.cn/
+  category: 实用软件
+  description: 浏览器收藏 · MSDN
+  tags:
+    - 实用软件
+- name: MSDN系统库
+  url: https://www.xitongku.com/index.html
+  category: 实用软件
+  description: 浏览器收藏 · MSDN系统库
+  tags:
+    - 实用软件
+- name: 雷电PE
+  url: http://wuyou.net/forum.php?mod=viewthread&tid=435122&extra=page%3D1
+  category: 实用软件
+  description: 浏览器收藏 · 雷电PE
+  tags:
+    - 实用软件
+- name: Microsoft Store
+  url: https://store.rg-adguard.net/
+  category: 实用软件
+  description: 浏览器收藏 · Microsoft Store
+  tags:
+    - 实用软件
+- name: OldNewExplorer
+  url: https://www.oldnewexplorer.com/zh/
+  category: 实用软件
+  description: 浏览器收藏 · OldNewExplorer
+  tags:
+    - 实用软件
+- name: 亦是美网络
+  url: http://www.yishimei.cn/
+  category: 实用软件
+  description: 浏览器收藏 · 亦是美网络
+  tags:
+    - 实用软件
+- name: 联想知识库
+  url: https://iknow.lenovo.com.cn/
+  category: 实用软件
+  description: 浏览器收藏 · 联想知识库
+  tags:
+    - 实用软件
+- name: App热
+  url: https://apphot.cc/
+  category: 实用软件
+  description: 浏览器收藏 · App热
+  tags:
+    - 实用软件
+- name: 'File list :: List of files by Microsoft®'
+  url: https://files.rg-adguard.net/category
+  category: 实用软件
+  description: '浏览器收藏 · File list :: List of files by Microsoft®'
+  tags:
+    - 实用软件
+- name: Chrome 离线包
+  url: https://www.google.com/intl/zh-CN/chrome/?standalone=1
+  category: 实用软件
+  description: 浏览器收藏 · Chrome 离线包
+  tags:
+    - 实用软件
+- name: Google 翻译
+  url: https://translate.google.cn/
+  category: 实用软件
+  description: 浏览器收藏 · Google 翻译
+  tags:
+    - 实用软件
+- name: 油猴用户脚本
+  url: https://www.userscript.zone/
+  category: 实用软件
+  description: 浏览器收藏 · 油猴用户脚本
+  tags:
+    - 实用软件
+- name: SauceNAO
+  url: https://saucenao.com/
+  category: 实用软件
+  description: 浏览器收藏 · SauceNAO
+  tags:
+    - 实用软件
+- name: icons for macOS
+  url: https://macosicons.com/
+  category: 实用软件
+  description: 浏览器收藏 · icons for macOS
+  tags:
+    - 实用软件
+- name: RGB颜色值与十六进制颜色码转换工具
+  url: https://www.sioe.cn/yingyong/yanse-rgb-16/
+  category: 实用软件
+  description: 浏览器收藏 · RGB颜色值与十六进制颜色码转换工具
+  tags:
+    - 实用软件
+- name: Google
+  url: https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl
+  category: 实用软件
+  description: 浏览器收藏 · Google
+  tags:
+    - 实用软件
+- name: 标准地图服务系统
+  url: http://bzdt.ch.mnr.gov.cn/
+  category: 实用软件
+  description: 浏览器收藏 · 标准地图服务系统
+  tags:
+    - 实用软件
+- name: 超级PDF在线免费转换
+  url: https://xpdf.net/
+  category: 实用软件
+  description: 浏览器收藏 · 超级PDF在线免费转换
+  tags:
+    - 实用软件
+- name: Panzoid
+  url: https://panzoid.com/
+  category: 实用软件
+  description: 浏览器收藏 · Panzoid
+  tags:
+    - 实用软件
+- name: 百度翻译
+  url: https://fanyi.baidu.com/?aldtype=16047
+  category: 实用软件
+  description: 浏览器收藏 · 百度翻译
+  tags:
+    - 实用软件
+- name: ICNS转PNG
+  url: https://www.aconvert.com/cn/image/icns-to-png/
+  category: 实用软件
+  description: 浏览器收藏 · ICNS转PNG
+  tags:
+    - 实用软件
+- name: SauceNAO 以图搜图
+  url: https://saucenao.cn/
+  category: 实用软件
+  description: 浏览器收藏 · SauceNAO 以图搜图
+  tags:
+    - 实用软件
+- name: 空投快传
+  url: https://airportal.cn/
+  category: 实用软件
+  description: 浏览器收藏 · 空投快传
+  tags:
+    - 实用软件
+- name: MyResumes 在线简历编辑
+  url: http://myresumes.cn/
+  category: 实用软件
+  description: 浏览器收藏 · MyResumes 在线简历编辑
+  tags:
+    - 实用软件
+- name: LAVFilters
+  url: https://github.com/Nevcairiel/LAVFilters
+  category: 实用软件
+  description: 浏览器收藏 · LAVFilters
+  tags:
+    - 实用软件
+- name: Pixiv-Shaft
+  url: https://github.com/CeuiLiSA/Pixiv-Shaft
+  category: 实用软件
+  description: 浏览器收藏 · Pixiv-Shaft
+  tags:
+    - 实用软件
+- name: lively
+  url: https://github.com/rocksdanister/lively
+  category: 实用软件
+  description: 浏览器收藏 · lively
+  tags:
+    - 实用软件
+- name: etcher
+  url: https://github.com/balena-io/etcher
+  category: 实用软件
+  description: 浏览器收藏 · etcher
+  tags:
+    - 实用软件
+- name: waifu2x-caffe
+  url: https://github.com/lltcggie/waifu2x-caffe
+  category: 实用软件
+  description: 浏览器收藏 · waifu2x-caffe
+  tags:
+    - 实用软件
+- name: unlocker
+  url: https://github.com/paolo-projects/unlocker
+  category: 实用软件
+  description: 浏览器收藏 · unlocker
+  tags:
+    - 实用软件
+- name: Imagine
+  url: https://github.com/meowtec/Imagine
+  category: 实用软件
+  description: 浏览器收藏 · Imagine
+  tags:
+    - 实用软件
+- name: QuickLook
+  url: https://github.com/QL-Win/QuickLook
+  category: 实用软件
+  description: 浏览器收藏 · QuickLook
+  tags:
+    - 实用软件
+- name: utvideo
+  url: https://github.com/umezawatakeshi/utvideo
+  category: 实用软件
+  description: 浏览器收藏 · utvideo
+  tags:
+    - 实用软件
+- name: AviSynthPlus
+  url: https://github.com/AviSynth/AviSynthPlus
+  category: 实用软件
+  description: 浏览器收藏 · AviSynthPlus
+  tags:
+    - 实用软件
+- name: N_m3u8DL-CLI
+  url: https://github.com/nilaoda/N_m3u8DL-CLI
+  category: 实用软件
+  description: 浏览器收藏 · N_m3u8DL-CLI
+  tags:
+    - 实用软件
+- name: BesLyric
+  url: https://github.com/BesLyric-for-X/BesLyric
+  category: 实用软件
+  description: 浏览器收藏 · BesLyric
+  tags:
+    - 实用软件
+- name: noMeiryoUI
+  url: https://github.com/Tatsu-syo/noMeiryoUI
+  category: 实用软件
+  description: 浏览器收藏 · noMeiryoUI
+  tags:
+    - 实用软件
+- name: steam++
+  url: https://github.com/BeyondDimension/SteamTools
+  category: 实用软件
+  description: 浏览器收藏 · steam++
+  tags:
+    - 实用软件
+- name: LSPosed
+  url: https://github.com/LSPosed/LSPosed
+  category: 实用软件
+  description: 浏览器收藏 · LSPosed
+  tags:
+    - 实用软件
+- name: Sui
+  url: https://github.com/RikkaApps/Sui
+  category: 实用软件
+  description: 浏览器收藏 · Sui
+  tags:
+    - 实用软件
+- name: Shizuku
+  url: https://github.com/RikkaApps/Shizuku
+  category: 实用软件
+  description: 浏览器收藏 · Shizuku
+  tags:
+    - 实用软件
+- name: 搞机助手 · R
+  url: https://github.com/liuran001/GJZS
+  category: 实用软件
+  description: 浏览器收藏 · 搞机助手 · R
+  tags:
+    - 实用软件
+- name: RePKG
+  url: https://github.com/notscuffed/repkg
+  category: 实用软件
+  description: 浏览器收藏 · RePKG
+  tags:
+    - 实用软件
+- name: 不许卡米
+  url: https://github.com/Xposed-Modules-Repo/com.hook.fuckmimarket
+  category: 实用软件
+  description: 浏览器收藏 · 不许卡米
+  tags:
+    - 实用软件
+- name: Macast
+  url: https://github.com/xfangfang/Macast
+  category: 实用软件
+  description: 浏览器收藏 · Macast
+  tags:
+    - 实用软件
+- name: win-capture-audio
+  url: https://github.com/bozbez/win-capture-audio
+  category: 实用软件
+  description: 浏览器收藏 · win-capture-audio
+  tags:
+    - 实用软件
+- name: ScreenToGif
+  url: https://github.com/NickeManarin/ScreenToGif
+  category: 实用软件
+  description: 浏览器收藏 · ScreenToGif
+  tags:
+    - 实用软件
+- name: Rufus
+  url: https://github.com/pbatard/rufus
+  category: 实用软件
+  description: 浏览器收藏 · Rufus
+  tags:
+    - 实用软件
+- name: qBittorrent
+  url: https://github.com/qbittorrent/qBittorrent
+  category: 实用软件
+  description: 浏览器收藏 · qBittorrent
+  tags:
+    - 实用软件
+- name: cat-catch
+  url: https://github.com/xifangczy/cat-catch
+  category: 实用软件
+  description: 浏览器收藏 · cat-catch
+  tags:
+    - 实用软件
+- name: qBittorrentEE
+  url: https://github.com/c0re100/qBittorrent-Enhanced-Edition
+  category: 实用软件
+  description: 浏览器收藏 · qBittorrentEE
+  tags:
+    - 实用软件
+- name: TechXueXi/techxuexi-js
+  url: https://github.com/TechXueXi/techxuexi-js
+  category: 实用软件
+  description: 浏览器收藏 · TechXueXi/techxuexi-js
+  tags:
+    - 实用软件
+- name: TechXueXi/TechXueXi
+  url: https://github.com/TechXueXi/TechXueXi
+  category: 实用软件
+  description: 浏览器收藏 · TechXueXi/TechXueXi
+  tags:
+    - 实用软件
+- name: SwitchyOmega
+  url: https://github.com/FelisCatus/SwitchyOmega
+  category: 实用软件
+  description: 浏览器收藏 · SwitchyOmega
+  tags:
+    - 实用软件
+- name: NatTypeTester
+  url: https://github.com/HMBSbige/NatTypeTester
+  category: 实用软件
+  description: 浏览器收藏 · NatTypeTester
+  tags:
+    - 实用软件
+- name: desmume
+  url: https://github.com/TASEmulators/desmume
+  category: 实用软件
+  description: 浏览器收藏 · desmume
+  tags:
+    - 实用软件
+- name: AndroidEasterEggs
+  url: https://github.com/hushenghao/AndroidEasterEggs
+  category: 实用软件
+  description: 浏览器收藏 · AndroidEasterEggs
+  tags:
+    - 实用软件
+- name: AnyDesk
+  url: https://anydesk.com/zhs/downloads/windows
+  category: 实用软件
+  description: 浏览器收藏 · AnyDesk
+  tags:
+    - 实用软件
+- name: 条形码生成
+  url: https://www.gongjugou.com/shenghuo/tiaoxingma/
+  category: 实用软件
+  description: 浏览器收藏 · 条形码生成
+  tags:
+    - 实用软件
+- name: 二维码生成
+  url: https://www.gongjugou.com/shenghuo/erweima/
+  category: 实用软件
+  description: 浏览器收藏 · 二维码生成
+  tags:
+    - 实用软件
+- name: PDF24 Creator
+  url: https://tools.pdf24.org/zh/creator
+  category: 实用软件
+  description: 浏览器收藏 · PDF24 Creator
+  tags:
+    - 实用软件
+- name: 玩机资源合集
+  url: https://jamcz.com/tutorial/wanji/
+  category: 实用软件
+  description: 浏览器收藏 · 玩机资源合集
+  tags:
+    - 实用软件
+- name: balenaEtcher
+  url: https://etcher.balena.io/
+  category: 实用软件
+  description: 浏览器收藏 · balenaEtcher
+  tags:
+    - 实用软件
+- name: mefcl'blog
+  url: https://www.mefcl.com/
+  category: 实用软件
+  description: 浏览器收藏 · mefcl'blog
+  tags:
+    - 实用软件
+- name: 秋之盒
+  url: https://www.atmb.top/
+  category: 实用软件
+  description: 浏览器收藏 · 秋之盒
+  tags:
+    - 实用软件
+- name: PyCharm
+  url: https://www.jetbrains.com/zh-cn/pycharm/
+  category: 实用软件
+  description: 浏览器收藏 · PyCharm
+  tags:
+    - 实用软件
+- name: IT天空
+  url: https://www.itsk.com/
+  category: 实用软件
+  description: 浏览器收藏 · IT天空
+  tags:
+    - 实用软件
+- name: 使用APKPure APK下载器在线极速下载原版应用 - APKPure官网
+  url: https://m.apkpure.com/cn/
+  category: 实用软件
+  description: 浏览器收藏 · 使用APKPure APK下载器在线极速下载原版应用 - APKPure官网
+  tags:
+    - 实用软件
+- name: 微PE工具箱
+  url: http://www.wepe.com.cn/
+  category: 实用软件
+  description: 浏览器收藏 · 微PE工具箱
+  tags:
+    - 实用软件
+- name: Microsoft Update Catalog
+  url: https://www.catalog.update.microsoft.com/home.aspx
+  category: 实用软件
+  description: 浏览器收藏 · Microsoft Update Catalog
+  tags:
+    - 实用软件
+- name: DirectX修复工具
+  url: https://blog.csdn.net/VBcom/article/details/9140197
+  category: 实用软件
+  description: 浏览器收藏 · DirectX修复工具
+  tags:
+    - 实用软件
+- name: Ubuntu
+  url: https://cn.ubuntu.com/download
+  category: 实用软件
+  description: 浏览器收藏 · Ubuntu
+  tags:
+    - 实用软件
+- name: DirectX修复工具增强版
+  url: https://blog.csdn.net/vbcom/article/details/7245186
+  category: 实用软件
+  description: 浏览器收藏 · DirectX修复工具增强版
+  tags:
+    - 实用软件
+- name: Centos
+  url: https://www.centos.org/download/
+  category: 实用软件
+  description: 浏览器收藏 · Centos
+  tags:
+    - 实用软件
+- name: 深度
+  url: https://www.deepin.org/zh/download/
+  category: 实用软件
+  description: 浏览器收藏 · 深度
+  tags:
+    - 实用软件
+- name: Fedora
+  url: https://getfedora.org/en/iot/download/
+  category: 实用软件
+  description: 浏览器收藏 · Fedora
+  tags:
+    - 实用软件
+- name: NEXT, ITELLYOU
+  url: https://next.itellyou.cn/
+  category: 实用软件
+  description: 浏览器收藏 · NEXT, ITELLYOU
+  tags:
+    - 实用软件
+- name: FydeOS
+  url: https://fydeos.com/
+  category: 实用软件
+  description: 浏览器收藏 · FydeOS
+  tags:
+    - 实用软件
+- name: Android-x86 - Porting Android to x86
+  url: https://www.android-x86.org/
+  category: 实用软件
+  description: 浏览器收藏 · Android-x86 - Porting Android to x86
+  tags:
+    - 实用软件
+- name: UOS生态社区
+  url: https://www.chinauos.com/resource/download-professional
+  category: 实用软件
+  description: 浏览器收藏 · UOS生态社区
+  tags:
+    - 实用软件
+- name: 唧唧
+  url: http://client.jijidown.com/
+  category: 实用软件
+  description: 浏览器收藏 · 唧唧
+  tags:
+    - 实用软件
+- name: 中文语言包 - Plugins | JetBrains
+  url: https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----
+  category: 实用软件
+  description: 浏览器收藏 · 中文语言包 - Plugins | JetBrains
+  tags:
+    - 实用软件
+- name: Java
+  url: https://www.oracle.com/cn/java/
+  category: 实用软件
+  description: 浏览器收藏 · Java
+  tags:
+    - 实用软件
+- name: DirectX Repair
+  url: https://blog.csdn.net/VBcom
+  category: 实用软件
+  description: 浏览器收藏 · DirectX Repair
+  tags:
+    - 实用软件
+- name: Download .NET Framework
+  url: https://dotnet.microsoft.com/download/dotnet-framework
+  category: 实用软件
+  description: 浏览器收藏 · Download .NET Framework
+  tags:
+    - 实用软件
+- name: Lenovo Quick Fix 联想智能解决工具
+  url: https://iknow.lenovo.com.cn/detail/dc_172545.html
+  category: 实用软件
+  description: 浏览器收藏 · Lenovo Quick Fix 联想智能解决工具
+  tags:
+    - 实用软件
+- name: PyPI
+  url: https://pypi.org/
+  category: 实用软件
+  description: 浏览器收藏 · PyPI
+  tags:
+    - 实用软件
+- name: Beautiful Soup官网
+  url: https://www.crummy.com/software/BeautifulSoup/
+  category: 实用软件
+  description: 浏览器收藏 · Beautiful Soup官网
+  tags:
+    - 实用软件
+- name: BootstrapMade
+  url: https://bootstrapmade.com/
+  category: 实用软件
+  description: 浏览器收藏 · BootstrapMade
+  tags:
+    - 实用软件
+- name: 优品PPT
+  url: http://www.ypppt.com/moban/
+  category: 实用软件
+  description: 浏览器收藏 · 优品PPT
+  tags:
+    - 实用软件
+- name: 致美化
+  url: https://zhutix.com/
+  category: 实用软件
+  description: 浏览器收藏 · 致美化
+  tags:
+    - 实用软件
+- name: PaintTool SAI
+  url: https://sai.piv.app/
+  category: 实用软件
+  description: 浏览器收藏 · PaintTool SAI
+  tags:
+    - 实用软件
+- name: Office Tool
+  url: https://otp.landian.vip/zh-cn/
+  category: 实用软件
+  description: 浏览器收藏 · Office Tool
+  tags:
+    - 实用软件
+- name: 万能驱动
+  url: https://www.itsk.com/thread-415847-1-1.html
+  category: 实用软件
+  description: 浏览器收藏 · 万能驱动
+  tags:
+    - 实用软件
+- name: 格式工厂
+  url: http://freetime.tech/formatfactory/CN/index.html
+  category: 实用软件
+  description: 浏览器收藏 · 格式工厂
+  tags:
+    - 实用软件
+- name: Node.js 中文网
+  url: http://nodejs.cn/
+  category: 实用软件
+  description: 浏览器收藏 · Node.js 中文网
+  tags:
+    - 实用软件
+- name: 极速中文网
+  url: http://www.jsxiaoshi.com/
+  category: 实用软件
+  description: 浏览器收藏 · 极速中文网
+  tags:
+    - 实用软件
+- name: FirPE Project
+  url: http://www.firpe.cn/
+  category: 实用软件
+  description: 浏览器收藏 · FirPE Project
+  tags:
+    - 实用软件
+- name: 黑苹果动力
+  url: https://www.mfpud.com/
+  category: 实用软件
+  description: 浏览器收藏 · 黑苹果动力
+  tags:
+    - 实用软件
+- name: Windows Office
+  url: https://tb.rg-adguard.net/public.php?lang=zh-CN
+  category: 实用软件
+  description: 浏览器收藏 · Windows Office
+  tags:
+    - 实用软件
+- name: GeForce Game Ready 驱动程序 | NVIDIA
+  url: https://www.nvidia.cn/geforce/game-ready-drivers/
+  category: 实用软件
+  description: 浏览器收藏 · GeForce Game Ready 驱动程序 | NVIDIA
+  tags:
+    - 实用软件
+- name: 黑域基地
+  url: https://www.hybase.com/
+  category: 实用软件
+  description: 浏览器收藏 · 黑域基地
+  tags:
+    - 实用软件
+- name: Redmi全系列机型ROM包下载站汇总
+  url: https://web.vip.miui.com/page/info/mio/mio/detail?postId=18111066&app_version=dev.20051
+  category: 实用软件
+  description: 浏览器收藏 · Redmi全系列机型ROM包下载站汇总
+  tags:
+    - 实用软件
+- name: 红米 K20 Pro (raphael) 国行版 Fastboot 线刷包 & Recovery 卡刷包
+  url: https://xiaomirom.com/rom/redmi-k20-pro-mi-9t-pro-raphael-china-fastboot-recovery-rom/
+  category: 实用软件
+  description: 浏览器收藏 · 红米 K20 Pro (raphael) 国行版 Fastboot 线刷包 & Recovery 卡刷包
+  tags:
+    - 实用软件
+- name: Other Versions - IntelliJ IDEA
+  url: https://www.jetbrains.com/idea/download/other.html
+  category: 实用软件
+  description: 浏览器收藏 · Other Versions - IntelliJ IDEA
+  tags:
+    - 实用软件
+- name: Other Versions - PyCharm
+  url: https://www.jetbrains.com/pycharm/download/other.html
+  category: 实用软件
+  description: 浏览器收藏 · Other Versions - PyCharm
+  tags:
+    - 实用软件
+- name: IdeaFan
+  url: https://allstone.lt/ideafan/
+  category: 实用软件
+  description: 浏览器收藏 · IdeaFan
+  tags:
+    - 实用软件
+- name: 主页 | 萤火虫资源站
+  url: https://www.yhcres.top/
+  category: 实用软件
+  description: 浏览器收藏 · 主页 | 萤火虫资源站
+  tags:
+    - 实用软件
+- name: ppt转出的视频是30帧 怎么把他弄成60帧啊
+  url: https://www.zhihu.com/question/368559664
+  category: 实用软件
+  description: 浏览器收藏 · ppt转出的视频是30帧 怎么把他弄成60帧啊
+  tags:
+    - 实用软件
+- name: PNG转ICO,PNG转ICNS | 图标格式在线转换 - EASYICON.NET
+  url: https://www.easyicon.net/covert/
+  category: 实用软件
+  description: 浏览器收藏 · PNG转ICO,PNG转ICNS | 图标格式在线转换 - EASYICON.NET
+  tags:
+    - 实用软件
+- name: F 搜
+  url: https://fsoufsou.com/
+  category: 实用软件
+  description: 浏览器收藏 · F 搜
+  tags:
+    - 实用软件
+- name: GitHub Proxy 代理加速
+  url: https://ghproxy.com/
+  category: 实用软件
+  description: 浏览器收藏 · GitHub Proxy 代理加速
+  tags:
+    - 实用软件
+- name: SteamDB
+  url: https://steamdb.info/
+  category: 实用软件
+  description: 浏览器收藏 · SteamDB
+  tags:
+    - 实用软件
+- name: Bare Bones
+  url: https://www.curseforge.com/minecraft/texture-packs/bb/files
+  category: 实用软件
+  description: 浏览器收藏 · Bare Bones
+  tags:
+    - 实用软件
+- name: REimagine
+  url: https://www.reimaginehome.ai/
+  category: 实用软件
+  description: 浏览器收藏 · REimagine
+  tags:
+    - 实用软件
+- name: Perplexity
+  url: https://www.perplexity.ai/
+  category: 实用软件
+  description: 浏览器收藏 · Perplexity
+  tags:
+    - 实用软件
+- name: Copilot Designer
+  url: https://www.bing.com/images/create
+  category: 实用软件
+  description: 浏览器收藏 · Copilot Designer
+  tags:
+    - 实用软件
+- name: Prompt Book
+  url: https://openart.ai/promptbook
+  category: 实用软件
+  description: 浏览器收藏 · Prompt Book
+  tags:
+    - 实用软件
+- name: 词魂
+  url: https://www.icihun.com/
+  category: 实用软件
+  description: 浏览器收藏 · 词魂
+  tags:
+    - 实用软件
+- name: LeiaPix
+  url: https://easywithai.com/ai-3d-assets-textures/leiapix/
+  category: 实用软件
+  description: 浏览器收藏 · LeiaPix
+  tags:
+    - 实用软件
+- name: 查询Emoji短代码
+  url: https://emojipedia.org/zh
+  category: 实用软件
+  description: 浏览器收藏 · 查询Emoji短代码
+  tags:
+    - 实用软件
+- name: Ideogram
+  url: https://ideogram.ai/
+  category: 实用软件
+  description: 浏览器收藏 · Ideogram
+  tags:
+    - 实用软件
+- name: CyberGuard
+  url: https://cyberguard.best/
+  category: 实用软件
+  description: 浏览器收藏 · CyberGuard
+  tags:
+    - 实用软件
+- name: Hikari PE
+  url: https://hikaricalyx.com/hikari-pe-sc/
+  category: 实用软件
+  description: 浏览器收藏 · Hikari PE
+  tags:
+    - 实用软件
+- name: 大眼仔旭
+  url: https://www.dayanzai.me/
+  category: 实用软件
+  description: 浏览器收藏 · 大眼仔旭
+  tags:
+    - 实用软件
+- name: IconPark
+  url: https://iconpark.oceanengine.com/home
+  category: 实用软件
+  description: 浏览器收藏 · IconPark
+  tags:
+    - 实用软件
+- name: 蓝湖
+  url: https://lanhuapp.com/?home
+  category: 实用软件
+  description: 浏览器收藏 · 蓝湖
+  tags:
+    - 实用软件
+- name: 腾讯智影
+  url: https://zenvideo.qq.com/
+  category: 实用软件
+  description: 浏览器收藏 · 腾讯智影
+  tags:
+    - 实用软件
+- name: Cutterman
+  url: https://www.cutterman.cn/
+  category: 实用软件
+  description: 浏览器收藏 · Cutterman
+  tags:
+    - 实用软件
+- name: D-ID
+  url: https://www.d-id.com/
+  category: 实用软件
+  description: 浏览器收藏 · D-ID
+  tags:
+    - 实用软件
+- name: 软仓
+  url: https://www.ruancang.net/
+  category: 实用软件
+  description: 浏览器收藏 · 软仓
+  tags:
+    - 实用软件
+- name: Lenovo Quick Fix：驱动安装工具-联想知识库
+  url: https://iknow.lenovo.com.cn/detail/419379
+  category: 实用软件
+  description: 浏览器收藏 · Lenovo Quick Fix：驱动安装工具-联想知识库
+  tags:
+    - 实用软件
+- name: ZCOOL免费字体
+  url: https://www.zcool.com.cn/special/zcoolfonts/
+  category: 字体资源
+  description: 浏览器收藏 · ZCOOL免费字体
+  tags:
+    - 字体资源
+- name: 思源等宽
+  url: https://github.com/adobe-fonts/source-han-mono
+  category: 设计资源
+  description: 浏览器收藏 · 思源等宽
+  tags:
+    - 设计资源
+- name: 最像素
+  url: https://github.com/SolidZORO/zpix-pixel-font
+  category: 字体资源
+  description: 浏览器收藏 · 最像素
+  tags:
+    - 字体资源
+- name: Inter Display
+  url: https://github.com/rsms/inter
+  category: 字体资源
+  description: 浏览器收藏 · Inter Display
+  tags:
+    - 字体资源
+- name: JetBrainsMono
+  url: https://github.com/JetBrains/JetBrainsMono
+  category: 字体资源
+  description: 浏览器收藏 · JetBrainsMono
+  tags:
+    - 字体资源
+- name: public-sans
+  url: https://github.com/uswds/public-sans
+  category: 字体资源
+  description: 浏览器收藏 · public-sans
+  tags:
+    - 字体资源
+- name: recursive
+  url: https://github.com/arrowtype/recursive
+  category: 字体资源
+  description: 浏览器收藏 · recursive
+  tags:
+    - 字体资源
+- name: Zhudou-Sans
+  url: https://github.com/Buernia/Zhudou-Sans
+  category: 字体资源
+  description: 浏览器收藏 · Zhudou-Sans
+  tags:
+    - 字体资源
+- name: 字库产品-汉仪字库
+  url: https://www.hanyi.com.cn/font-list
+  category: 字体资源
+  description: 浏览器收藏 · 字库产品-汉仪字库
+  tags:
+    - 字体资源
+- name: 金山云技术体
+  url: https://design.ksyun.com/font
+  category: 设计资源
+  description: 浏览器收藏 · 金山云技术体
+  tags:
+    - 设计资源
+- name: 100font.com
+  url: https://www.100font.com/
+  category: 字体资源
+  description: 浏览器收藏 · 100font.com
+  tags:
+    - 字体资源
+- name: 传统颜色
+  url: http://zhongguose.com/
+  category: 设计资源
+  description: 浏览器收藏 · 传统颜色
+  tags:
+    - 设计资源
+- name: ColorSpace
+  url: https://mycolor.space/
+  category: 设计资源
+  description: 浏览器收藏 · ColorSpace
+  tags:
+    - 设计资源
+- name: 花瓣网
+  url: https://huaban.com/
+  category: 设计资源
+  description: 浏览器收藏 · 花瓣网
+  tags:
+    - 设计资源
+- name: 优设网
+  url: https://www.uisdc.com/
+  category: 设计资源
+  description: 浏览器收藏 · 优设网
+  tags:
+    - 设计资源
+- name: 标小智LOGO设计神器
+  url: https://www.logosc.cn/
+  category: 设计资源
+  description: 浏览器收藏 · 标小智LOGO设计神器
+  tags:
+    - 设计资源
+- name: 小红书
+  url: https://www.xiaohongshu.com/explore
+  category: 设计资源
+  description: 浏览器收藏 · 小红书
+  tags:
+    - 设计资源
+- name: 堆友
+  url: https://d.design/
+  category: 设计资源
+  description: 浏览器收藏 · 堆友
+  tags:
+    - 设计资源
+- name: 书法迷字典
+  url: http://www.shufami.com/
+  category: 设计资源
+  description: 浏览器收藏 · 书法迷字典
+  tags:
+    - 设计资源
+- name: 猫啃网
+  url: https://www.maoken.com/
+  category: 设计资源
+  description: 浏览器收藏 · 猫啃网
+  tags:
+    - 设计资源
+- name: 文悦字库
+  url: https://wenyue.cn/
+  category: 字体资源
+  description: 浏览器收藏 · 文悦字库
+  tags:
+    - 字体资源
+- name: 免费商用字体
+  url: https://uiiiuiii.com/tool/typeface
+  category: 字体资源
+  description: 浏览器收藏 · 免费商用字体
+  tags:
+    - 字体资源
+- name: 字体天下
+  url: https://www.fonts.net.cn/
+  category: 字体资源
+  description: 浏览器收藏 · 字体天下
+  tags:
+    - 字体资源
+- name: Smiley Sans 得意黑
+  url: https://atelier-anchor.com/typefaces/smiley-sans
+  category: 字体资源
+  description: 浏览器收藏 · Smiley Sans 得意黑
+  tags:
+    - 字体资源
+- name: 钉钉进步体
+  url: https://page.dingtalk.com/wow/dingtalk/default/dingtalk/y-W5aF3_ZJwzulU0nceIl
+  category: 设计资源
+  description: 浏览器收藏 · 钉钉进步体
+  tags:
+    - 设计资源
+- name: 字嗨 文道字体
+  url: https://www.wonderfonts.com.cn/
+  category: 字体资源
+  description: 浏览器收藏 · 字嗨 文道字体
+  tags:
+    - 字体资源
+- name: 免费素材图片
+  url: https://www.pexels.com/zh-cn/
+  category: 设计资源
+  description: 浏览器收藏 · 免费素材图片
+  tags:
+    - 设计资源
+- name: ls.graphics
+  url: https://www.ls.graphics/free-mockups
+  category: 设计资源
+  description: 浏览器收藏 · ls.graphics
+  tags:
+    - 设计资源
+- name: Mockups-Design.com
+  url: https://mockups-design.com/
+  category: 设计资源
+  description: 浏览器收藏 · Mockups-Design.com
+  tags:
+    - 设计资源
+- name: Unblast
+  url: https://unblast.com/
+  category: 设计资源
+  description: 浏览器收藏 · Unblast
+  tags:
+    - 设计资源
+- name: Free Mockup Generator
+  url: https://mockups.pixeltrue.com/
+  category: 设计资源
+  description: 浏览器收藏 · Free Mockup Generator
+  tags:
+    - 设计资源
+- name: 免抠图片网
+  url: https://miankoutupian.com/
+  category: 设计资源
+  description: 浏览器收藏 · 免抠图片网
+  tags:
+    - 设计资源
+- name: 更好的渐变
+  url: https://www.learnui.design/tools/gradient-generator.html
+  category: 设计资源
+  description: 浏览器收藏 · 更好的渐变
+  tags:
+    - 设计资源
+- name: '| 思酷素材设计模板'
+  url: https://www.sskoo.com/
+  category: 设计资源
+  description: 浏览器收藏 · | 思酷素材设计模板
+  tags:
+    - 设计资源
+- name: Mockup PSD, 544,000+ High Quality Free PSD Templates for Download
+  url: https://www.freepik.com/psd/mockup
+  category: 设计资源
+  description: 浏览器收藏 · Mockup PSD, 544,000+ High Quality Free PSD Templates for Download
+  tags:
+    - 设计资源
+- name: 魔顿
+  url: http://www.modown.cn/
+  category: 设计资源
+  description: 浏览器收藏 · 魔顿
+  tags:
+    - 设计资源
+- name: Photopea
+  url: https://www.photopea.com/
+  category: 设计资源
+  description: 浏览器收藏 · Photopea
+  tags:
+    - 设计资源
+- name: Illustrations | unDraw
+  url: https://undraw.co/illustrations
+  category: 设计资源
+  description: 浏览器收藏 · Illustrations | unDraw
+  tags:
+    - 设计资源
+- name: UICN
+  url: https://www.ui.cn/
+  category: 设计资源
+  description: 浏览器收藏 · UICN
+  tags:
+    - 设计资源
+- name: 站长字体
+  url: https://font.chinaz.com/
+  category: 字体资源
+  description: 浏览器收藏 · 站长字体
+  tags:
+    - 字体资源
+- name: Upscale.media
+  url: https://www.upscale.media/zh
+  category: 图像处理
+  description: 浏览器收藏 · Upscale.media
+  tags:
+    - 图像处理
+- name: ImgLarger.
+  url: https://imglarger.com/zh-tw/
+  category: 图像处理
+  description: 浏览器收藏 · ImgLarger.
+  tags:
+    - 图像处理
+- name: Bigjpg
+  url: https://bigjpg.com/
+  category: 图像处理
+  description: 浏览器收藏 · Bigjpg
+  tags:
+    - 图像处理
+- name: PhotoKit
+  url: https://photokit.com/editor/?lang=zh
+  category: 图像处理
+  description: 浏览器收藏 · PhotoKit
+  tags:
+    - 图像处理
+- name: remove.bg
+  url: https://www.remove.bg/zh
+  category: 图像处理
+  description: 浏览器收藏 · remove.bg
+  tags:
+    - 图像处理
+- name: erase.bg
+  url: https://www.erase.bg/zh
+  category: 图像处理
+  description: 浏览器收藏 · erase.bg
+  tags:
+    - 图像处理
+- name: iLoveIMG
+  url: https://www.iloveimg.com/zh-cn
+  category: 图像处理
+  description: 浏览器收藏 · iLoveIMG
+  tags:
+    - 图像处理
+- name: 系统镜像
+  url: https://next.itellyou.cn/Original/
+  category: 系统维护
+  description: 浏览器收藏 · 系统镜像
+  tags:
+    - 系统维护
+- name: deepin系统下载
+  url: https://www.deepin.org/index/zh
+  category: 系统维护
+  description: 浏览器收藏 · deepin系统下载
+  tags:
+    - 系统维护
+- name: Fedora系统下载
+  url: https://fedoraproject.org/zh-Hans/iot/download
+  category: 系统维护
+  description: 浏览器收藏 · Fedora系统下载
+  tags:
+    - 系统维护
+- name: Ventoy
+  url: https://www.ventoy.net/cn/index.html
+  category: 系统维护
+  description: 浏览器收藏 · Ventoy
+  tags:
+    - 系统维护
+- name: Ventoy VHD插件
+  url: https://github.com/ventoy/vhdiso
+  category: 系统维护
+  description: 浏览器收藏 · Ventoy VHD插件
+  tags:
+    - 系统维护
+- name: Windows系统下载仓储站
+  url: https://hellowindows.cn/
+  category: 系统维护
+  description: 浏览器收藏 · Windows系统下载仓储站
+  tags:
+    - 系统维护
+- name: Edgeless
+  url: https://home.edgeless.top/
+  category: 系统维护
+  description: 浏览器收藏 · Edgeless
+  tags:
+    - 系统维护
+- name: FirPE
+  url: https://firpe.cn/page-247
+  category: 系统维护
+  description: 浏览器收藏 · FirPE
+  tags:
+    - 系统维护
+- name: HotPE
+  url: https://www.hotpe.top/
+  category: 系统维护
+  description: 浏览器收藏 · HotPE
+  tags:
+    - 系统维护
+- name: 杏雨梨云启动维护系统
+  url: https://www.xyboot.com/
+  category: 系统维护
+  description: 浏览器收藏 · 杏雨梨云启动维护系统
+  tags:
+    - 系统维护
+- name: Midjourney
+  url: https://www.midjourney.com/home
+  category: AI 工具
+  description: 浏览器收藏 · Midjourney
+  tags:
+    - AI 工具
+- name: DALL·E 2 | OpenAI
+  url: https://openai.com/index/dall-e-2/
+  category: AI 工具
+  description: 浏览器收藏 · DALL·E 2 | OpenAI
+  tags:
+    - AI 工具
+- name: DALL·E 3 | OpenAI
+  url: https://openai.com/index/dall-e-3/
+  category: AI 工具
+  description: 浏览器收藏 · DALL·E 3 | OpenAI
+  tags:
+    - AI 工具
+- name: Adobe Firefly
+  url: https://firefly.adobe.com/
+  category: AI 工具
+  description: 浏览器收藏 · Adobe Firefly
+  tags:
+    - AI 工具
+- name: Namelix
+  url: https://namelix.com/
+  category: AI 工具
+  description: 浏览器收藏 · Namelix
+  tags:
+    - AI 工具
+- name: Poe
+  url: https://poe.com/
+  category: AI 工具
+  description: 浏览器收藏 · Poe
+  tags:
+    - AI 工具
+- name: Fooocus
+  url: https://github.com/lllyasviel/Fooocus
+  category: AI 工具
+  description: 浏览器收藏 · Fooocus
+  tags:
+    - AI 工具
+- name: ComfyUI
+  url: https://github.com/comfyanonymous/ComfyUI
+  category: AI 工具
+  description: 浏览器收藏 · ComfyUI
+  tags:
+    - AI 工具
+- name: Midjourney Feed
+  url: https://www.midjourney.com/showcase
+  category: AI 工具
+  description: 浏览器收藏 · Midjourney Feed
+  tags:
+    - AI 工具
+- name: PromptFolder
+  url: https://promptfolder.com/midjourney-prompt-helper/
+  category: AI 工具
+  description: 浏览器收藏 · PromptFolder
+  tags:
+    - AI 工具
+- name: ChatGPT
+  url: https://chatgpt.com/
+  category: AI 工具
+  description: 浏览器收藏 · ChatGPT
+  tags:
+    - AI 工具
+- name: Gemini
+  url: https://gemini.google.com/app
+  category: AI 工具
+  description: 浏览器收藏 · Gemini
+  tags:
+    - AI 工具
+- name: Danbooru 标签超市
+  url: https://tags.novelai.dev/
+  category: AI 工具
+  description: 浏览器收藏 · Danbooru 标签超市
+  tags:
+    - AI 工具
+- name: 魔咒百科词典
+  url: https://aitag.top/
+  category: AI 工具
+  description: 浏览器收藏 · 魔咒百科词典
+  tags:
+    - AI 工具
+- name: Civitai Models
+  url: https://civitai.com/models
+  category: AI 工具
+  description: 浏览器收藏 · Civitai Models
+  tags:
+    - AI 工具
+- name: LiblibAI·哩布哩布AI
+  url: https://www.liblib.art/
+  category: AI 工具
+  description: 浏览器收藏 · LiblibAI·哩布哩布AI
+  tags:
+    - AI 工具
+- name: Hugging Face
+  url: https://huggingface.co/models
+  category: AI 工具
+  description: 浏览器收藏 · Hugging Face
+  tags:
+    - AI 工具
+- name: 智星云
+  url: https://gpu.ai-galaxy.cn/store
+  category: AI 工具
+  description: 浏览器收藏 · 智星云
+  tags:
+    - AI 工具
+- name: OneThingAI算力云
+  url: https://onethingai.com/
+  category: AI 工具
+  description: 浏览器收藏 · OneThingAI算力云
+  tags:
+    - AI 工具
+- name: maple-from-fall-and-flower
+  url: https://github.com/maple-flowers/maple-from-fall-and-flower
+  category: AI 工具
+  description: 浏览器收藏 · maple-from-fall-and-flower
+  tags:
+    - AI 工具
+- name: 学掌门Atstudy网校
+  url: https://www.atstudy.com/study
+  category: AI 工具
+  description: 浏览器收藏 · 学掌门Atstudy网校
+  tags:
+    - AI 工具
+- name: AI创作生成
+  url: https://www.atstudy.com/painting
+  category: AI 工具
+  description: 浏览器收藏 · AI创作生成
+  tags:
+    - AI 工具
+- name: Midjourney提词器
+  url: https://www.atstudy.com/midjourney
+  category: AI 工具
+  description: 浏览器收藏 · Midjourney提词器
+  tags:
+    - AI 工具
+- name: Topaz Labs | Photo AI 3™
+  url: https://www.topazlabs.com/topaz-photo-ai
+  category: AI 工具
+  description: 浏览器收藏 · Topaz Labs | Photo AI 3™
+  tags:
+    - AI 工具
+- name: 'Let’s Enhance: Image quality AI'
+  url: https://letsenhance.io/
+  category: AI 工具
+  description: '浏览器收藏 · Let’s Enhance: Image quality AI'
+  tags:
+    - AI 工具
+- name: Deep-Image
+  url: https://deep-image.ai/
+  category: AI 工具
+  description: 浏览器收藏 · Deep-Image
+  tags:
+    - AI 工具
+- name: Pixian.AI
+  url: https://pixian.ai/
+  category: AI 工具
+  description: 浏览器收藏 · Pixian.AI
+  tags:
+    - AI 工具
+- name: Vectorizer.AI 图片矢量化
+  url: https://vectorizer.ai/
+  category: AI 工具
+  description: 浏览器收藏 · Vectorizer.AI 图片矢量化
+  tags:
+    - AI 工具
+- name: Topaz Gigapixel AI
+  url: https://www.topazlabs.com/gigapixel
+  category: AI 工具
+  description: 浏览器收藏 · Topaz Gigapixel AI
+  tags:
+    - AI 工具
+- name: 可灵 AI
+  url: https://klingai.kuaishou.com/
+  category: AI 工具
+  description: 浏览器收藏 · 可灵 AI
+  tags:
+    - AI 工具
+- name: 通义千问
+  url: https://tongyi.aliyun.com/
+  category: AI 工具
+  description: 浏览器收藏 · 通义千问
+  tags:
+    - AI 工具
+- name: 项目空间魔搭
+  url: https://modelscope.cn/studios
+  category: AI 工具
+  description: 浏览器收藏 · 项目空间魔搭
+  tags:
+    - AI 工具
+- name: AI工具集
+  url: https://ai-bot.cn/
+  category: AI 工具
+  description: 浏览器收藏 · AI工具集
+  tags:
+    - AI 工具
+- name: DALL·E 2
+  url: https://openai.com/dall-e-2
+  category: AI 工具
+  description: 浏览器收藏 · DALL·E 2
+  tags:
+    - AI 工具
+- name: DeepL翻译
+  url: https://www.deepl.com/translator
+  category: AI 工具
+  description: 浏览器收藏 · DeepL翻译
+  tags:
+    - AI 工具
+- name: 无界AI
+  url: https://www.wujieai.com/
+  category: AI 工具
+  description: 浏览器收藏 · 无界AI
+  tags:
+    - AI 工具
+- name: 学掌门教育
+  url: https://www.atstudy.com/
+  category: AI 工具
+  description: 浏览器收藏 · 学掌门教育
+  tags:
+    - AI 工具
+- name: DeepSeek
+  url: https://chat.deepseek.com/
+  category: AI 工具
+  description: 浏览器收藏 · DeepSeek
+  tags:
+    - AI 工具
+- name: ula - BowlRoll
+  url: https://bowlroll.net/user/1413
+  category: MMD 资源
+  description: 浏览器收藏 · ula - BowlRoll
+  tags:
+    - MMD 资源
+- name: DeviantArt
+  url: https://www.deviantart.com/
+  category: MMD 资源
+  description: 浏览器收藏 · DeviantArt
+  tags:
+    - MMD 资源
+- name: BowlRoll
+  url: https://bowlroll.net/
+  category: MMD 资源
+  description: 浏览器收藏 · BowlRoll
+  tags:
+    - MMD 资源
+- name: Ai
+  url: https://bowlroll.net/user/233525
+  category: MMD 资源
+  description: 浏览器收藏 · Ai
+  tags:
+    - MMD 资源
+- name: 模之屋
+  url: https://www.aplaybox.com/
+  category: MMD 资源
+  description: 浏览器收藏 · 模之屋
+  tags:
+    - MMD 资源
+- name: sasikizu
+  url: https://bowlroll.net/user/266437
+  category: MMD 资源
+  description: 浏览器收藏 · sasikizu
+  tags:
+    - MMD 资源
+- name: Original Motion
+  url: https://vk.com/topic-149649373_36564373?post=39
+  category: MMD 资源
+  description: 浏览器收藏 · Original Motion
+  tags:
+    - MMD 资源
+- name: kotami cafe
+  url: https://bowlroll.net/user/40608
+  category: MMD 资源
+  description: 浏览器收藏 · kotami cafe
+  tags:
+    - MMD 资源
+- name: 溯北
+  url: https://bowlroll.net/user/149031
+  category: MMD 资源
+  description: 浏览器收藏 · 溯北
+  tags:
+    - MMD 资源
+- name: 怪獣対若大将P
+  url: https://bowlroll.net/user/3486
+  category: MMD 资源
+  description: 浏览器收藏 · 怪獣対若大将P
+  tags:
+    - MMD 资源
+- name: RedialC
+  url: https://bowlroll.net/user/216962
+  category: MMD 资源
+  description: 浏览器收藏 · RedialC
+  tags:
+    - MMD 资源
+- name: 角砂糖
+  url: https://bowlroll.net/user/64843
+  category: MMD 资源
+  description: 浏览器收藏 · 角砂糖
+  tags:
+    - MMD 资源
+- name: ビームマンP
+  url: https://www43.atwiki.jp/beamman/
+  category: MMD 资源
+  description: 浏览器收藏 · ビームマンP
+  tags:
+    - MMD 资源
+- name: Omicoya
+  url: https://okoneya.jp/mmd_files/
+  category: MMD 资源
+  description: 浏览器收藏 · Omicoya
+  tags:
+    - MMD 资源
+- name: 針金P
+  url: http://harigane.at.webry.info/201010/article_1.html
+  category: MMD 资源
+  description: 浏览器收藏 · 針金P
+  tags:
+    - MMD 资源
+- name: 查找MMEffect
+  url: https://www6.atwiki.jp/vpvpwiki/?cmd=word&word=mme&type=&pageid=272
+  category: MMD 资源
+  description: 浏览器收藏 · 查找MMEffect
+  tags:
+    - MMD 资源
+- name: ray-mmd
+  url: https://github.com/ray-cast/ray-mmd
+  category: MMD 资源
+  description: 浏览器收藏 · ray-mmd
+  tags:
+    - MMD 资源
+- name: ikeno
+  url: https://ux.getuploader.com/ikeno
+  category: MMD 资源
+  description: 浏览器收藏 · ikeno
+  tags:
+    - MMD 资源
+- name: Elle
+  url: https://ux.getuploader.com/Elle_DataPort/
+  category: MMD 资源
+  description: 浏览器收藏 · Elle
+  tags:
+    - MMD 资源
+- name: MikuMikuWiki
+  url: https://wiki.mmdxyz.cn/doku.php
+  category: MMD 资源
+  description: 浏览器收藏 · MikuMikuWiki
+  tags:
+    - MMD 资源
+- name: 有道翻译
+  url: https://fanyi.youdao.com/
+  category: 实用软件
+  description: 浏览器收藏 · 有道翻译
+  tags:
+    - 实用软件
+- name: bilibili
+  url: https://www.bilibili.com/
+  category: 实用软件
+  description: 浏览器收藏 · bilibili
+  tags:
+    - 实用软件
+- name: 易搜
+  url: https://yiso.eu.org/
+  category: 实用软件
+  description: 浏览器收藏 · 易搜
+  tags:
+    - 实用软件
+- name: GPT Image 2
+  url: https://apimart.ai/zh/model/gpt-image-2
+  category: AI 工具
+  description: 浏览器收藏 · GPT Image 2
+  tags:
+    - AI 工具
+- name: Nano Banana Pro
+  url: https://apimart.ai/zh/model/nano-banana-2-api
+  category: AI 工具
+  description: 浏览器收藏 · Nano Banana Pro
+  tags:
+    - AI 工具
+- name: 豆包
+  url: https://www.doubao.com/chat/
+  category: AI 工具
+  description: 浏览器收藏 · 豆包
+  tags:
+    - AI 工具
+- name: 即梦
+  url: https://jimeng.jianying.com/ai-tool/generate?type=image&workspace=undefined
+  category: AI 工具
+  description: 浏览器收藏 · 即梦
+  tags:
+    - AI 工具
+- name: Lovart
+  url: https://www.lovart.ai/zh/home
+  category: AI 工具
+  description: 浏览器收藏 · Lovart
+  tags:
+    - AI 工具
+- name: XFUN
+  url: https://www.xfun.design/homePage
+  category: 实用软件
+  description: 浏览器收藏 · XFUN
+  tags:
+    - 实用软件
+- name: Pinterest
+  url: https://www.pinterest.com/
+  category: 实用软件
+  description: 浏览器收藏 · Pinterest
+  tags:
+    - 实用软件
+- name: SceneForge
+  url: https://sceneforge.studio/app
+  category: AI 工具
+  description: 浏览器收藏 · SceneForge
+  tags:
+    - AI 工具
+- name: ambientCG
+  url: https://ambientcg.com/
+  category: 实用软件
+  description: 浏览器收藏 · ambientCG
+  tags:
+    - 实用软件
+- name: Poly Haven
+  url: https://polyhaven.com/
+  category: 实用软件
+  description: 浏览器收藏 · Poly Haven
+  tags:
+    - 实用软件
+- name: 搜图导航
+  url: https://www.91sotu.com/
+  category: 实用软件
+  description: 浏览器收藏 · 搜图导航
+  tags:
+    - 实用软件
+- name: PDF转图像
+  url: https://tools.pdf24.org/zh/pdf-to-images
+  category: 实用软件
+  description: 浏览器收藏 · PDF转图像
+  tags:
+    - 实用软件
+- name: LibTV
+  url: https://www.liblib.tv/canvas?spaceId=10878124&projectId=62819aa1291341a497cccb9f6f74275a
+  category: AI 工具
+  description: 浏览器收藏 · LibTV
+  tags:
+    - AI 工具
+- name: iKuuu
+  url: https://ikuuu.win/
+  category: 实用软件
+  description: 浏览器收藏 · iKuuu
+  tags:
+    - 实用软件
+- name: 山水云
+  url: http://xn--9kq015a4jm.com/
+  category: 实用软件
+  description: 浏览器收藏 · 山水云
+  tags:
+    - 实用软件
+- name: 智修Ai学院
+  url: https://www.zxaixueyuan.com/
+  category: AI 工具
+  description: 浏览器收藏 · 智修Ai学院
+  tags:
+    - AI 工具
+- name: Blender中国社区
+  url: https://www.blendercn.org/
+  category: 设计资源
+  description: 浏览器收藏 · Blender中国社区
+  tags:
+    - 设计资源
+- name: KurTip
+  url: https://kurtwei.com/blog/
+  category: 设计资源
+  description: 浏览器收藏 · KurTip
+  tags:
+    - 设计资源
+- name: BLT
+  url: https://www.blendermagic.cn/
+  category: 设计资源
+  description: 浏览器收藏 · BLT
+  tags:
+    - 设计资源
+- name: 全民解析网 - VIP视频高清解析 - VIP视频在线搜索解析官网
+  url: https://jx.z6.net.cn/
+  category: 实用软件
+  description: 浏览器收藏 · 全民解析网 - VIP视频高清解析 - VIP视频在线搜索解析官网
+  tags:
+    - 实用软件
+- name: 电影天堂:高清电影下载,高品质生活
+  url: https://www.dygod.net/
+  category: 实用软件
+  description: 浏览器收藏 · 电影天堂:高清电影下载,高品质生活
+  tags:
+    - 实用软件
+- name: 悠久的小宝库
+  url: https://u9baoku.xyz/
+  category: 实用软件
+  description: 软件与资源收藏站。
+  tags:
+    - 实用软件
+- name: 轻尘（Carefree）
+  url: https://pan.lanzouo.com/b0f1hcopa
+  category: 实用软件
+  description: PotPlayer 皮肤，旧称 Carefree，基于 FlyDonkey 的 theSimpleThing2 Black 修改。支持透明无边框界面，建议启用图层式皮肤输出。
+  tags:
+    - PotPlayer
+    - 播放器皮肤
+    - 轻尘
+    - Carefree
+- name: HEU_KMS_Activator
+  url: https://github.com/zbezj/HEU_KMS_Activator/releases
+  category: 系统维护
+  description: Windows 与 Office 激活工具的项目发布页。
+  tags:
+    - 系统维护
+- name: MAS
+  url: https://massgrave.dev/
+  category: 系统维护
+  description: Microsoft Activation Scripts，Windows 与 Office 激活工具。
+  tags:
+    - 系统维护
+- name: GitHub 文件加速
+  url: https://shrill-pond-3e81.hunsh.workers.dev/
+  category: 实用软件
+  description: 用于 GitHub 文件下载的加速入口。
+  tags:
+    - 实用软件
+- name: Share-SSR
+  url: https://github.com/selierlin/Share-SSR-V2ray/blob/master/1-share-ssr-v2ray.md
+  category: 实用软件
+  description: Share-SSR-V2ray 项目的共享网络资源文档。
+  tags:
+    - 实用软件
+- name: KMS_VL_ALL_AIO
+  url: https://github.com/abbodi1406/KMS_VL_ALL_AIO/releases
+  category: 系统维护
+  description: 激活工具相关收藏；适用版本与使用说明待补充。
+  tags:
+    - 系统维护
+- name: Share-SS(6j5h)
+  url: https://www.lanzous.com/b1008660
+  category: 实用软件
+  description: 下载或文件分享：Share-SS(6j5h)。具体内容待补充。
+  tags:
+    - 实用软件
+- name: Microsoft VC++运行库
+  url: http://dreamcast2.ys168.com/
+  category: 实用软件
+  description: 下载或文件分享：Microsoft VC++运行库。具体内容待补充。
+  tags:
+    - 实用软件
+- name: '@vposy Adobe破解'
+  url: https://weibo.com/vposy?from=myfollow_all&is_all=1
+  category: 实用软件
+  description: 说明待补充。
+  tags:
+    - 实用软件
+- name: 亦是美网络 KMS
+  url: http://www.yishimei.cn/network/319.html
+  category: 系统维护
+  description: Windows、Office 等产品的 KMS 工具与相关教程。
+  tags:
+    - 系统维护
+- name: 渔的后花园
+  url: https://pan.yuos.top/#/s/yKuv?path=%2F
+  category: 实用软件
+  description: 下载或文件分享：渔的后花园。具体内容待补充。
+  tags:
+    - 实用软件
+- name: 迅雷破解版
+  url: https://pan.lanzoui.com/b0f22rzif
+  category: 实用软件
+  description: 下载或文件分享：迅雷破解版。具体内容待补充。
+  tags:
+    - 实用软件
+- name: iSlide 公网版
+  url: https://www.jianguoyun.com/p/DaWpngwQ5eiGCxjGyOAEIAA#dir=%2FWindows::mode=0
+  category: 实用软件
+  description: 下载或文件分享：iSlide 公网版 - 坚果云 - 云盘|网盘|企业网盘|同步|备份|无限空间|免费网络硬盘|企业云盘。具体内容待补充。
+  tags:
+    - 实用软件
+- name: WinRAR 烈火破解
+  url: https://apphot.cc/121.html
+  category: 实用软件
+  description: WinRAR 特别版相关下载页面。
+  tags:
+    - 实用软件
+- name: HEU_KMS_Activator(9xum)
+  url: https://wwi.lanzoup.com/b05gumbe
+  category: 系统维护
+  description: 激活工具相关收藏；适用版本与使用说明待补充。
+  tags:
+    - 系统维护
+- name: Adobe GenP
+  url: https://www.reddit.com/r/GenP/wiki/redditgenpguides/
+  category: 实用软件
+  description: 说明待补充。
+  tags:
+    - 实用软件
+- name: 360清理优化精简独立版 V15 极速版 - 吾爱破解
+  url: https://www.52pojie.cn/thread-1888984-1-1.html
+  category: 实用软件
+  description: 360 清理优化独立版的论坛分享。
+  tags:
+    - 实用软件
+- name: 脏图重绘
+  url: https://www.runninghub.cn/workflow/2054404696055533570?source=workspace
+  category: AI 工具
+  description: RunningHub 工作流：脏图重绘。
+  tags:
+    - AI 工具
+- name: RhBananaPro
+  url: https://www.runninghub.cn/workflow/2094724439928819713?source=workspace
+  category: AI 工具
+  description: RunningHub 工作流：RhBananaPro。
+  tags:
+    - AI 工具
+- name: RhBanana2
+  url: https://www.runninghub.cn/workflow/2056286160116346882?source=workspace
+  category: AI 工具
+  description: RunningHub 工作流：RhBanana2。
+  tags:
+    - AI 工具
+- name: SeedVR2高清放大
+  url: https://www.runninghub.cn/workflow/2061741044022210562?source=workspace
+  category: AI 工具
+  description: RunningHub 工作流：SeedVR2高清放大。
+  tags:
+    - AI 工具
+- name: sing-box
+  url: https://sing-box.sagernet.org/zh/clients/
+  category: 网络工具
+  description: sing-box 图形界面客户端的文档与下载入口。
+  tags:
+    - 网络工具
+- name: Clash Verge Rev
+  url: https://github.com/clash-verge-rev/clash-verge-rev/releases
+  category: 网络工具
+  description: Clash Verge Rev 客户端的项目发布页。
+  tags:
+    - 网络工具
+- name: Free-servers
+  url: https://github.com/Pawdroid/Free-servers
+  category: 网络工具
+  description: 共享网络节点与订阅资源的项目页面。
+  tags:
+    - 网络工具
+- name: WARP 一键优选IP
+  url: https://gitlab.com/Misaka-blog/warp-script/-/blob/main/files/warp-yxip/warp-yxip-win.7z
+  category: 网络工具
+  description: 网络工具或项目收藏；具体用途待补充。
+  tags:
+    - 网络工具
+- name: WireGuard
+  url: https://www.wireguard.com/
+  category: 网络工具
+  description: WireGuard 网络隧道工具。
+  tags:
+    - 网络工具
+- name: MatsuriDayo
+  url: https://matsuridayo.github.io/
+  category: 网络工具
+  description: MatsuriDayo 网络工具项目与文档。
+  tags:
+    - 网络工具
+- name: v2rayNG
+  url: https://github.com/2dust/v2rayNG/releases
+  category: 网络工具
+  description: Android 网络客户端 v2rayNG 的项目发布页。
+  tags:
+    - 网络工具
+- name: Clash-for-Windows_Chinese
+  url: https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases
+  category: 网络工具
+  description: Clash for Windows 中文版本相关项目发布页。
+  tags:
+    - 网络工具
+- name: WinNTSetup
+  url: https://www.mediafire.com/folder/53um6k2nmhvd5/
+  category: 实用软件
+  description: 下载或文件分享：WinNTSetup。具体内容待补充。
+  tags:
+    - 实用软件
+- name: 小米刷机包汇总
+  url: https://xiaomishequ.feishu.cn/sheets/shtcnsRTbwSvpUsaei6B04ogI6Z?sheet=05Zku0
+  category: 系统维护
+  description: 小米刷机包汇总文档；具体内容待补充。
+  tags:
+    - 系统维护
+- name: AIGC知识库
+  url: https://www.yuque.com/zuoshoumeiyoushou/kdv105
+  category: AI 工具
+  description: AIGC 相关资料与知识库。
+  tags:
+    - AI 工具
+- name: ZelinAI
+  url: https://www.zelinai.com/
+  category: AI 工具
+  description: AI 工具、提示词或教程收藏；具体内容待补充。
+  tags:
+    - AI 工具
+- name: 元素法典
+  url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
+  category: AI 工具
+  description: NovelAI 提示词与元素搭配参考文档。
+  tags:
+    - AI 工具
+- name: Stable Diffusion WebUI 整合包教程
+  url: https://www.bilibili.com/read/cv31254871/?spm_id_from=333.1369.0.0
+  category: AI 工具
+  description: AI 工具、提示词或教程收藏；具体内容待补充。
+  tags:
+    - AI 工具
+- name: aichatos永久地址 地址发布页
+  url: https://x.aichatos8.cn/
+  category: AI 工具
+  description: aichatos 的地址发布页面。
+  tags:
+    - AI 工具
+- name: 万年寝不足
+  url: https://onedrive.live.com/?authkey=%21ACYieu0bTYFjEiE&id=BB455C87024D8563%21588&cid=BB455C87024D8563
+  category: MMD 资源
+  description: MMD 创作者资源分享；具体内容待补充。
+  tags:
+    - MMD 资源
+- name: そぼろ
+  url: https://onedrive.live.com/?id=EF581C37A4524EDA%21108&cid=EF581C37A4524EDA
+  category: MMD 资源
+  description: MMD 创作者资源分享；具体内容待补充。
+  tags:
+    - MMD 资源
+- name: 下っ腹P
+  url: https://www.dropbox.com/sh/tsx5b0whjn7e3dv/AADsay2hUo2CMEK4bih30Nq6a/shader?dl=0&subfolder_nav_tracking=1
+  category: MMD 资源
+  description: MMD 创作者资源分享；具体内容待补充。
+  tags:
+    - MMD 资源
+- name: 凌凡资源分享
+  url: https://fanl.top/index.html
+  category: 实用软件
+  description: 资源分享网站；具体资源说明待补充。
+  tags:
+    - 实用软件
+- name: RhBanana2.1
+  url: https://www.runninghub.cn/workflow/2117431315023880193
+  category: AI 工具
+  description: RunningHub 工作流：RhBanana2.1。
+  tags:
+    - AI 工具
+- name: 抠图
+  url: https://www.runninghub.cn/workflow/2107767550653321217?source=workspace
+  category: AI 工具
+  description: RunningHub 工作流：抠图。
+  tags:
+    - AI 工具
