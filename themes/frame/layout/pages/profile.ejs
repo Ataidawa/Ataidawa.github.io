@@ -20,19 +20,25 @@
     for (var i = 0; i < posts.length; i++) {
       if (posts[i].featured_image) { first = posts[i]; break; }
     }
-    if (first) { strip.push({ img: first.featured_image, name: item.name }); }
+    if (first) { strip.push({ img: first.featured_image, name: item.name, english: item.english || ['VISUAL','DESIGN'] }); }
   });
 
   var blogCat = site.categories.findOne({ name: '文章' });
   var blogs = blogCat ? blogCat.posts.sort('-date').toArray().slice(0, 5) : [];
 %>
 
-<section class="hero">
+<section class="portfolio-cover cover-editorial" aria-label="作品集封面">
+<div class="cover-top"><span>JOPOLIS. / DESIGN ARCHIVE</span><span>2026 · HANGZHOU</span></div>
+<div class="cover-composition"><div class="cover-title"><p class="cover-kicker">电商视觉 · 品牌表达 · 信息设计</p><h1>视觉，<br>有迹可循<span class="cover-period">.</span></h1><p class="cover-subtitle">从第一眼的吸引，到每一处信息的清晰。</p><div class="cover-actions"><a class="hero-link hero-link-primary" href="/work/">浏览作品 ↗</a><a class="hero-link" href="#resume">认识 <%= pf.title %> ↓</a></div></div><div class="cover-gallery" aria-label="设计领域索引"><% strip.slice(0,3).forEach(function(s,i){ %><div class="cover-float float-<%= i %>"><a class="cover-sheet sheet-<%= i %>" href="/work/"><span class="sheet-number">0<%= i+1 %> / SELECTED</span><strong><%= s.name %></strong><span class="sheet-rule"></span><em><% s.english.forEach(function(line,n){ %><% if(n){ %><br><% } %><%= line %><% }); %></em><span class="sheet-arrow">↗</span></a></div><% }); %></div></div>
+<div class="cover-bottom"><span><%= pf.title %> · <%= pf.specialty || '电商视觉' %></span><span class="cover-ticker">信息的秩序 / 视觉的张力 / 细节的表达</span><a href="#resume">向下了解 ↓</a></div>
+</section>
+
+<section class="hero" id="resume">
   <div class="hero-text">
     <% var states={seeking:'求职中',available:'开放合作',employed:'在职',unavailable:'暂不接单'}; var status=states[pf.status] ? pf.status : 'seeking'; if (pf.status || pf.badge) { %>
       <div class="hero-badge" data-status="<%= status %>"><span class="dot" aria-hidden="true"></span><span><%= states[status] %><% if(pf.specialty) { %> · <%= pf.specialty %><% } %></span></div>
     <% } %>
-    <h1 class="hero-name"><%= pf.title %></h1>
+    <h2 class="hero-name"><%= pf.title %></h2>
     <% if (pf.role) { %><p class="hero-role"><%= pf.role %></p><% } %>
     <div class="hero-intro">
       <% bodyLines.forEach(function(line){ %><p><%= line.trim() %></p><% }); %>
@@ -92,3 +98,34 @@
  <div class="home-extra"><div class="section-head"><h2>相册簿</h2><a class="section-more" href="<%= url_for('/albums/') %>">全部相册 →</a></div><div class="home-album-grid"><% var previewPhotos=[]; (site.data.albums||[]).forEach(function(a){previewPhotos=previewPhotos.concat(a.photos||[]);}); previewPhotos.slice(0,3).forEach(function(p){ %><a href="<%= url_for('/albums/') %>" aria-label="浏览相册：<%= p.caption %>"><img src="<%= url_for(p.image) %>" alt="<%= p.caption %>" loading="lazy"></a><% }); %></div></div>
  <div class="home-extra"><div class="section-head"><h2>友链</h2><a class="section-more" href="<%= url_for('/friends/') %>">全部友链 →</a></div><div class="home-friends"><% (site.data.friends||[]).slice(0,2).forEach(function(f){ %><a class="friend-card" href="<%= f.url %>" target="_blank" rel="noopener noreferrer"><% if(f.avatar){ %><img src="<%= url_for(f.avatar) %>" alt="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="friend-avatar" aria-hidden="true" hidden><%= f.name.slice(0,1) %></span><% }else{ %><span class="friend-avatar"><%= f.name.slice(0,1) %></span><% } %><div><h2><%= f.name %></h2><p><%= f.description %></p></div><span>↗</span></a><% }); %></div></div>
 </section>
+
+<%
+  var savedSites = (site.data.marked || []).filter(function(b){ return /^https?:\/\//i.test(b.url || ''); });
+  var previewSites = [];
+  var seenCategories = new Set();
+  savedSites.forEach(function(b){
+    var category = b.category || '其他';
+    if (!seenCategories.has(category) && previewSites.length < 3) {
+      seenCategories.add(category);
+      previewSites.push(b);
+    }
+  });
+  savedSites.forEach(function(b){ if (previewSites.length < 3 && previewSites.indexOf(b) === -1) previewSites.push(b); });
+%>
+<% if (previewSites.length) { %>
+<section class="section home-bookmarks" aria-labelledby="home-bookmarks-title">
+  <div class="section-head">
+    <h2 id="home-bookmarks-title">网站收藏</h2>
+    <div class="section-summary"><p>好用的网站，留个记号。已收藏 <%= savedSites.length %> 个。</p><a class="section-more" href="<%= url_for('/marked/') %>">全部收藏 →</a></div>
+  </div>
+  <div class="marked-grid">
+    <% previewSites.forEach(function(b){ %>
+    <a class="marked-card" href="<%= b.url %>" target="_blank" rel="noopener noreferrer">
+      <div class="marked-card-top"><span class="marked-initial" aria-hidden="true"><%= b.name.slice(0,1) %></span><span class="content-chip"><%= b.category || '其他' %></span><span aria-hidden="true">↗</span></div>
+      <h2><%= b.name %></h2><p><%= b.description %></p>
+      <span class="marked-domain"><%= b.url.replace(/^https?:\/\//,'').replace(/\/$/,'') %></span>
+    </a>
+    <% }); %>
+  </div>
+</section>
+<% } %>

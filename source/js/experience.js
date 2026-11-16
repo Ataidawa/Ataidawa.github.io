@@ -4,7 +4,7 @@ function initExperience(){
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('has-entered'); observer.unobserve(entry.target); } });
     }, {threshold:0.05});
-    document.querySelectorAll('.work-grid-item,.work-entry,.blog-row,.hero,.album-heading,.album-photo,.friend-card,.friends-empty').forEach(function (el) { el.classList.add('will-enter'); observer.observe(el); });
+    document.querySelectorAll('.work-grid-item,.work-entry,.blog-row,.hero,.album-heading,.album-photo,.friend-card,.marked-card,.friends-empty').forEach(function (el) { el.classList.add('will-enter'); observer.observe(el); });
   }
   document.querySelectorAll('.image-viewer').forEach(function(d){d.remove();});
   var dialog = document.createElement('dialog');

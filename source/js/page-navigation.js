@@ -1,6 +1,6 @@
 (function(){
   var controller;
-  function supported(url){return url.origin===location.origin&&['/','/work/','/notes/','/albums/','/friends/'].includes(url.pathname);}
+  function supported(url){return url.origin===location.origin&&['/','/work/','/notes/','/albums/','/friends/','/marked/'].includes(url.pathname);}
   async function navigate(url,push){
     if(controller)controller.abort();controller=new AbortController();
     try{

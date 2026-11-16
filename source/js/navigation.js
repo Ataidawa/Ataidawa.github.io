@@ -35,3 +35,4 @@
     }
   });
 })();
+(function(){function active(){var current=location.pathname.replace(/index\.html$/,'').replace(/\/+$/,'')||'/';document.querySelectorAll('.menu-item').forEach(function(item){var link=item.querySelector('a');if(!link)return;var route=new URL(link.href,location.href).pathname.replace(/\/+$/,'')||'/';var selected=route===current;item.classList.toggle('menu-item-active',selected);if(selected)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');});}document.addEventListener('DOMContentLoaded',active);document.addEventListener('jopolis:navigate',active);active();})();

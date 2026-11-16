@@ -1,0 +1,263 @@
+# 根据本次聊天和旧站文章整理；使用或下载字体前查看各项目当前说明。
+- name: Typora
+  url: https://typora.io/
+  category: 实用软件
+  description: Markdown 编辑与本地图片预览，写文章时使用。
+  tags:
+    - Markdown
+    - 排版
+    - 写作
+- name: LocalSend
+  url: https://localsend.org/
+  category: 实用软件
+  description: 局域网跨设备传文件，之前随笔中记录过。
+  tags:
+    - 文件传输
+    - Windows
+    - Android
+    - 跨平台
+- name: Beeftext
+  url: https://beeftext.org/
+  category: 实用软件
+  description: 用快捷字词展开常用文本，保存时间戳和重复输入。
+  tags:
+    - 效率
+    - 文本替换
+    - Windows
+- name: Bandizip
+  url: https://www.bandisoft.com/bandizip/
+  category: 实用软件
+  description: 压缩与解压工具的官方介绍和下载入口。
+  tags:
+    - 压缩
+    - 解压
+    - Windows
+- name: MiSans
+  url: https://hyperos.mi.com/font/
+  category: 字体资源
+  description: 小米字体官网，查看字体家族、下载与使用说明。
+  tags:
+    - 小米
+    - 中文
+    - 字体
+- name: OPPO Sans
+  url: https://www.coloros.com/article/A00000074/
+  category: 字体资源
+  description: ColorOS 官方字体介绍与下载页面。
+  tags:
+    - OPPO
+    - 中文
+    - 无衬线
+- name: HarmonyOS Sans
+  url: https://developer.huawei.com/consumer/cn/doc/design-guides/font-0000001828772001/
+  category: 字体资源
+  description: 华为开发者的鸿蒙字体设计说明。
+  tags:
+    - 华为
+    - 鸿蒙
+    - 中文
+- name: HONOR Sans
+  url: https://developer.honor.com/cn/doc/guides/100681
+  category: 字体资源
+  description: 荣耀开发者的字体资源文档入口。
+  tags:
+    - 荣耀
+    - 中文
+    - 字体
+- name: vivo Sans
+  url: https://developers.vivo.com/doc/d/314fa33cbaec4a93be351cd44757d9d9
+  category: 字体资源
+  description: vivo 开放平台的字体介绍与资源文档。
+  tags:
+    - vivo
+    - 中文
+    - 字体
+- name: 阿里巴巴普惠体
+  url: https://www.alibabafonts.com/
+  category: 字体资源
+  description: 阿里巴巴字体官网，查询字体资源与使用说明。
+  tags:
+    - 阿里巴巴
+    - 普惠体
+    - 中文
+- name: 思源黑体
+  url: https://github.com/adobe-fonts/source-han-sans
+  category: 字体资源
+  description: Adobe 官方 Source Han Sans 项目与发行版本。
+  tags:
+    - Adobe
+    - 中文
+    - CJK
+    - 黑体
+- name: 思源宋体
+  url: https://github.com/adobe-fonts/source-han-serif
+  category: 字体资源
+  description: Adobe 官方 Source Han Serif 项目与发行版本。
+  tags:
+    - Adobe
+    - 中文
+    - CJK
+    - 宋体
+- name: Noto CJK
+  url: https://github.com/notofonts/noto-cjk
+  category: 字体资源
+  description: Noto 中日韩字体项目，查询字库和发行版本。
+  tags:
+    - Noto Sans SC
+    - 本站字体
+    - 中文
+    - CJK
+- name: Inter
+  url: https://rsms.me/inter/
+  category: 字体资源
+  description: Inter 作者官网，查看字形、字体特性与下载。
+  tags:
+    - 西文
+    - 界面
+    - 无衬线
+- name: IBM Plex
+  url: https://www.ibm.com/plex/
+  category: 字体资源
+  description: IBM 官方字体家族展示与资源入口。
+  tags:
+    - IBM
+    - 西文
+    - 排版
+- name: 更纱黑体
+  url: https://github.com/be5invis/Sarasa-Gothic
+  category: 字体资源
+  description: 更纱黑体作者项目，查询版本与下载说明。
+  tags:
+    - Sarasa Gothic
+    - 等宽
+    - 中文
+    - 编程
+- name: 梦源黑体
+  url: https://github.com/Pal3love/dream-han-cjk
+  category: 字体资源
+  description: Dream Han CJK 作者项目与发行资源。
+  tags:
+    - 梦源
+    - 中文
+    - 黑体
+- name: 得意黑
+  url: https://github.com/atelier-anchor/smiley-sans
+  category: 字体资源
+  description: Smiley Sans 作者项目，查看字形、下载和使用说明。
+  tags:
+    - 标题
+    - 中文
+    - Smiley Sans
+- name: 霞鹜文楷
+  url: https://github.com/lxgw/LxgwWenKai
+  category: 字体资源
+  description: 霞鹜文楷作者项目与版本下载。
+  tags:
+    - 文楷
+    - 中文
+    - 阅读
+- name: Apple 字体资源
+  url: https://developer.apple.com/fonts/
+  category: 字体资源
+  description: 苹果官方字体资源与使用说明入口。
+  tags:
+    - Apple
+    - SF Pro
+    - PingFang
+    - 苹方
+- name: 站酷 ZCOOL
+  url: https://www.zcool.com.cn/
+  category: 设计工具
+  description: 查看设计作品、作品集与视觉参考。
+  tags:
+    - 灵感
+    - 作品集
+    - 电商视觉
+- name: Remix Icon
+  url: https://github.com/Remix-Design/RemixIcon
+  category: 设计工具
+  description: 本站导航使用的图标集，官方项目与图标资源。
+  tags:
+    - 图标
+    - SVG
+    - 本站图标
+- name: Iconfont
+  url: https://www.iconfont.cn/
+  category: 设计工具
+  description: 阿里巴巴矢量图标库，旧站图标教程中使用过。
+  tags:
+    - 图标
+    - 矢量
+    - 素材
+- name: 识字体 LikeFont
+  url: https://www.likefont.com/
+  category: 设计工具
+  description: 图片字体识别工具，之前随笔中收藏过。
+  tags:
+    - 识别字体
+    - 查字体
+    - 排版
+- name: Hexo
+  url: https://hexo.io/zh-cn/
+  category: 建站开发
+  description: 本站使用的静态博客框架及中文文档。
+  tags:
+    - 博客
+    - 文档
+    - 本站框架
+- name: Git
+  url: https://git-scm.com/
+  category: 建站开发
+  description: 版本管理工具的官方文档与下载入口。
+  tags:
+    - 版本管理
+    - Git
+    - 发布
+- name: Node.js
+  url: https://nodejs.org/zh-cn
+  category: 建站开发
+  description: JavaScript 运行环境，网站构建所需工具。
+  tags:
+    - JavaScript
+    - Node
+    - 构建
+- name: GitHub
+  url: https://github.com/
+  category: 建站开发
+  description: 代码仓库与项目协作，本站源码托管位置。
+  tags:
+    - Git
+    - 开源
+    - GitHub Pages
+- name: Vercel
+  url: https://vercel.com/
+  category: 部署服务
+  description: 网站部署平台，本项目播放器接口的托管服务。
+  tags:
+    - 部署
+    - 托管
+    - 播放器
+- name: Cloudflare
+  url: https://www.cloudflare.com/zh-cn/
+  category: 部署服务
+  description: DNS、网络与网站托管相关产品入口。
+  tags:
+    - DNS
+    - CDN
+    - Pages
+- name: 腾讯 EdgeOne Pages
+  url: https://edgeone.cloud.tencent.com/pages/
+  category: 部署服务
+  description: 腾讯云中国站的 Pages 项目与部署入口。
+  tags:
+    - 腾讯云
+    - 部署
+    - Pages
+- name: DigitalPlat Domains
+  url: https://domain.digitalplat.org/
+  category: 部署服务
+  description: 之前 us.kg 免费域名的来源平台入口。
+  tags:
+    - 域名
+    - us.kg
+    - DNS

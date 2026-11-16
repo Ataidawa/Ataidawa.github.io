@@ -1,0 +1,10 @@
+<% var bookmarks=site.data.marked || []; var groups=[...new Set(bookmarks.map(function(b){return b.category||'其他';}))]; %>
+<header class="page-head"><p class="page-eyebrow">JOPOLIS / BOOKMARKS</p><h1 class="page-title">Marked.</h1><p class="page-desc">好用的网站，留个记号。</p></header>
+<section class="marked-collection" aria-label="网站收藏">
+  <div class="marked-tools"><label class="marked-search"><span>搜索收藏</span><input type="search" placeholder="网站、用途或关键词" aria-label="搜索收藏网站"></label><span class="marked-count" role="status"><%= bookmarks.length %> 个收藏</span></div>
+  <div class="marked-filters" role="group" aria-label="网站分类"><button class="tag-btn" data-marked-category="" aria-pressed="true">全部</button><% groups.forEach(function(group){ %><button class="tag-btn" data-marked-category="<%= group %>" aria-pressed="false"><%= group %></button><% }); %></div>
+  <div class="marked-grid"><% bookmarks.forEach(function(bookmark){ if(!/^https?:\/\//i.test(bookmark.url||''))return; %>
+    <a class="marked-card" href="<%= bookmark.url %>" target="_blank" rel="noopener noreferrer" data-category="<%= bookmark.category||'其他' %>" data-search="<%= [bookmark.name,bookmark.description,bookmark.category,(bookmark.tags||[]).join(' ')].join(' ').toLowerCase() %>"><div class="marked-card-top"><span class="marked-initial" aria-hidden="true"><%= bookmark.name.slice(0,1) %></span><span class="content-chip"><%= bookmark.category||'其他' %></span><span aria-hidden="true">↗</span></div><h2><%= bookmark.name %></h2><p><%= bookmark.description %></p><span class="marked-domain"><%= bookmark.url.replace(/^https?:\/\//,'').replace(/\/$/,'') %></span></a>
+  <% }); %></div>
+  <p class="marked-empty" hidden>没有找到匹配的网站，换个关键词试试。</p>
+</section>

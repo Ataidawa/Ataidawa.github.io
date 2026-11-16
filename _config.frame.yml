@@ -17,6 +17,7 @@ menu:
   文章: /notes/
   相册簿: /albums/
   友链: /friends/
+  网站收藏: /marked/
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -27,10 +28,13 @@ stylesheets:
 - /css/contact.css
 - /css/codex.css
 - /css/design-system.css
+- /css/home-cover.css
 
 # scripts loaded in the end of the body
 scripts:
 - /js/theme-switch.js
+- /js/cover.js
+- /js/marked.js
 - /js/footer.js
 - /js/portfolio-filter.js
 - /js/text-cursor.js

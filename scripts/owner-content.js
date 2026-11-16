@@ -44,7 +44,7 @@ function sync() {
     if(path.dirname(target)===path.resolve(hexo.source_dir,'_posts')&&fs.existsSync(target))fs.unlinkSync(target);
   }
   fs.mkdirSync(path.dirname(manifest),{recursive:true});fs.writeFileSync(manifest,JSON.stringify([...names]));
-  for(const [from,to] of [['相册/相册.yml','albums.yml'],['友链/友链.yml','friends.yml'],['设置/播放器.yml','music.yml'],['设置/页脚.yml','footer.yml'],['作品/分类.yml','portfolio.yml']])copyFile(from,'_data/'+to);
+  for(const [from,to] of [['收藏/网站.yml','marked.yml'],['相册/相册.yml','albums.yml'],['友链/友链.yml','friends.yml'],['设置/播放器.yml','music.yml'],['设置/页脚.yml','footer.yml'],['作品/分类.yml','portfolio.yml']])copyFile(from,'_data/'+to);
   copyFile('设置/配色与外观.css','css/design-system.css');
   function assets(dir,relative='') { for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const rel=path.join(relative,entry.name);if(entry.name==='NotoSansSC-Variable.ttf')continue;if(entry.isDirectory())assets(path.join(dir,entry.name),rel);else copyFile(path.join('素材',rel),path.join('managed-assets',rel));} }
   assets(path.join(owner,'素材'));

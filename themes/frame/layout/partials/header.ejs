@@ -4,7 +4,7 @@
       <div class="site-brand-container">
         <a href="<%= url_for()%>" aria-label="Jopolis · 首页">
           <% if (theme.logo_image.enable) {%>
-            <img class="logo-img" src="<%= url_for(theme.logo_image.image_path)%>" alt="Jopolis">
+            <span class="brand-slices"><img class="logo-img" src="<%= url_for(theme.logo_image.image_path)%>" alt="Jopolis"><img class="brand-slice slice-a" src="<%= url_for(theme.logo_image.image_path)%>" alt="" aria-hidden="true"><img class="brand-slice slice-b" src="<%= url_for(theme.logo_image.image_path)%>" alt="" aria-hidden="true"></span>
           <%} else {%>
             <%= theme.site_brand_name %>
           <% } %>
@@ -23,11 +23,11 @@
           <% Object.keys(theme.menu).forEach(key => { %>
             <% if (url_for(theme.menu[key]) + "index.html" == url_for(page.path)) {%>
               <li class="menu-item menu-item-active">
-                <a href="<%=url_for(theme.menu[key])%>"><span class="nav-icon ri-icon" data-icon="<%= ({'/':'home-5-line','/work/':'briefcase-4-line','/notes/':'article-line','/albums/':'gallery-line','/friends/':'links-line'})[theme.menu[key]] || 'article-line' %>" aria-hidden="true"></span><span><%=key%></span><span class="nav-chevron" aria-hidden="true">→</span></a>
+                <a href="<%=url_for(theme.menu[key])%>"><span class="nav-icon ri-icon" data-icon="<%= ({'/':'home-5-line','/work/':'briefcase-4-line','/notes/':'article-line','/albums/':'gallery-line','/friends/':'links-line','/marked/':'bookmark-3-line'})[theme.menu[key]] || 'article-line' %>" aria-hidden="true"></span><span><%=key%></span><span class="nav-chevron" aria-hidden="true">→</span></a>
               </li> 
             <%} else {%>
               <li class="menu-item">
-                <a href="<%=url_for(theme.menu[key])%>"><span class="nav-icon ri-icon" data-icon="<%= ({'/':'home-5-line','/work/':'briefcase-4-line','/notes/':'article-line','/albums/':'gallery-line','/friends/':'links-line'})[theme.menu[key]] || 'article-line' %>" aria-hidden="true"></span><span><%=key%></span><span class="nav-chevron" aria-hidden="true">→</span></a>
+                <a href="<%=url_for(theme.menu[key])%>"><span class="nav-icon ri-icon" data-icon="<%= ({'/':'home-5-line','/work/':'briefcase-4-line','/notes/':'article-line','/albums/':'gallery-line','/friends/':'links-line','/marked/':'bookmark-3-line'})[theme.menu[key]] || 'article-line' %>" aria-hidden="true"></span><span><%=key%></span><span class="nav-chevron" aria-hidden="true">→</span></a>
               </li> 
             <% }%>       
           <% }); %>
