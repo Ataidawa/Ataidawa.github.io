@@ -3,7 +3,7 @@ typora-copy-images-to: "./component-guide.assets"
 short_id: "4acc5b24"
 title: 文章控件手册：复制这些示例即可使用
 date: 2026-11-15 11:05:00
-updated: 2026-11-15
+updated: 2026-11-17
 categories:
   - 文章
 tags:
@@ -123,3 +123,11 @@ tags:
 ```
 
 提供播放／暂停、播放进度和时间显示，时间会自动读取音频元数据。播放一段录音会暂停其他录音和全局音乐。建议 WAV 用于短音效，较长录音用常见的 MP3 或 M4A 文件；具体格式支持取决于浏览器。
+
+## 2026-11-17：共用卡片与链接交互
+
+作品、文章列表、相册、友链和网站收藏由全站交互脚本自动识别，无需在每个页面再写鼠标动画。新增组件请复用现有 `.work-grid-item`、`.blog-row`、`.album-photo`、`.friend-card` 或 `.marked-card` 结构；共用动效由 `site-motion.js` 和 `site-motion.css` 维护。普通文字超链接保留细下划线展开反馈，键盘访问保留焦点提示。
+
+图片放大按钮的波纹必须放在 `position:relative` 且裁切溢出的图片容器内，坐标按按钮实际尺寸计算，避免波纹出现在文字区域。大图模式仍使用直角图片。
+
+收藏 favicon 使用 `partials/bookmark-icon.ejs` 共用组件；本地图标懒加载，缺失或加载失败时退回名称首字。图标不参与照片的大图与多尺寸生成流程。

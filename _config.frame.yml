@@ -29,9 +29,11 @@ stylesheets:
 - /css/codex.css
 - /css/design-system.css
 - /css/home-cover.css
+- /css/site-motion.css
 
 # scripts loaded in the end of the body
 scripts:
+- /js/site-motion.js
 - /js/theme-switch.js
 - /js/cover.js
 - /js/marked.js

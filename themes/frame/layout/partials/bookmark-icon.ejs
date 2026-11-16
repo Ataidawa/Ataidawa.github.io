@@ -1,0 +1,1 @@
+<span class="marked-initial" aria-hidden="true"><%= bookmark.name.slice(0,1) %><% if(bookmark.favicon && /^\/managed-assets\/bookmarks\/icons\/[a-f0-9]+\.png$/.test(bookmark.favicon)){ %><img data-site-icon src="<%= url_for(bookmark.favicon) %>" width="44" height="44" alt="" loading="lazy" decoding="async" onerror="this.hidden=true"><% } %></span>

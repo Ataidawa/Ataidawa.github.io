@@ -30,7 +30,7 @@
 <section class="portfolio-cover cover-editorial" aria-label="作品集封面">
 <div class="cover-top"><span>JOPOLIS. / DESIGN ARCHIVE</span><span>2026 · HANGZHOU</span></div>
 <div class="cover-composition"><div class="cover-title"><p class="cover-kicker">电商视觉 · 品牌表达 · 信息设计</p><h1>视觉，<br>有迹可循<span class="cover-period">.</span></h1><p class="cover-subtitle">从第一眼的吸引，到每一处信息的清晰。</p><div class="cover-actions"><a class="hero-link hero-link-primary" href="/work/">浏览作品 ↗</a><a class="hero-link" href="#resume">认识 <%= pf.title %> ↓</a></div></div><div class="cover-gallery" aria-label="设计领域索引"><% strip.slice(0,3).forEach(function(s,i){ %><div class="cover-float float-<%= i %>"><a class="cover-sheet sheet-<%= i %>" href="/work/"><span class="sheet-number">0<%= i+1 %> / SELECTED</span><strong><%= s.name %></strong><span class="sheet-rule"></span><em><% s.english.forEach(function(line,n){ %><% if(n){ %><br><% } %><%= line %><% }); %></em><span class="sheet-arrow">↗</span></a></div><% }); %></div></div>
-<div class="cover-bottom"><span><%= pf.title %> · <%= pf.specialty || '电商视觉' %></span><span class="cover-ticker">信息的秩序 / 视觉的张力 / 细节的表达</span><a href="#resume">向下了解 ↓</a></div>
+<div class="cover-bottom"><span><%= pf.title %> · <%= pf.specialty || '电商视觉' %></span><span class="cover-ticker">信息的秩序 / 视觉的张力 / 细节的表达</span><a href="/marked/">逛逛网站收藏 ↗</a></div>
 </section>
 
 <section class="hero" id="resume">
@@ -121,7 +121,7 @@
   <div class="marked-grid">
     <% previewSites.forEach(function(b){ %>
     <a class="marked-card" href="<%= b.url %>" target="_blank" rel="noopener noreferrer">
-      <div class="marked-card-top"><span class="marked-initial" aria-hidden="true"><%= b.name.slice(0,1) %></span><span class="content-chip"><%= b.category || '其他' %></span><span aria-hidden="true">↗</span></div>
+      <div class="marked-card-top"><%- partial('partials/bookmark-icon', {bookmark:b}) %><span class="content-chip"><%= b.category || '其他' %></span><span aria-hidden="true">↗</span></div>
       <h2><%= b.name %></h2><p><%= b.description %></p>
       <span class="marked-domain"><%= b.url.replace(/^https?:\/\//,'').replace(/\/$/,'') %></span>
     </a>

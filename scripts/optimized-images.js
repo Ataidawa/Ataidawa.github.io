@@ -32,7 +32,7 @@ hexo.extend.filter.register('after_generate',async function(){
     const tags=[...new Set(html.match(/<img\b[^>]*>/gi)||[])];
     for(const tag of tags){
       const match=tag.match(/\bsrc="(\/[^"?#]+\.(?:jpe?g|png|webp))(?:[?#][^"]*)?"/i);
-      if(!match||tag.includes('srcset='))continue;
+      if(!match||tag.includes('srcset=')||tag.includes('data-site-icon'))continue;
       const image=await optimize(match[1]);if(!image)continue;
       const small=image.variants[0],large=image.variants[image.variants.length-1];
       const sizes=route==='albums/index.html'||route==='index.html'?'(max-width: 688px) 100vw, 300px':'(max-width: 688px) 100vw, (max-width: 1200px) 50vw, 780px';
