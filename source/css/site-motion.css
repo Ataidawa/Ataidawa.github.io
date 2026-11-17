@@ -1,4 +1,16 @@
 /* Shared interaction contract. Loaded after the homepage's composition rules. */
+html { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+@media(max-width:688px) {
+ html,body { min-width:0!important; width:100%; overflow-x:hidden; }
+ .header .flex-container,.main,.main .flex-container { min-width:0!important; max-width:100%; box-sizing:border-box; }
+ .header .logo-img { width:112px!important; height:27px!important; max-width:100%; object-fit:contain; }
+ .header .site-brand-container,.header .brand-slices { min-width:0; max-width:150px; }
+ .portfolio-cover.cover-editorial { width:calc(100vw - 24px); margin-left:calc(50% - 50vw + 12px); box-sizing:border-box; }
+ .cover-top { font-size:10px; flex-wrap:wrap; gap:8px; letter-spacing:.06em; }
+ .cover-top>* { max-width:100%; overflow-wrap:anywhere; }
+ .main img { max-width:100%; }
+ .marked-grid,.friends-grid { grid-template-columns:minmax(0,1fr); }
+}
 :root { --motion-fast:160ms; --motion-surface:280ms; --motion-ease:cubic-bezier(.2,.75,.25,1); }
 .main:has(.portfolio-cover) { --cover-gap:16px; padding-top:var(--cover-gap); }
 .main .portfolio-cover { margin-top:0; border-radius:var(--radius-card); overflow:hidden; height:calc(100svh - var(--nav-height,80px) - var(--cover-gap)); min-height:calc(100svh - var(--nav-height,80px) - var(--cover-gap)); }
