@@ -1,9 +1,10 @@
-# 收藏图标缓存在网站管理/素材/bookmarks/icons；favicon 不存在时显示首字。
+# 根据网站标题、已读取的页面信息及用途整理分类。
 - name: Typora
   url: https://typora.io/
   category: 实用软件
   description: Markdown 编辑与本地图片预览，写文章时使用。
   tags:
+    - 实用软件
     - Markdown
     - 排版
     - 写作
@@ -13,6 +14,7 @@
   category: 实用软件
   description: 局域网跨设备传文件，之前随笔中记录过。
   tags:
+    - 实用软件
     - 文件传输
     - Windows
     - Android
@@ -23,6 +25,7 @@
   category: 实用软件
   description: 用快捷字词展开常用文本，保存时间戳和重复输入。
   tags:
+    - 实用软件
     - 效率
     - 文本替换
     - Windows
@@ -32,6 +35,7 @@
   category: 实用软件
   description: 压缩与解压工具的官方介绍和下载入口。
   tags:
+    - 实用软件
     - 压缩
     - 解压
     - Windows
@@ -41,6 +45,7 @@
   category: 字体资源
   description: 小米字体官网，查看字体家族、下载与使用说明。
   tags:
+    - 字体资源
     - 小米
     - 中文
     - 字体
@@ -49,6 +54,7 @@
   category: 字体资源
   description: ColorOS 官方字体介绍与下载页面。
   tags:
+    - 字体资源
     - OPPO
     - 中文
     - 无衬线
@@ -58,6 +64,7 @@
   category: 字体资源
   description: 华为开发者的鸿蒙字体设计说明。
   tags:
+    - 字体资源
     - 华为
     - 鸿蒙
     - 中文
@@ -67,6 +74,7 @@
   category: 字体资源
   description: 荣耀开发者的字体资源文档入口。
   tags:
+    - 字体资源
     - 荣耀
     - 中文
     - 字体
@@ -76,6 +84,7 @@
   category: 字体资源
   description: vivo 开放平台的字体介绍与资源文档。
   tags:
+    - 字体资源
     - vivo
     - 中文
     - 字体
@@ -85,6 +94,7 @@
   category: 字体资源
   description: 阿里巴巴字体官网，查询字体资源与使用说明。
   tags:
+    - 字体资源
     - 阿里巴巴
     - 普惠体
     - 中文
@@ -94,6 +104,7 @@
   category: 字体资源
   description: Adobe 官方 Source Han Sans 项目与发行版本。
   tags:
+    - 字体资源
     - Adobe
     - 中文
     - CJK
@@ -104,6 +115,7 @@
   category: 字体资源
   description: Adobe 官方 Source Han Serif 项目与发行版本。
   tags:
+    - 字体资源
     - Adobe
     - 中文
     - CJK
@@ -114,6 +126,7 @@
   category: 字体资源
   description: Noto 中日韩字体项目，查询字库和发行版本。
   tags:
+    - 字体资源
     - Noto Sans SC
     - 本站字体
     - 中文
@@ -124,6 +137,7 @@
   category: 字体资源
   description: Inter 作者官网，查看字形、字体特性与下载。
   tags:
+    - 字体资源
     - 西文
     - 界面
     - 无衬线
@@ -133,6 +147,7 @@
   category: 字体资源
   description: IBM 官方字体家族展示与资源入口。
   tags:
+    - 字体资源
     - IBM
     - 西文
     - 排版
@@ -142,6 +157,7 @@
   category: 字体资源
   description: 更纱黑体作者项目，查询版本与下载说明。
   tags:
+    - 字体资源
     - Sarasa Gothic
     - 等宽
     - 中文
@@ -152,6 +168,7 @@
   category: 字体资源
   description: Dream Han CJK 作者项目与发行资源。
   tags:
+    - 字体资源
     - 梦源
     - 中文
     - 黑体
@@ -161,6 +178,7 @@
   category: 字体资源
   description: Smiley Sans 作者项目，查看字形、下载和使用说明。
   tags:
+    - 字体资源
     - 标题
     - 中文
     - Smiley Sans
@@ -170,6 +188,7 @@
   category: 字体资源
   description: 霞鹜文楷作者项目与版本下载。
   tags:
+    - 字体资源
     - 文楷
     - 中文
     - 阅读
@@ -179,6 +198,7 @@
   category: 字体资源
   description: 苹果官方字体资源与使用说明入口。
   tags:
+    - 字体资源
     - Apple
     - SF Pro
     - PingFang
@@ -186,9 +206,10 @@
   favicon: /managed-assets/bookmarks/icons/040e49eeca924515.png
 - name: 站酷 ZCOOL
   url: https://www.zcool.com.cn/
-  category: 设计工具
+  category: 设计资源
   description: 查看设计作品、作品集与视觉参考。
   tags:
+    - 设计资源
     - 灵感
     - 作品集
     - 电商视觉
@@ -198,6 +219,7 @@
   category: 设计工具
   description: 本站导航使用的图标集，官方项目与图标资源。
   tags:
+    - 设计工具
     - 图标
     - SVG
     - 本站图标
@@ -207,6 +229,7 @@
   category: 设计工具
   description: 阿里巴巴矢量图标库，旧站图标教程中使用过。
   tags:
+    - 设计工具
     - 图标
     - 矢量
     - 素材
@@ -216,42 +239,47 @@
   category: 设计工具
   description: 图片字体识别工具，之前随笔中收藏过。
   tags:
+    - 设计工具
     - 识别字体
     - 查字体
     - 排版
   favicon: /managed-assets/bookmarks/icons/55d978af98b6914b.png
 - name: Hexo
   url: https://hexo.io/zh-cn/
-  category: 建站开发
+  category: 开发与编程
   description: 本站使用的静态博客框架及中文文档。
   tags:
+    - 开发与编程
     - 博客
     - 文档
     - 本站框架
   favicon: /managed-assets/bookmarks/icons/48ebab24c99efd60.png
 - name: Git
   url: https://git-scm.com/
-  category: 建站开发
+  category: 开发与编程
   description: 版本管理工具的官方文档与下载入口。
   tags:
+    - 开发与编程
     - 版本管理
     - Git
     - 发布
   favicon: /managed-assets/bookmarks/icons/607bd260855ea583.png
 - name: Node.js
   url: https://nodejs.org/zh-cn
-  category: 建站开发
+  category: 开发与编程
   description: JavaScript 运行环境，网站构建所需工具。
   tags:
+    - 开发与编程
     - JavaScript
     - Node
     - 构建
   favicon: /managed-assets/bookmarks/icons/d05c9ca803b9119b.png
 - name: GitHub
   url: https://github.com/
-  category: 建站开发
+  category: 开发与编程
   description: 代码仓库与项目协作，本站源码托管位置。
   tags:
+    - 开发与编程
     - Git
     - 开源
     - GitHub Pages
@@ -261,6 +289,7 @@
   category: 部署服务
   description: 网站部署平台，本项目播放器接口的托管服务。
   tags:
+    - 部署服务
     - 部署
     - 托管
     - 播放器
@@ -270,6 +299,7 @@
   category: 部署服务
   description: DNS、网络与网站托管相关产品入口。
   tags:
+    - 部署服务
     - DNS
     - CDN
     - Pages
@@ -279,6 +309,7 @@
   category: 部署服务
   description: 腾讯云中国站的 Pages 项目与部署入口。
   tags:
+    - 部署服务
     - 腾讯云
     - 部署
     - Pages
@@ -288,23 +319,24 @@
   category: 部署服务
   description: 之前 us.kg 免费域名的来源平台入口。
   tags:
+    - 部署服务
     - 域名
     - us.kg
     - DNS
   favicon: /managed-assets/bookmarks/icons/497b20c2beffa06e.png
 - name: 爬虫报错：Do you need to install a parser library
   url: https://blog.csdn.net/qq_41996090/article/details/82313842
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · 爬虫报错：Do you need to install a parser library
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/a88ab60df8bd80e2.png
 - name: Python re正则表达式速查
   url: https://www.cnblogs.com/trojan-z/p/7406335.html
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · Python re正则表达式速查
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/19f90e5d1e106659.png
 - name: 新版VMware之MacOS系统爬坑记
   url: https://mp.weixin.qq.com/s/rqw9m8JVJ_XHi4Ufst_rsQ
@@ -321,115 +353,108 @@
     - 学习与教程
 - name: sublime怎么设置中文
   url: https://www.php.cn/tool/sublime/463446.html
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · sublime怎么设置中文
   tags:
-    - 学习与教程
+    - 开发与编程
 - name: MIUI历史版本
   url: https://miuiver.com/
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · MIUI历史版本
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/7655cbe1765f6f3a.png
 - name: 小丸工具箱「值不能为null
   url: https://www.bilibili.com/read/cv10133597
-  category: 学习与教程
+  category: 兴趣与娱乐
   description: 浏览器收藏 · 小丸工具箱「值不能为null
   tags:
-    - 学习与教程
+    - 兴趣与娱乐
   favicon: /managed-assets/bookmarks/icons/0fae5909ea6ae967.png
 - name: .NET Framework Repair Tool
   url: https://www.microsoft.com/en-us/download/details.aspx?id=30135
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · .NET Framework Repair Tool
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3be1be2cbd942bce.png
 - name: RedmiBook Pro 15 增强版 驱动下载
   url: https://www.mi.com/service/notebook/drivers/A29R
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · RedmiBook Pro 15 增强版 驱动下载
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/fab31ec537afb009.png
 - name: 联想驱动列表
   url: https://newsupport.lenovo.com.cn/driveList.html?fromsource=driveList&selname=PF2BV52N
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · 联想驱动列表
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/c64fbf2ccde7510e.png
 - name: ASUS Vivobook Pro 15 OLED
   url: >-
     https://www.asus.com.cn/laptops/for-creators/vivobook/asus-vivobook-pro-15-oled-k6500-12th-gen-intel/helpdesk_bios/?model2Name=ASUS-Vivobook-Pro-15-OLED-K6500-12th-Gen-Intel
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · ASUS Vivobook Pro 15 OLED
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/bae1540f500fd74b.png
 - name: 小米线刷 Antirollback check error
   url: https://miuiver.com/antirollback-check-error/
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · 小米线刷 Antirollback check error
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/7655cbe1765f6f3a.png
 - name: Redmi Book Pro 14 2022
   url: https://www.mi.com/service/notebook/drivers/A28
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · Redmi Book Pro 14 2022
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/fab31ec537afb009.png
 - name: 黑果小兵的部落阁
   url: https://blog.daliansky.net/
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · 黑果小兵的部落阁
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/61907360b5e1a509.png
 - name: 联想（Lenovo）小新15IIL2020款i5-1035G电脑 Hackintosh 黑苹果efi引导文件 _ 黑苹果社区
   url: https://www.imacosx.cn/112407.html
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · 联想（Lenovo）小新15IIL2020款i5-1035G电脑 Hackintosh 黑苹果efi引导文件 _ 黑苹果社区
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/d0b8ba4229c919f2.png
 - name: Python3 教程
   url: https://www.runoob.com/python3/python3-tutorial.html
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · Python3 教程
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/78749b16a5a95825.png
 - name: Python3 实例
   url: https://www.runoob.com/python3/python3-examples.html
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · Python3 实例
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/78749b16a5a95825.png
-- name: 之江汇
-  url: http://yun.zjer.cn/index.php?r=portal/index/index
-  category: 学习与教程
-  description: 浏览器收藏 · 之江汇
-  tags:
-    - 学习与教程
-  favicon: /managed-assets/bookmarks/icons/ac2612c1b520d76a.png
 - name: Python 6小时网络爬虫入门课程完整版(2020年） - YouTube
   url: https://www.youtube.com/watch?v=ZMjhBB17KVY&t=752s
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · Python 6小时网络爬虫入门课程完整版(2020年） - YouTube
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/6860776e5611f69c.png
 - name: LOFTER
   url: http://www.lofter.com/
-  category: 学习与教程
+  category: 兴趣与娱乐
   description: 浏览器收藏 · LOFTER
   tags:
-    - 学习与教程
+    - 兴趣与娱乐
   favicon: /managed-assets/bookmarks/icons/49e58abe834fe5d6.png
 - name: Topbook
   url: https://topbook.cc/overview
@@ -440,24 +465,17 @@
   favicon: /managed-assets/bookmarks/icons/fcc1743e0d453e03.png
 - name: Git教程
   url: https://www.liaoxuefeng.com/wiki/896043488029600
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · Git教程
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/0a44e11d904b9a2e.png
-- name: 安全教育平台
-  url: https://ningbo.xueanquan.com/
-  category: 学习与教程
-  description: 浏览器收藏 · 安全教育平台
-  tags:
-    - 学习与教程
-  favicon: /managed-assets/bookmarks/icons/1a998f7bd2418e3d.png
 - name: PHP 教程 | 菜鸟教程
   url: https://www.runoob.com/php/php-tutorial.html
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · PHP 教程 | 菜鸟教程
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/78749b16a5a95825.png
 - name: RIME | 中州韻輸入法引擎
   url: https://rime.im/
@@ -468,39 +486,32 @@
   favicon: /managed-assets/bookmarks/icons/77bd9facd5441bc7.png
 - name: 力扣 (LeetCode)
   url: https://leetcode.cn/problemset/all/
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · 力扣 (LeetCode)
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/c8b68bb42698494a.png
 - name: LookAE
   url: https://www.lookae.com/
-  category: 学习与教程
+  category: 设计资源
   description: 浏览器收藏 · LookAE
   tags:
-    - 学习与教程
+    - 设计资源
   favicon: /managed-assets/bookmarks/icons/41b89d92529ed850.png
 - name: OI Wiki
   url: https://oi-wiki.org//
-  category: 学习与教程
+  category: 开发与编程
   description: 浏览器收藏 · OI Wiki
   tags:
-    - 学习与教程
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/ef38d59b0a769679.png
 - name: 免费压缩PDF文件
   url: https://smallpdf.com/cn/compress-pdf
-  category: 学习与教程
+  category: 办公与文档
   description: 浏览器收藏 · 免费压缩PDF文件
   tags:
-    - 学习与教程
+    - 办公与文档
   favicon: /managed-assets/bookmarks/icons/389f3ed3286f62c3.png
-- name: 浙江省等级考试考生报名系统
-  url: https://crcs.zjzs.net/
-  category: 学习与教程
-  description: 浏览器收藏 · 浙江省等级考试考生报名系统
-  tags:
-    - 学习与教程
-  favicon: /managed-assets/bookmarks/icons/ae4acce326a848a5.png
 - name: 红米 Note 7 Pro violet
   url: https://xiaomirom.com/series/violet/
   category: 学习与教程
@@ -510,31 +521,31 @@
   favicon: /managed-assets/bookmarks/icons/15e4140dd773a20e.png
 - name: AndroidTV x86
   url: https://archive.org/details/androidtv-x86
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · AndroidTV x86
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/b83974d09bef2f6e.png
 - name: Install/Dual Boot Android TV OS on Windows PC - YouTube
   url: https://www.youtube.com/watch?v=ahHAzll-bMI
-  category: 学习与教程
+  category: 系统维护
   description: 浏览器收藏 · Install/Dual Boot Android TV OS on Windows PC - YouTube
   tags:
-    - 学习与教程
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/6860776e5611f69c.png
 - name: 从Youtube，Viki，Viu，Vlive等下载字幕！ - DownSub
   url: https://downsub.com/
-  category: 学习与教程
+  category: 影音工具
   description: 浏览器收藏 · 从Youtube，Viki，Viu，Vlive等下载字幕！ - DownSub
   tags:
-    - 学习与教程
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/b08aff40c3e8fe89.png
 - name: theSimpleThing 2.0
   url: https://www.deviantart.com/flydonkey/art/444035536
-  category: 兴趣与娱乐
+  category: 影音工具
   description: 浏览器收藏 · theSimpleThing 2.0
   tags:
-    - 兴趣与娱乐
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/12d4053fc39bdb3d.png
 - name: 3DM游戏网
   url: https://www.3dmgame.com/
@@ -668,10 +679,10 @@
   favicon: /managed-assets/bookmarks/icons/8a9dac33daf0ba04.png
 - name: Kardox
   url: https://www.deviantart.com/fiko3535/art/Kardox-Skin-for-PotPlayer-576709785
-  category: 兴趣与娱乐
+  category: 影音工具
   description: 浏览器收藏 · Kardox
   tags:
-    - 兴趣与娱乐
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/12d4053fc39bdb3d.png
 - name: M站
   url: https://www.missevan.com/
@@ -694,13 +705,6 @@
   tags:
     - 兴趣与娱乐
   favicon: /managed-assets/bookmarks/icons/92895638e1146661.png
-- name: mikumikumoving_eng
-  url: https://sites.google.com/site/mikumikumovingeng/mikumikumoving
-  category: 兴趣与娱乐
-  description: 浏览器收藏 · mikumikumoving_eng
-  tags:
-    - 兴趣与娱乐
-  favicon: /managed-assets/bookmarks/icons/41bd38517b7bcaa0.png
 - name: OptiFine
   url: https://optifine.net/home
   category: 兴趣与娱乐
@@ -759,10 +763,10 @@
   favicon: /managed-assets/bookmarks/icons/a6e5256a2786edde.png
 - name: Splas
   url: https://www.deviantart.com/sasukedll7170/art/Splash-2-1-skin-for-PotPlayer-617203811
-  category: 兴趣与娱乐
+  category: 影音工具
   description: 浏览器收藏 · Splas
   tags:
-    - 兴趣与娱乐
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/12d4053fc39bdb3d.png
 - name: Steam Unlocked
   url: https://steamunlocked.net/
@@ -843,17 +847,17 @@
   favicon: /managed-assets/bookmarks/icons/e390ec72339af9b2.png
 - name: SwitchHost -hosts 文件管理工具
   url: https://github.com/oldj/SwitchHosts
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · SwitchHost -hosts 文件管理工具
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: v2rayN
   url: https://github.com/2dust/v2rayN
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · v2rayN
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: 虚拟显示屏
   url: https://www.spacedesk.net/zh/
@@ -871,17 +875,17 @@
   favicon: /managed-assets/bookmarks/icons/0b35ac7637a6df3a.png
 - name: K-Lite Codec Pack
   url: https://www.codecguide.com/download_kl.htm
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · K-Lite Codec Pack
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/b887895e4b1d0505.png
 - name: Watt Toolkit
   url: https://steampp.net/
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · Watt Toolkit
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/b61123546c785bc8.png
 - name: iTop Easy Desktop
   url: https://www.itopvpn.com/itop-easy-desktop
@@ -892,31 +896,31 @@
   favicon: /managed-assets/bookmarks/icons/dbf9c82fd7dada1a.png
 - name: UVR GUI 人声分离
   url: https://github.com/Anjok07/ultimatevocalremovergui
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · UVR GUI 人声分离
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: DnsTools
   url: https://github.com/Kukaina/DnsTools
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · DnsTools
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: foobox-cn
   url: https://github.com/dream7180/foobox-cn
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · foobox-cn
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: mpv.net
   url: https://github.com/mpvnet-player/mpv.net
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · mpv.net
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: ScriptCat
   url: https://docs.scriptcat.org/
@@ -926,10 +930,10 @@
     - 实用软件
 - name: 【玩的嗨】Vip工具箱
   url: https://wiki.wandhi.com/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · 【玩的嗨】Vip工具箱
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/7013a727750e9a02.png
 - name: Platform Tools（ADB）
   url: https://developer.android.google.cn/tools/releases/platform-tools?hl=zh-cn
@@ -940,38 +944,38 @@
   favicon: /managed-assets/bookmarks/icons/5293b2132387deee.png
 - name: Windows 系统下载
   url: https://www.microsoft.com/zh-cn/software-download
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Windows 系统下载
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3be1be2cbd942bce.png
 - name: MSDN新版
   url: https://next.itellyou.cn/Original/Index
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · MSDN新版
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/644b79db573b8a40.png
 - name: MSDN
   url: https://msdn.itellyou.cn/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · MSDN
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/02f31309b47b87f7.png
 - name: MSDN系统库
   url: https://www.xitongku.com/index.html
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · MSDN系统库
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/2bfc88e106dbeee2.png
 - name: 雷电PE
   url: http://wuyou.net/forum.php?mod=viewthread&tid=435122&extra=page%3D1
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 雷电PE
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/314c8414fecc573f.png
 - name: Microsoft Store
   url: https://store.rg-adguard.net/
@@ -989,24 +993,24 @@
   favicon: /managed-assets/bookmarks/icons/a19fb55767346312.png
 - name: 亦是美网络
   url: http://www.yishimei.cn/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 亦是美网络
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/6b33ea23156d94be.png
 - name: 联想知识库
   url: https://iknow.lenovo.com.cn/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 联想知识库
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/6876f62ae91381c0.png
 - name: App热
   url: https://apphot.cc/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · App热
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/72cd56bd06b668b4.png
 - name: 'File list :: List of files by Microsoft®'
   url: https://files.rg-adguard.net/category
@@ -1024,10 +1028,10 @@
   favicon: /managed-assets/bookmarks/icons/191347bfe55d0ca9.png
 - name: Google 翻译
   url: https://translate.google.cn/
-  category: 实用软件
+  category: 翻译与文本
   description: 浏览器收藏 · Google 翻译
   tags:
-    - 实用软件
+    - 翻译与文本
 - name: 油猴用户脚本
   url: https://www.userscript.zone/
   category: 实用软件
@@ -1044,17 +1048,17 @@
   favicon: /managed-assets/bookmarks/icons/0d94d1616fa1fc4e.png
 - name: icons for macOS
   url: https://macosicons.com/
-  category: 实用软件
+  category: 设计资源
   description: 浏览器收藏 · icons for macOS
   tags:
-    - 实用软件
+    - 设计资源
   favicon: /managed-assets/bookmarks/icons/58a88a9ad3070141.png
 - name: RGB颜色值与十六进制颜色码转换工具
   url: https://www.sioe.cn/yingyong/yanse-rgb-16/
-  category: 实用软件
+  category: 设计工具
   description: 浏览器收藏 · RGB颜色值与十六进制颜色码转换工具
   tags:
-    - 实用软件
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/2a717f4c62195c06.png
 - name: Google
   url: https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl
@@ -1072,24 +1076,24 @@
   favicon: /managed-assets/bookmarks/icons/4b3927c2be6bcd40.png
 - name: 超级PDF在线免费转换
   url: https://xpdf.net/
-  category: 实用软件
+  category: 办公与文档
   description: 浏览器收藏 · 超级PDF在线免费转换
   tags:
-    - 实用软件
+    - 办公与文档
   favicon: /managed-assets/bookmarks/icons/6dd62a29874f3c41.png
 - name: 百度翻译
   url: https://fanyi.baidu.com/?aldtype=16047
-  category: 实用软件
+  category: 翻译与文本
   description: 浏览器收藏 · 百度翻译
   tags:
-    - 实用软件
+    - 翻译与文本
   favicon: /managed-assets/bookmarks/icons/d9ff9cd0f7ff587d.png
 - name: ICNS转PNG
   url: https://www.aconvert.com/cn/image/icns-to-png/
-  category: 实用软件
+  category: 设计工具
   description: 浏览器收藏 · ICNS转PNG
   tags:
-    - 实用软件
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/781a2d76bb4a5ecf.png
 - name: SauceNAO 以图搜图
   url: https://saucenao.cn/
@@ -1107,17 +1111,17 @@
   favicon: /managed-assets/bookmarks/icons/bea31d2bd130175f.png
 - name: MyResumes 在线简历编辑
   url: http://myresumes.cn/
-  category: 实用软件
+  category: 办公与文档
   description: 浏览器收藏 · MyResumes 在线简历编辑
   tags:
-    - 实用软件
+    - 办公与文档
   favicon: /managed-assets/bookmarks/icons/0f60677785762ff4.png
 - name: LAVFilters
   url: https://github.com/Nevcairiel/LAVFilters
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · LAVFilters
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: Pixiv-Shaft
   url: https://github.com/CeuiLiSA/Pixiv-Shaft
@@ -1142,136 +1146,136 @@
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: waifu2x-caffe
   url: https://github.com/lltcggie/waifu2x-caffe
-  category: 实用软件
+  category: 图像处理
   description: 浏览器收藏 · waifu2x-caffe
   tags:
-    - 实用软件
+    - 图像处理
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: unlocker
   url: https://github.com/paolo-projects/unlocker
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · unlocker
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: Imagine
   url: https://github.com/meowtec/Imagine
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Imagine
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: QuickLook
   url: https://github.com/QL-Win/QuickLook
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · QuickLook
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: utvideo
   url: https://github.com/umezawatakeshi/utvideo
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · utvideo
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: AviSynthPlus
   url: https://github.com/AviSynth/AviSynthPlus
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · AviSynthPlus
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: N_m3u8DL-CLI
   url: https://github.com/nilaoda/N_m3u8DL-CLI
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · N_m3u8DL-CLI
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: BesLyric
   url: https://github.com/BesLyric-for-X/BesLyric
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · BesLyric
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: noMeiryoUI
   url: https://github.com/Tatsu-syo/noMeiryoUI
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · noMeiryoUI
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: steam++
   url: https://github.com/BeyondDimension/SteamTools
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · steam++
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: LSPosed
   url: https://github.com/LSPosed/LSPosed
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · LSPosed
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: Sui
   url: https://github.com/RikkaApps/Sui
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Sui
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: Shizuku
   url: https://github.com/RikkaApps/Shizuku
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Shizuku
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: 搞机助手 · R
   url: https://github.com/liuran001/GJZS
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 搞机助手 · R
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: RePKG
   url: https://github.com/notscuffed/repkg
-  category: 实用软件
+  category: 三维与材质
   description: 浏览器收藏 · RePKG
   tags:
-    - 实用软件
+    - 三维与材质
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: 不许卡米
   url: https://github.com/Xposed-Modules-Repo/com.hook.fuckmimarket
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 不许卡米
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: Macast
   url: https://github.com/xfangfang/Macast
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · Macast
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: win-capture-audio
   url: https://github.com/bozbez/win-capture-audio
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · win-capture-audio
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: ScreenToGif
   url: https://github.com/NickeManarin/ScreenToGif
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · ScreenToGif
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: Rufus
   url: https://github.com/pbatard/rufus
@@ -1317,45 +1321,45 @@
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: SwitchyOmega
   url: https://github.com/FelisCatus/SwitchyOmega
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · SwitchyOmega
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: NatTypeTester
   url: https://github.com/HMBSbige/NatTypeTester
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · NatTypeTester
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: desmume
   url: https://github.com/TASEmulators/desmume
-  category: 实用软件
+  category: 兴趣与娱乐
   description: 浏览器收藏 · desmume
   tags:
-    - 实用软件
+    - 兴趣与娱乐
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: AndroidEasterEggs
   url: https://github.com/hushenghao/AndroidEasterEggs
-  category: 实用软件
+  category: 兴趣与娱乐
   description: 浏览器收藏 · AndroidEasterEggs
   tags:
-    - 实用软件
+    - 兴趣与娱乐
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: PDF24 Creator
   url: https://tools.pdf24.org/zh/creator
-  category: 实用软件
+  category: 办公与文档
   description: 浏览器收藏 · PDF24 Creator
   tags:
-    - 实用软件
+    - 办公与文档
   favicon: /managed-assets/bookmarks/icons/61bb574d6017d29d.png
 - name: 玩机资源合集
   url: https://jamcz.com/tutorial/wanji/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · 玩机资源合集
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/8740fc3207a7efae.png
 - name: balenaEtcher
   url: https://etcher.balena.io/
@@ -1366,17 +1370,17 @@
   favicon: /managed-assets/bookmarks/icons/1b443ebbc680f0aa.png
 - name: mefcl'blog
   url: https://www.mefcl.com/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · mefcl'blog
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/60d05670cfab9ba8.png
 - name: PyCharm
   url: https://www.jetbrains.com/zh-cn/pycharm/
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · PyCharm
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/fc34ed039dd8b27f.png
 - name: IT天空
   url: https://www.itsk.com/
@@ -1387,10 +1391,10 @@
   favicon: /managed-assets/bookmarks/icons/cd27421c73631ecc.png
 - name: 微PE工具箱
   url: http://www.wepe.com.cn/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 微PE工具箱
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/89b597f54eca7bec.png
 - name: Microsoft Update Catalog
   url: https://www.catalog.update.microsoft.com/home.aspx
@@ -1400,114 +1404,114 @@
     - 实用软件
 - name: Ubuntu
   url: https://cn.ubuntu.com/download
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Ubuntu
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/e14999f86834e9f8.png
 - name: Centos
   url: https://www.centos.org/download/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Centos
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/41772284df5db5de.png
 - name: 深度
   url: https://www.deepin.org/zh/download/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 深度
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/45beb6559118fb4d.png
 - name: NEXT, ITELLYOU
   url: https://next.itellyou.cn/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · NEXT, ITELLYOU
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/644b79db573b8a40.png
 - name: FydeOS
   url: https://fydeos.com/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · FydeOS
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/629c2df16a5293ae.png
 - name: Android-x86 - Porting Android to x86
   url: https://www.android-x86.org/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Android-x86 - Porting Android to x86
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/fcb36d5b93f3a091.png
 - name: UOS生态社区
   url: https://www.chinauos.com/resource/download-professional
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · UOS生态社区
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/88a0feee5e4fa43b.png
 - name: 唧唧
   url: http://client.jijidown.com/
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · 唧唧
   tags:
-    - 实用软件
+    - 影音工具
 - name: 中文语言包 - Plugins | JetBrains
   url: https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · 中文语言包 - Plugins | JetBrains
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/b9b56b188584ac41.png
 - name: Java
   url: https://www.oracle.com/cn/java/
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · Java
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/4ec9b209908ddddd.png
 - name: Download .NET Framework
   url: https://dotnet.microsoft.com/download/dotnet-framework
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Download .NET Framework
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/658c323d2c18edcc.png
 - name: Lenovo Quick Fix 联想智能解决工具
   url: https://iknow.lenovo.com.cn/detail/dc_172545.html
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Lenovo Quick Fix 联想智能解决工具
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/6876f62ae91381c0.png
 - name: PyPI
   url: https://pypi.org/
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · PyPI
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/a4aa2ac280bb8d1a.png
 - name: Beautiful Soup官网
   url: https://www.crummy.com/software/BeautifulSoup/
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · Beautiful Soup官网
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/e16ff427c461594d.png
 - name: BootstrapMade
   url: https://bootstrapmade.com/
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · BootstrapMade
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/110d88c0e99fa321.png
 - name: 优品PPT
   url: http://www.ypppt.com/moban/
-  category: 实用软件
+  category: 办公与文档
   description: 浏览器收藏 · 优品PPT
   tags:
-    - 实用软件
+    - 办公与文档
   favicon: /managed-assets/bookmarks/icons/c435004a9bffc5a1.png
 - name: 致美化
   url: https://zhutix.com/
@@ -1518,99 +1522,99 @@
   favicon: /managed-assets/bookmarks/icons/26ece75a4aa7edd8.png
 - name: Office Tool
   url: https://otp.landian.vip/zh-cn/
-  category: 实用软件
+  category: 办公与文档
   description: 浏览器收藏 · Office Tool
   tags:
-    - 实用软件
+    - 办公与文档
 - name: 万能驱动
   url: https://www.itsk.com/thread-415847-1-1.html
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 万能驱动
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/cd27421c73631ecc.png
 - name: 格式工厂
   url: http://freetime.tech/formatfactory/CN/index.html
-  category: 实用软件
+  category: 影音工具
   description: 浏览器收藏 · 格式工厂
   tags:
-    - 实用软件
+    - 影音工具
   favicon: /managed-assets/bookmarks/icons/f5ed6e65aa0cf722.png
 - name: Node.js 中文网
   url: http://nodejs.cn/
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · Node.js 中文网
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/658f87eb91192153.png
 - name: 极速中文网
   url: http://www.jsxiaoshi.com/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · 极速中文网
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/74cbb72ca2855134.png
 - name: FirPE Project
   url: http://www.firpe.cn/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · FirPE Project
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/7a769d688c377105.png
 - name: 黑苹果动力
   url: https://www.mfpud.com/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 黑苹果动力
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/44e1c9b3b4e30ec5.png
 - name: Windows Office
   url: https://tb.rg-adguard.net/public.php?lang=zh-CN
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Windows Office
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/a773b0932fdb4a35.png
 - name: GeForce Game Ready 驱动程序 | NVIDIA
   url: https://www.nvidia.cn/geforce/game-ready-drivers/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · GeForce Game Ready 驱动程序 | NVIDIA
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/df76ec19b2778c1a.png
 - name: 黑域基地
   url: https://www.hybase.com/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · 黑域基地
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/36796618161b1f8b.png
 - name: Redmi全系列机型ROM包下载站汇总
   url: https://web.vip.miui.com/page/info/mio/mio/detail?postId=18111066&app_version=dev.20051
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Redmi全系列机型ROM包下载站汇总
   tags:
-    - 实用软件
+    - 系统维护
 - name: 红米 K20 Pro (raphael) 国行版 Fastboot 线刷包 & Recovery 卡刷包
   url: https://xiaomirom.com/rom/redmi-k20-pro-mi-9t-pro-raphael-china-fastboot-recovery-rom/
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · 红米 K20 Pro (raphael) 国行版 Fastboot 线刷包 & Recovery 卡刷包
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/15e4140dd773a20e.png
 - name: Other Versions - IntelliJ IDEA
   url: https://www.jetbrains.com/idea/download/other.html
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · Other Versions - IntelliJ IDEA
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/fc34ed039dd8b27f.png
 - name: Other Versions - PyCharm
   url: https://www.jetbrains.com/pycharm/download/other.html
-  category: 实用软件
+  category: 开发与编程
   description: 浏览器收藏 · Other Versions - PyCharm
   tags:
-    - 实用软件
+    - 开发与编程
   favicon: /managed-assets/bookmarks/icons/fc34ed039dd8b27f.png
 - name: IdeaFan
   url: https://allstone.lt/ideafan/
@@ -1620,65 +1624,65 @@
     - 实用软件
 - name: 主页 | 萤火虫资源站
   url: https://www.yhcres.top/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · 主页 | 萤火虫资源站
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/fe861be0c70c19de.png
 - name: GitHub Proxy 代理加速
   url: https://ghproxy.com/
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · GitHub Proxy 代理加速
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/f982e753d5a890a4.png
 - name: REimagine
   url: https://www.reimaginehome.ai/
-  category: 实用软件
+  category: AI 工具
   description: 浏览器收藏 · REimagine
   tags:
-    - 实用软件
+    - AI 工具
   favicon: /managed-assets/bookmarks/icons/b6b753c9db2ff55d.png
 - name: Copilot Designer
   url: https://www.bing.com/images/create
-  category: 实用软件
+  category: AI 工具
   description: 浏览器收藏 · Copilot Designer
   tags:
-    - 实用软件
+    - AI 工具
   favicon: /managed-assets/bookmarks/icons/5f44044454ef4481.png
 - name: 查询Emoji短代码
   url: https://emojipedia.org/zh
-  category: 实用软件
+  category: 设计资源
   description: 浏览器收藏 · 查询Emoji短代码
   tags:
-    - 实用软件
+    - 设计资源
   favicon: /managed-assets/bookmarks/icons/785f3baf97f0dbf1.png
 - name: Ideogram
   url: https://ideogram.ai/
-  category: 实用软件
+  category: AI 工具
   description: 浏览器收藏 · Ideogram
   tags:
-    - 实用软件
+    - AI 工具
 - name: CyberGuard
   url: https://cyberguard.best/
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · CyberGuard
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/cb0ab000cb4d2d0f.png
 - name: 大眼仔旭
   url: https://www.dayanzai.me/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · 大眼仔旭
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/0fb7c031cdd9f63b.png
 - name: IconPark
   url: https://iconpark.oceanengine.com/home
-  category: 实用软件
+  category: 设计工具
   description: 浏览器收藏 · IconPark
   tags:
-    - 实用软件
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/07aa4291686a0b9c.png
 - name: 蓝湖
   url: https://lanhuapp.com/?home
@@ -1688,24 +1692,24 @@
     - 实用软件
 - name: Cutterman
   url: https://www.cutterman.cn/
-  category: 实用软件
+  category: 设计工具
   description: 浏览器收藏 · Cutterman
   tags:
-    - 实用软件
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/387e87bde3006990.png
 - name: D-ID
   url: https://www.d-id.com/
-  category: 实用软件
+  category: AI 工具
   description: 浏览器收藏 · D-ID
   tags:
-    - 实用软件
+    - AI 工具
   favicon: /managed-assets/bookmarks/icons/b061486928d77268.png
 - name: Lenovo Quick Fix：驱动安装工具-联想知识库
   url: https://iknow.lenovo.com.cn/detail/419379
-  category: 实用软件
+  category: 系统维护
   description: 浏览器收藏 · Lenovo Quick Fix：驱动安装工具-联想知识库
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/6876f62ae91381c0.png
 - name: ZCOOL免费字体
   url: https://www.zcool.com.cn/special/zcoolfonts/
@@ -1716,10 +1720,10 @@
   favicon: /managed-assets/bookmarks/icons/4405a2855e1d60c3.png
 - name: 思源等宽
   url: https://github.com/adobe-fonts/source-han-mono
-  category: 设计资源
+  category: 字体资源
   description: 浏览器收藏 · 思源等宽
   tags:
-    - 设计资源
+    - 字体资源
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: 最像素
   url: https://github.com/SolidZORO/zpix-pixel-font
@@ -1772,10 +1776,10 @@
   favicon: /managed-assets/bookmarks/icons/8e1565ff2703c70b.png
 - name: 金山云技术体
   url: https://design.ksyun.com/font
-  category: 设计资源
+  category: 字体资源
   description: 浏览器收藏 · 金山云技术体
   tags:
-    - 设计资源
+    - 字体资源
   favicon: /managed-assets/bookmarks/icons/2811db5748cdbd5d.png
 - name: 100font.com
   url: https://www.100font.com/
@@ -1786,17 +1790,17 @@
   favicon: /managed-assets/bookmarks/icons/e871b0d438011936.png
 - name: 传统颜色
   url: http://zhongguose.com/
-  category: 设计资源
+  category: 系统维护
   description: 浏览器收藏 · 传统颜色
   tags:
-    - 设计资源
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/7e0bedc2ed73bbac.png
 - name: ColorSpace
   url: https://mycolor.space/
-  category: 设计资源
+  category: 设计工具
   description: 浏览器收藏 · ColorSpace
   tags:
-    - 设计资源
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/2cfcf80fa4c67f5d.png
 - name: 花瓣网
   url: https://huaban.com/
@@ -1814,10 +1818,10 @@
   favicon: /managed-assets/bookmarks/icons/b4d7413c4b198822.png
 - name: 标小智LOGO设计神器
   url: https://www.logosc.cn/
-  category: 设计资源
+  category: 设计工具
   description: 浏览器收藏 · 标小智LOGO设计神器
   tags:
-    - 设计资源
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/a268f923333c6541.png
 - name: 小红书
   url: https://www.xiaohongshu.com/explore
@@ -1835,17 +1839,17 @@
   favicon: /managed-assets/bookmarks/icons/23a5a3e04fbc88fe.png
 - name: 书法迷字典
   url: http://www.shufami.com/
-  category: 设计资源
+  category: 字体资源
   description: 浏览器收藏 · 书法迷字典
   tags:
-    - 设计资源
+    - 字体资源
   favicon: /managed-assets/bookmarks/icons/67e6e90eceadc9fd.png
 - name: 猫啃网
   url: https://www.maoken.com/
-  category: 设计资源
+  category: 字体资源
   description: 浏览器收藏 · 猫啃网
   tags:
-    - 设计资源
+    - 字体资源
   favicon: /managed-assets/bookmarks/icons/487b34b93b71f85e.png
 - name: 文悦字库
   url: https://wenyue.cn/
@@ -1877,10 +1881,10 @@
   favicon: /managed-assets/bookmarks/icons/902bbefc6e11546f.png
 - name: 钉钉进步体
   url: https://page.dingtalk.com/wow/dingtalk/default/dingtalk/y-W5aF3_ZJwzulU0nceIl
-  category: 设计资源
+  category: 字体资源
   description: 浏览器收藏 · 钉钉进步体
   tags:
-    - 设计资源
+    - 字体资源
   favicon: /managed-assets/bookmarks/icons/06e39601803fa866.png
 - name: ls.graphics
   url: https://www.ls.graphics/free-mockups
@@ -1912,10 +1916,10 @@
   favicon: /managed-assets/bookmarks/icons/6de11c3cdb4f74d6.png
 - name: 更好的渐变
   url: https://www.learnui.design/tools/gradient-generator.html
-  category: 设计资源
+  category: 设计工具
   description: 浏览器收藏 · 更好的渐变
   tags:
-    - 设计资源
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/cff08343a62b06fa.png
 - name: '| 思酷素材设计模板'
   url: https://www.sskoo.com/
@@ -1932,10 +1936,10 @@
     - 设计资源
 - name: Photopea
   url: https://www.photopea.com/
-  category: 设计资源
+  category: 设计工具
   description: 浏览器收藏 · Photopea
   tags:
-    - 设计资源
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/0367f3fed66177da.png
 - name: Illustrations | unDraw
   url: https://undraw.co/illustrations
@@ -1974,31 +1978,31 @@
   favicon: /managed-assets/bookmarks/icons/6def5e9d5b40cd2f.png
 - name: PhotoKit
   url: https://photokit.com/editor/?lang=zh
-  category: 图像处理
+  category: 设计工具
   description: 浏览器收藏 · PhotoKit
   tags:
-    - 图像处理
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/09c5d5ccdd6bb487.png
 - name: remove.bg
   url: https://www.remove.bg/zh
-  category: 图像处理
+  category: 设计工具
   description: 浏览器收藏 · remove.bg
   tags:
-    - 图像处理
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/c215b077bb7a3672.png
 - name: erase.bg
   url: https://www.erase.bg/zh
-  category: 图像处理
+  category: 设计工具
   description: 浏览器收藏 · erase.bg
   tags:
-    - 图像处理
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/0316cfa49f2823ca.png
 - name: iLoveIMG
   url: https://www.iloveimg.com/zh-cn
-  category: 图像处理
+  category: 设计工具
   description: 浏览器收藏 · iLoveIMG
   tags:
-    - 图像处理
+    - 设计工具
   favicon: /managed-assets/bookmarks/icons/af502ea1dab692ac.png
 - name: 系统镜像
   url: https://next.itellyou.cn/Original/
@@ -2009,10 +2013,10 @@
   favicon: /managed-assets/bookmarks/icons/644b79db573b8a40.png
 - name: deepin系统下载
   url: https://www.deepin.org/index/zh
-  category: 系统维护
+  category: 实用软件
   description: 浏览器收藏 · deepin系统下载
   tags:
-    - 系统维护
+    - 实用软件
   favicon: /managed-assets/bookmarks/icons/45beb6559118fb4d.png
 - name: Fedora系统下载
   url: https://fedoraproject.org/zh-Hans/iot/download
@@ -2064,10 +2068,10 @@
   favicon: /managed-assets/bookmarks/icons/504d4fbcf2f8b659.png
 - name: 杏雨梨云启动维护系统
   url: https://www.xyboot.com/
-  category: 系统维护
+  category: 实用软件
   description: 浏览器收藏 · 杏雨梨云启动维护系统
   tags:
-    - 系统维护
+    - 实用软件
   favicon: /managed-assets/bookmarks/icons/b9a22960ed2df6c7.png
 - name: Adobe Firefly
   url: https://firefly.adobe.com/
@@ -2148,10 +2152,10 @@
   favicon: /managed-assets/bookmarks/icons/ae1f45a5b387e18d.png
 - name: 智星云
   url: https://gpu.ai-galaxy.cn/store
-  category: AI 工具
+  category: 系统维护
   description: 浏览器收藏 · 智星云
   tags:
-    - AI 工具
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/2cc225bb39148e82.png
 - name: OneThingAI算力云
   url: https://onethingai.com/
@@ -2167,54 +2171,33 @@
   tags:
     - AI 工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
-- name: 学掌门Atstudy网校
-  url: https://www.atstudy.com/study
-  category: AI 工具
-  description: 浏览器收藏 · 学掌门Atstudy网校
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/e0a1bea60fe74bc7.png
-- name: AI创作生成
-  url: https://www.atstudy.com/painting
-  category: AI 工具
-  description: 浏览器收藏 · AI创作生成
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/e0a1bea60fe74bc7.png
-- name: Midjourney提词器
-  url: https://www.atstudy.com/midjourney
-  category: AI 工具
-  description: 浏览器收藏 · Midjourney提词器
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/e0a1bea60fe74bc7.png
 - name: 'Let’s Enhance: Image quality AI'
   url: https://letsenhance.io/
-  category: AI 工具
+  category: 图像处理
   description: '浏览器收藏 · Let’s Enhance: Image quality AI'
   tags:
-    - AI 工具
+    - 图像处理
   favicon: /managed-assets/bookmarks/icons/a5ccca3b16aefc83.png
 - name: Deep-Image
   url: https://deep-image.ai/
-  category: AI 工具
+  category: 图像处理
   description: 浏览器收藏 · Deep-Image
   tags:
-    - AI 工具
+    - 图像处理
   favicon: /managed-assets/bookmarks/icons/1466a930ba68574d.png
 - name: Pixian.AI
   url: https://pixian.ai/
-  category: AI 工具
+  category: 图像处理
   description: 浏览器收藏 · Pixian.AI
   tags:
-    - AI 工具
+    - 图像处理
   favicon: /managed-assets/bookmarks/icons/e1deb234586afc1c.png
 - name: Vectorizer.AI 图片矢量化
   url: https://vectorizer.ai/
-  category: AI 工具
+  category: 办公与文档
   description: 浏览器收藏 · Vectorizer.AI 图片矢量化
   tags:
-    - AI 工具
+    - 办公与文档
   favicon: /managed-assets/bookmarks/icons/5441b09b26795071.png
 - name: 可灵 AI
   url: https://klingai.kuaishou.com/
@@ -2239,10 +2222,10 @@
   favicon: /managed-assets/bookmarks/icons/10850bda756d1ef1.png
 - name: DeepL翻译
   url: https://www.deepl.com/translator
-  category: AI 工具
+  category: 翻译与文本
   description: 浏览器收藏 · DeepL翻译
   tags:
-    - AI 工具
+    - 翻译与文本
   favicon: /managed-assets/bookmarks/icons/acdfd3a9d22b1baa.png
 - name: 无界AI
   url: https://www.wujieai.com/
@@ -2251,13 +2234,6 @@
   tags:
     - AI 工具
   favicon: /managed-assets/bookmarks/icons/f237e5a190797427.png
-- name: 学掌门教育
-  url: https://www.atstudy.com/
-  category: AI 工具
-  description: 浏览器收藏 · 学掌门教育
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/e0a1bea60fe74bc7.png
 - name: DeepSeek
   url: https://chat.deepseek.com/
   category: AI 工具
@@ -2265,124 +2241,26 @@
   tags:
     - AI 工具
   favicon: /managed-assets/bookmarks/icons/24f60d8ca3c49e80.png
-- name: ula - BowlRoll
-  url: https://bowlroll.net/user/1413
-  category: MMD 资源
-  description: 浏览器收藏 · ula - BowlRoll
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: DeviantArt
-  url: https://www.deviantart.com/
-  category: MMD 资源
-  description: 浏览器收藏 · DeviantArt
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/12d4053fc39bdb3d.png
-- name: BowlRoll
-  url: https://bowlroll.net/
-  category: MMD 资源
-  description: 浏览器收藏 · BowlRoll
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: Ai
-  url: https://bowlroll.net/user/233525
-  category: MMD 资源
-  description: 浏览器收藏 · Ai
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: 模之屋
-  url: https://www.aplaybox.com/
-  category: MMD 资源
-  description: 浏览器收藏 · 模之屋
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/c8aefbf7e0839bd5.png
-- name: sasikizu
-  url: https://bowlroll.net/user/266437
-  category: MMD 资源
-  description: 浏览器收藏 · sasikizu
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: Original Motion
-  url: https://vk.com/topic-149649373_36564373?post=39
-  category: MMD 资源
-  description: 浏览器收藏 · Original Motion
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/877ca9b8dd0b5eeb.png
-- name: kotami cafe
-  url: https://bowlroll.net/user/40608
-  category: MMD 资源
-  description: 浏览器收藏 · kotami cafe
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: 溯北
-  url: https://bowlroll.net/user/149031
-  category: MMD 资源
-  description: 浏览器收藏 · 溯北
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: 怪獣対若大将P
-  url: https://bowlroll.net/user/3486
-  category: MMD 资源
-  description: 浏览器收藏 · 怪獣対若大将P
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: RedialC
-  url: https://bowlroll.net/user/216962
-  category: MMD 资源
-  description: 浏览器收藏 · RedialC
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: 角砂糖
-  url: https://bowlroll.net/user/64843
-  category: MMD 资源
-  description: 浏览器收藏 · 角砂糖
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/f0a48a25ea731fe5.png
-- name: Omicoya
-  url: https://okoneya.jp/mmd_files/
-  category: MMD 资源
-  description: 浏览器收藏 · Omicoya
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/8df5ace7e430dd15.png
-- name: ray-mmd
-  url: https://github.com/ray-cast/ray-mmd
-  category: MMD 资源
-  description: 浏览器收藏 · ray-mmd
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: 有道翻译
   url: https://fanyi.youdao.com/
-  category: 实用软件
+  category: 翻译与文本
   description: 浏览器收藏 · 有道翻译
   tags:
-    - 实用软件
+    - 翻译与文本
   favicon: /managed-assets/bookmarks/icons/67155eff6ae0843b.png
 - name: bilibili
   url: https://www.bilibili.com/
-  category: 实用软件
+  category: 兴趣与娱乐
   description: 浏览器收藏 · bilibili
   tags:
-    - 实用软件
+    - 兴趣与娱乐
   favicon: /managed-assets/bookmarks/icons/0fae5909ea6ae967.png
 - name: 易搜
   url: https://yiso.eu.org/
-  category: 实用软件
+  category: 软件与资源
   description: 浏览器收藏 · 易搜
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/3dd13dcd79b9f8fc.png
 - name: GPT Image 2
   url: https://apimart.ai/zh/model/gpt-image-2
@@ -2421,52 +2299,52 @@
   favicon: /managed-assets/bookmarks/icons/e93c245ca33af126.png
 - name: XFUN
   url: https://www.xfun.design/homePage
-  category: 实用软件
+  category: 设计资源
   description: 浏览器收藏 · XFUN
   tags:
-    - 实用软件
+    - 设计资源
   favicon: /managed-assets/bookmarks/icons/ed2da15a602232f3.png
 - name: Pinterest
   url: https://www.pinterest.com/
-  category: 实用软件
+  category: 设计资源
   description: 浏览器收藏 · Pinterest
   tags:
-    - 实用软件
+    - 设计资源
   favicon: /managed-assets/bookmarks/icons/ff5effacb4d45d40.png
 - name: SceneForge
   url: https://sceneforge.studio/app
-  category: AI 工具
+  category: 三维与材质
   description: 浏览器收藏 · SceneForge
   tags:
-    - AI 工具
+    - 三维与材质
   favicon: /managed-assets/bookmarks/icons/923657537a294bf8.png
 - name: ambientCG
   url: https://ambientcg.com/
-  category: 实用软件
+  category: 三维与材质
   description: 浏览器收藏 · ambientCG
   tags:
-    - 实用软件
+    - 三维与材质
   favicon: /managed-assets/bookmarks/icons/511a823ed91a6ad8.png
 - name: Poly Haven
   url: https://polyhaven.com/
-  category: 实用软件
+  category: 三维与材质
   description: 浏览器收藏 · Poly Haven
   tags:
-    - 实用软件
+    - 三维与材质
   favicon: /managed-assets/bookmarks/icons/1cc56842224a08b5.png
 - name: 搜图导航
   url: https://www.91sotu.com/
-  category: 实用软件
+  category: 设计资源
   description: 浏览器收藏 · 搜图导航
   tags:
-    - 实用软件
+    - 设计资源
   favicon: /managed-assets/bookmarks/icons/f8d3d6bdff2fc207.png
 - name: PDF转图像
   url: https://tools.pdf24.org/zh/pdf-to-images
-  category: 实用软件
+  category: 办公与文档
   description: 浏览器收藏 · PDF转图像
   tags:
-    - 实用软件
+    - 办公与文档
   favicon: /managed-assets/bookmarks/icons/61bb574d6017d29d.png
 - name: LibTV
   url: https://www.liblib.tv/canvas?spaceId=10878124&projectId=62819aa1291341a497cccb9f6f74275a
@@ -2477,16 +2355,16 @@
   favicon: /managed-assets/bookmarks/icons/a8ca4446239c1d77.png
 - name: iKuuu
   url: https://ikuuu.win/
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · iKuuu
   tags:
-    - 实用软件
+    - 网络工具
 - name: 山水云
   url: http://xn--9kq015a4jm.com/
-  category: 实用软件
+  category: 网络工具
   description: 浏览器收藏 · 山水云
   tags:
-    - 实用软件
+    - 网络工具
 - name: 智修Ai学院
   url: https://www.zxaixueyuan.com/
   category: AI 工具
@@ -2496,51 +2374,52 @@
   favicon: /managed-assets/bookmarks/icons/60b662232b3a23dc.png
 - name: Blender中国社区
   url: https://www.blendercn.org/
-  category: 设计资源
+  category: 三维与材质
   description: 浏览器收藏 · Blender中国社区
   tags:
-    - 设计资源
+    - 三维与材质
   favicon: /managed-assets/bookmarks/icons/8b204d910dbaccbc.png
 - name: KurTip
   url: https://kurtwei.com/blog/
-  category: 设计资源
+  category: 三维与材质
   description: 浏览器收藏 · KurTip
   tags:
-    - 设计资源
+    - 三维与材质
   favicon: /managed-assets/bookmarks/icons/8b8a332fe3e973c5.png
 - name: BLT
   url: https://www.blendermagic.cn/
-  category: 设计资源
+  category: 三维与材质
   description: 浏览器收藏 · BLT
   tags:
-    - 设计资源
+    - 三维与材质
   favicon: /managed-assets/bookmarks/icons/1aca0f6f113419b6.png
 - name: 全民解析网 - VIP视频高清解析 - VIP视频在线搜索解析官网
   url: https://jx.z6.net.cn/
-  category: 实用软件
+  category: 兴趣与娱乐
   description: 浏览器收藏 · 全民解析网 - VIP视频高清解析 - VIP视频在线搜索解析官网
   tags:
-    - 实用软件
+    - 兴趣与娱乐
   favicon: /managed-assets/bookmarks/icons/69889111b1fbabd2.png
 - name: 电影天堂:高清电影下载,高品质生活
   url: https://www.dygod.net/
-  category: 实用软件
+  category: 兴趣与娱乐
   description: 浏览器收藏 · 电影天堂:高清电影下载,高品质生活
   tags:
-    - 实用软件
+    - 兴趣与娱乐
   favicon: /managed-assets/bookmarks/icons/bc90991881aa9b07.png
 - name: 悠久的小宝库
   url: https://u9baoku.xyz/
-  category: 实用软件
+  category: 软件与资源
   description: 软件与资源收藏站。
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/87f44402281202d7.png
 - name: 轻尘（Carefree）
   url: https://pan.lanzouo.com/b0f1hcopa
-  category: 实用软件
+  category: 影音工具
   description: PotPlayer 皮肤，旧称 Carefree，基于 FlyDonkey 的 theSimpleThing2 Black 修改。支持透明无边框界面，建议启用图层式皮肤输出。
   tags:
+    - 影音工具
     - PotPlayer
     - 播放器皮肤
     - 轻尘
@@ -2561,37 +2440,37 @@
     - 系统维护
 - name: GitHub 文件加速
   url: https://shrill-pond-3e81.hunsh.workers.dev/
-  category: 实用软件
+  category: 网络工具
   description: 用于 GitHub 文件下载的加速入口。
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/91ad953fbb55391a.png
 - name: Share-SSR
   url: https://github.com/selierlin/Share-SSR-V2ray/blob/master/1-share-ssr-v2ray.md
-  category: 实用软件
+  category: 网络工具
   description: Share-SSR-V2ray 项目的共享网络资源文档。
   tags:
-    - 实用软件
+    - 网络工具
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: Share-SS(6j5h)
   url: https://www.lanzous.com/b1008660
-  category: 实用软件
+  category: 网络工具
   description: 下载或文件分享：Share-SS(6j5h)。具体内容待补充。
   tags:
-    - 实用软件
+    - 网络工具
 - name: Microsoft VC++运行库
   url: http://dreamcast2.ys168.com/
-  category: 实用软件
+  category: 系统维护
   description: 下载或文件分享：Microsoft VC++运行库。具体内容待补充。
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/224b947df69c2d0a.png
 - name: '@vposy Adobe破解'
   url: https://weibo.com/vposy?from=myfollow_all&is_all=1
-  category: 实用软件
+  category: 软件与资源
   description: 说明待补充。
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/4fe172aa9cd13655.png
 - name: 亦是美网络 KMS
   url: http://www.yishimei.cn/network/319.html
@@ -2602,31 +2481,31 @@
   favicon: /managed-assets/bookmarks/icons/6b33ea23156d94be.png
 - name: 渔的后花园
   url: https://pan.yuos.top/#/s/yKuv?path=%2F
-  category: 实用软件
+  category: 系统维护
   description: 下载或文件分享：渔的后花园。具体内容待补充。
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/40be09604b6b3016.png
 - name: 迅雷破解版
   url: https://pan.lanzoui.com/b0f22rzif
-  category: 实用软件
+  category: 系统维护
   description: 下载或文件分享：迅雷破解版。具体内容待补充。
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/fc47a0136b8137fc.png
 - name: iSlide 公网版
   url: https://www.jianguoyun.com/p/DaWpngwQ5eiGCxjGyOAEIAA#dir=%2FWindows::mode=0
-  category: 实用软件
+  category: 办公与文档
   description: 下载或文件分享：iSlide 公网版 - 坚果云 - 云盘|网盘|企业网盘|同步|备份|无限空间|免费网络硬盘|企业云盘。具体内容待补充。
   tags:
-    - 实用软件
+    - 办公与文档
   favicon: /managed-assets/bookmarks/icons/7a418c36ba0036ab.png
 - name: WinRAR 烈火破解
   url: https://apphot.cc/121.html
-  category: 实用软件
+  category: 软件与资源
   description: WinRAR 特别版相关下载页面。
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/72cd56bd06b668b4.png
 - name: HEU_KMS_Activator(9xum)
   url: https://wwi.lanzoup.com/b05gumbe
@@ -2637,46 +2516,18 @@
   favicon: /managed-assets/bookmarks/icons/64849f8c62077b68.png
 - name: Adobe GenP
   url: https://www.reddit.com/r/GenP/wiki/redditgenpguides/
-  category: 实用软件
+  category: 软件与资源
   description: 说明待补充。
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/582cff1d9cd20ceb.png
 - name: 360清理优化精简独立版 V15 极速版 - 吾爱破解
   url: https://www.52pojie.cn/thread-1888984-1-1.html
-  category: 实用软件
+  category: 系统维护
   description: 360 清理优化独立版的论坛分享。
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/bee7051c0ffe9b1c.png
-- name: 脏图重绘
-  url: https://www.runninghub.cn/workflow/2054404696055533570?source=workspace
-  category: AI 工具
-  description: RunningHub 工作流：脏图重绘。
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/d009d85b9203d7ab.png
-- name: RhBananaPro
-  url: https://www.runninghub.cn/workflow/2094724439928819713?source=workspace
-  category: AI 工具
-  description: RunningHub 工作流：RhBananaPro。
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/d009d85b9203d7ab.png
-- name: RhBanana2
-  url: https://www.runninghub.cn/workflow/2056286160116346882?source=workspace
-  category: AI 工具
-  description: RunningHub 工作流：RhBanana2。
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/d009d85b9203d7ab.png
-- name: SeedVR2高清放大
-  url: https://www.runninghub.cn/workflow/2061741044022210562?source=workspace
-  category: AI 工具
-  description: RunningHub 工作流：SeedVR2高清放大。
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/d009d85b9203d7ab.png
 - name: sing-box
   url: https://sing-box.sagernet.org/zh/clients/
   category: 网络工具
@@ -2728,31 +2579,31 @@
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: Clash-for-Windows_Chinese
   url: https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases
-  category: 网络工具
+  category: 系统维护
   description: Clash for Windows 中文版本相关项目发布页。
   tags:
-    - 网络工具
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3aeb002460381c6f.png
 - name: WinNTSetup
   url: https://www.mediafire.com/folder/53um6k2nmhvd5/
-  category: 实用软件
+  category: 系统维护
   description: 下载或文件分享：WinNTSetup。具体内容待补充。
   tags:
-    - 实用软件
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/3ebcf782818cfa0b.png
 - name: 小米刷机包汇总
   url: https://xiaomishequ.feishu.cn/sheets/shtcnsRTbwSvpUsaei6B04ogI6Z?sheet=05Zku0
-  category: 系统维护
+  category: 实用软件
   description: 小米刷机包汇总文档；具体内容待补充。
   tags:
-    - 系统维护
+    - 实用软件
   favicon: /managed-assets/bookmarks/icons/f981838009bfde1c.png
 - name: AIGC知识库
   url: https://www.yuque.com/zuoshoumeiyoushou/kdv105
-  category: AI 工具
+  category: 系统维护
   description: AIGC 相关资料与知识库。
   tags:
-    - AI 工具
+    - 系统维护
   favicon: /managed-assets/bookmarks/icons/2df3ded4af23527b.png
 - name: ZelinAI
   url: https://www.zelinai.com/
@@ -2781,31 +2632,10 @@
   tags:
     - AI 工具
   favicon: /managed-assets/bookmarks/icons/5c52282faf81ac11.png
-- name: 下っ腹P
-  url: https://www.dropbox.com/sh/tsx5b0whjn7e3dv/AADsay2hUo2CMEK4bih30Nq6a/shader?dl=0&subfolder_nav_tracking=1
-  category: MMD 资源
-  description: MMD 创作者资源分享；具体内容待补充。
-  tags:
-    - MMD 资源
-  favicon: /managed-assets/bookmarks/icons/82f4a8c95fec94b2.png
 - name: 凌凡资源分享
   url: https://fanl.top/index.html
-  category: 实用软件
+  category: 软件与资源
   description: 资源分享网站；具体资源说明待补充。
   tags:
-    - 实用软件
+    - 软件与资源
   favicon: /managed-assets/bookmarks/icons/cc33e99526b15aec.png
-- name: RhBanana2.1
-  url: https://www.runninghub.cn/workflow/2117431315023880193
-  category: AI 工具
-  description: RunningHub 工作流：RhBanana2.1。
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/d009d85b9203d7ab.png
-- name: 抠图
-  url: https://www.runninghub.cn/workflow/2107767550653321217?source=workspace
-  category: AI 工具
-  description: RunningHub 工作流：抠图。
-  tags:
-    - AI 工具
-  favicon: /managed-assets/bookmarks/icons/d009d85b9203d7ab.png
