@@ -9,7 +9,7 @@
       card.classList.add('motion-card');
     });
     document.querySelectorAll('.main a[href],.footer a[href]').forEach(function (a) {
-      if (a.matches(cards + ',.hero-link,.tag-btn,.footer-ic,.image-zoom,.cover-sheet') || a.querySelector('img,svg') || a.closest('.article-outline')) return;
+      if (a.matches(cards + ',.hero-link,.tag-btn,.section-more,.back-link,.post-more,.footer-ic,.image-zoom,.cover-sheet') || a.querySelector('img,svg') || a.closest('.article-outline')) return;
       a.classList.add('motion-link');
     });
   }

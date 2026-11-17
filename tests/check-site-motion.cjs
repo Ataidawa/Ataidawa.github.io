@@ -6,7 +6,7 @@ w.requestAnimationFrame=fn=>{queue.push(fn);return queue.length;};w.cancelAnimat
 const flush=()=>{for(let i=0;i<40&&queue.length;i++){const batch=queue;queue=[];batch.forEach(fn=>fn());}};
 w.eval(fs.readFileSync('source/js/site-motion.js','utf8'));d.dispatchEvent(new w.Event('DOMContentLoaded'));
 assert.equal(d.querySelectorAll('.motion-card').length,3);
-assert(d.querySelector('.section-more').classList.contains('motion-link'));
+assert(!d.querySelector('.section-more').classList.contains('motion-link'));
 for(const card of d.querySelectorAll('.motion-card')){
  card.getBoundingClientRect=()=>({left:100,top:100,width:200,height:100});
  card.dispatchEvent(new w.MouseEvent('pointermove',{bubbles:true,clientX:290,clientY:110}));flush();
