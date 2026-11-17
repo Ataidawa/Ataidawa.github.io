@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "bookmark": "node tools/add-bookmark.cjs",
     "build": "node tools/update-playlist.cjs && hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
