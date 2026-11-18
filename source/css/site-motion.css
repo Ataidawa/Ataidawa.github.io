@@ -70,3 +70,16 @@ body:has(.portfolio-cover):not(.cover-nav-visible) .header :is(.site-nav,.menu-b
 .cover-navigation a:focus-visible,.cover-theme-toggle:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
 @media(max-width:688px) { .cover-navigation { width:100%; justify-content:flex-start; gap:4px 18px; font-size:12px; } .cover-navigation a { min-height:24px; display:flex; align-items:center; } }
 @media(prefers-reduced-motion:reduce) { .header :is(.site-nav,.menu-btn,.theme-toggle) { transition:none; } }
+/* On the cover the complete header is outside the viewport, without layout shifts. */
+body:has(.portfolio-cover) .header { position:fixed; top:0; left:0; right:0; z-index:1000; transition:transform 260ms var(--motion-ease),opacity 260ms ease; }
+body:has(.portfolio-cover):not(.cover-nav-visible) .header { transform:translateY(-110%); opacity:0; visibility:hidden; pointer-events:none; }
+body:has(.portfolio-cover) .main .portfolio-cover { height:calc(100svh - var(--cover-gap)*2); min-height:calc(100svh - var(--cover-gap)*2); }
+.cover-brand { display:inline-flex; align-items:center; flex:none; background:none!important; text-decoration:none!important; }
+.cover-brand .brand-slices { display:inline-block; position:relative; width:140px; height:33px; }
+.cover-brand .logo-img { display:block; width:140px; height:33px; object-fit:contain; position:relative; z-index:3; }
+[data-theme="dark"] .cover-brand .logo-img { filter:invert(1); }
+@media(max-width:688px) {
+ .cover-brand .brand-slices,.cover-brand .logo-img { width:112px; height:27px; }
+ body:has(.portfolio-cover) .main .portfolio-cover { height:auto; min-height:calc(100svh - var(--cover-gap)*2); }
+}
+@media(prefers-reduced-motion:reduce) { body:has(.portfolio-cover) .header { transition:none; } }

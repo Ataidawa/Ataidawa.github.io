@@ -5,6 +5,7 @@
   var cover=document.querySelector('.portfolio-cover');
   function show(visible){
    document.body.classList.toggle('cover-nav-visible',visible);
+   var header=document.querySelector('.header');if(header)header.inert=!!cover&&!visible;
    ['site-navigation','menu-btn','theme-toggle'].forEach(function(id){var el=document.getElementById(id);if(el)el.inert=!!cover&&!visible;});
    if(cover&&!visible){document.body.classList.remove('nav-open');var nav=document.getElementById('site-navigation');if(nav)nav.classList.remove('is-open');var button=document.getElementById('menu-btn');if(button)button.setAttribute('aria-expanded','false');}
   }
