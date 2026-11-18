@@ -1,38 +1,86 @@
 {
   "playlist_id": "18598014323",
+  "updated_at": "2026-11-18T18:06:10.626Z",
   "tracks": [
     {
-      "id": "31426746",
-      "name": "idfc",
-      "artist": "Blackbear",
-      "pic": "http://p2.music.126.net/A5M2fD3LtLz0qFUnt5vGfQ==/7801034999769746.jpg",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=31426746",
-      "duration": 245172
+      "id": "149297",
+      "name": "夜的钢琴曲五",
+      "artist": "石进",
+      "pic": "http://p1.music.126.net/BUGjlj2O8qY0mmHmVuer6Q==/109951168892676402.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=149297",
+      "duration": 130935
+    },
+    {
+      "id": "2091823800",
+      "name": "The Beginning",
+      "artist": "flawed mangoes",
+      "pic": "http://p1.music.126.net/HdUain1HSoS_U2LQ6t_7pQ==/109951170516297324.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=2091823800",
+      "duration": 175384
+    },
+    {
+      "id": "2709261303",
+      "name": "Stray.wav (slowed)",
+      "artist": "$uNDOWN",
+      "pic": "http://p1.music.126.net/4EP2AATFXulkNBAl-rIOgA==/109951171053226540.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=2709261303",
+      "duration": 115006
+    },
+    {
+      "id": "489998634",
+      "name": "Shinjuku",
+      "artist": "just big hills",
+      "pic": "http://p1.music.126.net/P2Xaoq0qZ7K3f-N4Jk5Nag==/109951165330381989.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=489998634",
+      "duration": 168001
+    },
+    {
+      "id": "500352029",
+      "name": "sounds of summer",
+      "artist": "E66S",
+      "pic": "http://p1.music.126.net/62M6m5R3T7VRl7WALy2IIg==/109951163007497770.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=500352029",
+      "duration": 256731
+    },
+    {
+      "id": "475072640",
+      "name": "[ raw cuts ] 006",
+      "artist": "matador",
+      "pic": "http://p1.music.126.net/vnxGtuH0u_0PIvwpzw9e9w==/109951170729613181.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=475072640",
+      "duration": 138423
+    },
+    {
+      "id": "411314970",
+      "name": "Gasoline (Instrumental)",
+      "artist": "Halsey",
+      "pic": "http://p1.music.126.net/2f-Cy_bJEUOvu2RUPX_QqQ==/1407374891428099.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=411314970",
+      "duration": 197172
+    },
+    {
+      "id": "436667409",
+      "name": "《从你的全世界路过》插曲扒带",
+      "artist": "ULY",
+      "pic": "http://p1.music.126.net/O89Ae7dCtDzYFChkeQedWg==/17745018161034403.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=436667409",
+      "duration": 157805
+    },
+    {
+      "id": "518894020",
+      "name": "Are You Lost",
+      "artist": "Park Bird",
+      "pic": "http://p1.music.126.net/goTttaafOqtsTp8c4mRB-g==/109951174027799855.jpg",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=518894020",
+      "duration": 167436
     },
     {
       "id": "2729473649",
       "name": "词不达意",
       "artist": "万能日记",
-      "pic": "http://p2.music.126.net/AbhVMj1LS_4xX1ZVr56Ypg==/109951171513237180.jpg",
+      "pic": "http://p1.music.126.net/AbhVMj1LS_4xX1ZVr56Ypg==/109951171513237180.jpg",
       "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=2729473649",
       "duration": 131632
-    },
-    {
-      "id": "2146772076",
-      "name": "忘却",
-      "artist": "马格南MAGNUM",
-      "pic": "http://p2.music.126.net/gTVHWsX07BIp0cwQ9J7h7w==/109951169505148858.jpg",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=2146772076",
-      "duration": 273966
-    },
-    {
-      "id": "1342743435",
-      "name": "Ibuprofen",
-      "artist": "Alicks",
-      "pic": "http://p2.music.126.net/S7reWj8cuhvdfMpc0RfHxQ==/109951165290760627.jpg",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=1342743435",
-      "duration": 284240
     }
-  ],
-  "updated_at": "2026-11-14T20:40:08.5705035Z"
+  ]
 }
