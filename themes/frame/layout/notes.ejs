@@ -3,7 +3,8 @@
   var notes = notesCat ? notesCat.posts.sort('-date').toArray() : [];
 %>
 <div class="page-head">
-  <h1 class="page-title">文章</h1>
+  <p class="page-eyebrow">JOPOLIS / JOURNAL</p>
+  <h1 class="page-title" aria-label="文章">Notes.</h1>
   <p class="page-desc">设计复盘、工具和一点行业观察，共 <%= notes.length %> 篇</p>
 </div>
 

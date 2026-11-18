@@ -1,4 +1,4 @@
-<header class="page-head"><p class="page-eyebrow">JOPOLIS / MOMENTS</p><h1 class="page-title">相册簿</h1><p class="page-desc">把灵感、过程和日常，留在画面里。</p></header>
+<header class="page-head"><p class="page-eyebrow">JOPOLIS / MOMENTS</p><h1 class="page-title" aria-label="相册簿">Albums.</h1><p class="page-desc">把灵感、过程和日常，留在画面里。</p></header>
 <% (site.data.albums || []).forEach(function(album) { %>
 <section class="album-section">
   <div class="album-heading"><div><h2><%= album.title %></h2><p><%= album.description %></p></div><span class="content-chip"><%= album.photos.length %> 张<%= album.placeholder ? ' · 占位预览' : '' %></span></div>
