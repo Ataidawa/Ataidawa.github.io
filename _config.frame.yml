@@ -33,6 +33,7 @@ stylesheets:
 
 # scripts loaded in the end of the body
 scripts:
+- /js/cover-navigation.js
 - /js/site-motion.js
 - /js/theme-switch.js
 - /js/cover.js
