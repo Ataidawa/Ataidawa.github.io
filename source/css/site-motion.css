@@ -66,6 +66,7 @@ body:has(.portfolio-cover):not(.cover-nav-visible) .header :is(.site-nav,.menu-b
 .header :is(.site-nav,.menu-btn,.theme-toggle) { transition:opacity 240ms ease,visibility 240ms ease,transform 240ms ease; }
 .cover-navigation { display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:12px 24px; }
 .cover-navigation a { color:var(--accent); padding:10px 0; white-space:nowrap; }
+.main .cover-navigation a.motion-link { background-position:var(--underline-origin,50%) calc(50% + .5em + 3px); }
 .cover-theme-toggle { border:0; background:transparent; color:var(--accent); padding:10px; cursor:pointer; font-size:20px; }
 .cover-navigation a:focus-visible,.cover-theme-toggle:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
 @media(max-width:688px) { .cover-navigation { width:100%; justify-content:flex-start; gap:4px 18px; font-size:12px; } .cover-navigation a { min-height:24px; display:flex; align-items:center; } }
